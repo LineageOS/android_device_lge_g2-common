@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a5ae5dd_811d77bf",
+        "filename": "GestureSettings/res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-20T23:55:57Z",
+      "side": 1,
+      "message": "Anschalten und Ausschalten wird groß geschrieben.",
+      "revId": "9288602ab53ded56221052c76dba3c9ab1d54671",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
