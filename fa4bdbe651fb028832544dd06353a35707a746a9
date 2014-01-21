@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3a57f1b5_44afaee3",
+        "filename": "GestureSettings/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-21T22:51:55Z",
+      "side": 1,
+      "message": "Ich glaube, man muss da 2x klopfen. Da LGs Original-Firmware dieses Feature hat, dürften die Benutzer das schon kennen.\n\nWie wäre es mit \u0027Klopfgeste deaktiviert\u0027 und \u0027Doppeltes Tippen schaltet den Bildschirm an\u0027 (o.ä., evtl. mit \u0027Gerät\u0027 statt \u0027Bildschirm\u0027) als Summaries?",
+      "parentUuid": "5a5ae5dd_890a7dd1",
+      "revId": "fa4bdbe651fb028832544dd06353a35707a746a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a5ae5dd_290fc9e2",
         "filename": "GestureSettings/res/values-de/strings.xml",
         "patchSetId": 2
@@ -64,6 +82,24 @@
       "writtenOn": "2014-01-21T08:15:35Z",
       "side": 1,
       "message": "Eventuell: \"Klopfgeste auf Statusleiste aktiviert\"",
+      "revId": "fa4bdbe651fb028832544dd06353a35707a746a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_64ac2aee",
+        "filename": "GestureSettings/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-21T22:51:55Z",
+      "side": 1,
+      "message": "Mein Vorschlag wäre wie oben: \u0027Klopfgeste deaktiviert\u0027 und \u0027Doppeltes Tippen auf die Statusleiste schaltet den Bildschirm aus\u0027.",
+      "parentUuid": "5a5ae5dd_e9f9b1c9",
       "revId": "fa4bdbe651fb028832544dd06353a35707a746a9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
