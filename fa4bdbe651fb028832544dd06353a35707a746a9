@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "3a57f1b5_64798a2f",
+        "filename": "GestureSettings/res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-22T03:03:08Z",
+      "side": 1,
+      "message": "Das aktiviert/deaktiviert am Ende gefällt mir halt nicht. IMHO kann man so statische Summaries auch weglassen. Daher mein obiger Vorschlag mit verschiedenen Strings für an und aus. Eventuell könnte man den Titel dann auch noch umbenennen, z.B. in \u0027Einschalten durch Klopfen\u0027.",
+      "parentUuid": "3a57f1b5_249cf268",
+      "revId": "fa4bdbe651fb028832544dd06353a35707a746a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a5ae5dd_290fc9e2",
         "filename": "GestureSettings/res/values-de/strings.xml",
         "patchSetId": 2
