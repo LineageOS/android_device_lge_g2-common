@@ -16,6 +16,24 @@
       "revId": "cc04ce765fa0fe5b8aa8cbc1cda7ba3fdf9b974e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_8a812ffe",
+        "filename": "GestureSettings/res/values-de/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-22T23:53:08Z",
+      "side": 1,
+      "message": "Mal abgesehen davon, dass ich deinen Ton etwas unpassend finde:\n\nMan muss IMHO zwischen der Geste und der Einzelaktion unterscheiden. Man \u0027tippt\u0027 halt 2x, und insgesamt ist das dann eine Klopfgeste. Ein Beispiel dafür, dass das auch andere so sehen: http://www.tech.de/news/lg-macht-klopfen-zum-standard-10028066.html",
+      "parentUuid": "3a57f1b5_6a92b359",
+      "revId": "cc04ce765fa0fe5b8aa8cbc1cda7ba3fdf9b974e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
