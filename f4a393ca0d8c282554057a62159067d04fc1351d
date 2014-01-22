@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a57f1b5_e7033c0c",
+        "filename": "GestureSettings/res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2014-01-22T08:53:29Z",
+      "side": 1,
+      "message": "Nitpick:\nPlease remove this empty line",
+      "revId": "f4a393ca0d8c282554057a62159067d04fc1351d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_8708482a",
+        "filename": "GestureSettings/res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2014-01-22T08:53:29Z",
+      "side": 1,
+      "message": "Same here",
+      "revId": "f4a393ca0d8c282554057a62159067d04fc1351d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
