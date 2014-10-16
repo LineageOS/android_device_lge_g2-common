@@ -16,6 +16,24 @@
       "revId": "ef34b0a4714ca8d8cbb584ae0115b449fc77e9a6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a18252c_d5afbc92",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2014-10-16T10:59:25Z",
+      "side": 1,
+      "message": "Meh, yeah it probably should be. But I don\u0027t know if he\u0027s still even looking at these. I think he kinda got pissed off that his changes were being ignored (which they shouldn\u0027t be, they\u0027re pretty good)",
+      "parentUuid": "5a18252c_153e54b8",
+      "revId": "ef34b0a4714ca8d8cbb584ae0115b449fc77e9a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
