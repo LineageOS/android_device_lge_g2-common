@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a18252c_153e54b8",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-10-16T05:59:12Z",
+      "side": 1,
+      "message": "This should probably be caf-new if you are moving over to using caf things.",
+      "revId": "ef34b0a4714ca8d8cbb584ae0115b449fc77e9a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
