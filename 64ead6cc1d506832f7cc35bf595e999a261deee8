@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a18252c_57dba7ed",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2014-10-28T01:26:57Z",
+      "side": 1,
+      "message": "Does this actually work? BOARD_WLAN_DEVICE is defined after you try to use it. Seems to me this would cause breakage.",
+      "revId": "64ead6cc1d506832f7cc35bf595e999a261deee8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
