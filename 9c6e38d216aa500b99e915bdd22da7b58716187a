@@ -16,6 +16,24 @@
       "revId": "9c6e38d216aa500b99e915bdd22da7b58716187a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bacf61ea_5e68eaba",
+        "filename": "overlay/packages/apps/Settings/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2015-02-06T16:49:25Z",
+      "side": 1,
+      "message": "I know. Just about to remove them anyway.",
+      "parentUuid": "bacf61ea_de733ab3",
+      "revId": "9c6e38d216aa500b99e915bdd22da7b58716187a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
