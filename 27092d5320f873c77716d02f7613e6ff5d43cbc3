@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad45d7e_3a10a04e",
+        "filename": "ril/telephony/java/com/android/internal/telephony/LgeLteRIL.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2015-03-05T17:06:02Z",
+      "side": 1,
+      "message": "should probably call this ca2 to align with calling it ca above...",
+      "revId": "27092d5320f873c77716d02f7613e6ff5d43cbc3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad45d7e_9a1d4c69",
+        "filename": "ril/telephony/java/com/android/internal/telephony/LgeLteRIL.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 207,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2015-03-05T17:06:02Z",
+      "side": 1,
+      "message": "ca3",
+      "revId": "27092d5320f873c77716d02f7613e6ff5d43cbc3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
