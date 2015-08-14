@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f231b9d_530edbe5",
+        "filename": "cmhw/org/cyanogenmod/hardware/TapToWake.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 10094
+      },
+      "writtenOn": "2015-08-14T07:32:05Z",
+      "side": 1,
+      "message": "I know you just took my patch directly, but it was bad.  You shouldn\u0027t ever throw an exception in cmhw jar.  It would crash the system.",
+      "range": {
+        "startLine": 30,
+        "startChar": 15,
+        "endLine": 30,
+        "endChar": 73
+      },
+      "revId": "3c2a0f86f92c1561a4e254b73c9be642e7401a41",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
