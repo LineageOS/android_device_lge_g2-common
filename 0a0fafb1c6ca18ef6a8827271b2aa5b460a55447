@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f201791_958d847d",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 308,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2015-08-17T17:10:43Z",
+      "side": 1,
+      "message": "if you\u0027re just setting the default here, its better to remove the line completely",
+      "range": {
+        "startLine": 308,
+        "startChar": 19,
+        "endLine": 308,
+        "endChar": 47
+      },
+      "revId": "0a0fafb1c6ca18ef6a8827271b2aa5b460a55447",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f201791_b5908097",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 314,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2015-08-17T17:10:43Z",
+      "side": 1,
+      "message": "line ending/spacing issue?",
+      "revId": "0a0fafb1c6ca18ef6a8827271b2aa5b460a55447",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
