@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f201791_23c2e886",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2015-08-22T09:45:58Z",
+      "side": 0,
+      "message": "Kill the whitespace but leave the line, it\u0027s separated for organization.",
+      "range": {
+        "startLine": 48,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 4
+      },
+      "revId": "07ccc97e73655ff3cb4dd22375782ca8491a72a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
