@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f1d235d_1004c716",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2015-09-04T07:21:56Z",
+      "side": 0,
+      "message": "Just set this to none",
+      "range": {
+        "startLine": 14,
+        "startChar": 32,
+        "endLine": 14,
+        "endChar": 39
+      },
+      "revId": "07ccc97e73655ff3cb4dd22375782ca8491a72a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
