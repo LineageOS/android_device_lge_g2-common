@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f436f4f_3beb42b1",
+        "filename": "system_prop.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 7202
+      },
+      "writtenOn": "2015-10-04T17:44:53Z",
+      "side": 1,
+      "message": "Missing \\ at the end of the line 37\n\nhttps://github.com/CyanogenMod/android_device_lge_g2-common/commit/79aa3f9c5087d36097f3a405c51cbc679c1a9e19#commitcomment-13576680",
+      "range": {
+        "startLine": 37,
+        "startChar": 4,
+        "endLine": 37,
+        "endChar": 39
+      },
+      "revId": "79aa3f9c5087d36097f3a405c51cbc679c1a9e19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
