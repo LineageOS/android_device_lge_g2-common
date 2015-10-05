@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f287b81_6e4c6f76",
+        "filename": "rootdir/etc/set_baseband.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2015-10-05T17:41:14Z",
+      "side": 1,
+      "message": "You should just grep the entire baseband partition. I do this on 3 other LG devices (g3, vk810 and v410) and it works fine. Then you don\u0027t ever have to worry about maintaining this, plus its universal between all variants.",
+      "revId": "62c2eb0ac348ac821c2d54787cba7d405f59c0f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
