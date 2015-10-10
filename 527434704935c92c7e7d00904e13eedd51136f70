@@ -16,6 +16,24 @@
       "revId": "527434704935c92c7e7d00904e13eedd51136f70",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f287b81_64b7e388",
+        "filename": "board-info.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13610
+      },
+      "writtenOn": "2015-10-10T04:59:03Z",
+      "side": 1,
+      "message": "Using | right? Isn\u0027t better move this board-info to specific variant repo? I was thinking in add a script on init to checks and sets aboot version, but it will mess any update using an old recovery. Your method is better.",
+      "parentUuid": "7f287b81_e49193f3",
+      "revId": "527434704935c92c7e7d00904e13eedd51136f70",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
