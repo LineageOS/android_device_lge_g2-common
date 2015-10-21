@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f2577a7_3c3a1de7",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-10-21T02:44:24Z",
+      "side": 1,
+      "message": "Don\u0027t need this",
+      "revId": "faa374cd6f467f64e4d3c28e95404e7e6425ae65",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f2577a7_fc2375bd",
+        "filename": "liblge/Android.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-10-21T02:44:24Z",
+      "side": 1,
+      "message": "Not needed",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 46
+      },
+      "revId": "faa374cd6f467f64e4d3c28e95404e7e6425ae65",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
