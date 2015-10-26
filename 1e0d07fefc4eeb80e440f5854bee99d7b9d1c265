@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f2577a7_2138a8d1",
+        "filename": "ril/telephony/java/com/android/internal/telephony/LgeLteRIL.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-10-26T23:24:40Z",
+      "side": 1,
+      "message": "This seems wonky to me, the original code called through to the constructor below. Shouldn\u0027t you be modifying that constructor, or having that constructor now call this one?",
+      "revId": "1e0d07fefc4eeb80e440f5854bee99d7b9d1c265",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
