@@ -16,6 +16,24 @@
       "revId": "1e0d07fefc4eeb80e440f5854bee99d7b9d1c265",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f2577a7_61459017",
+        "filename": "ril/telephony/java/com/android/internal/telephony/LgeLteRIL.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 444
+      },
+      "writtenOn": "2015-10-26T23:48:33Z",
+      "side": 1,
+      "message": "You tell me. :)\n\nhttps://github.com/CyanogenMod/android_device_samsung_klte-common/blob/cm-12.1/ril/telephony/java/com/android/internal/telephony/KlteRIL.java",
+      "parentUuid": "5f2577a7_2138a8d1",
+      "revId": "1e0d07fefc4eeb80e440f5854bee99d7b9d1c265",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
