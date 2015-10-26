@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f2577a7_bbbba9e3",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-10-26T11:03:29Z",
+      "side": 1,
+      "message": "Is this needed?",
+      "revId": "4976e33e01cebcc7d73081dd8b9ccb9666b4a67a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f2577a7_1be3dd07",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 323,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-10-26T11:03:29Z",
+      "side": 1,
+      "message": "There\u0027s a separate bootlogo service?",
+      "revId": "4976e33e01cebcc7d73081dd8b9ccb9666b4a67a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f2577a7_dbec35f5",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 324,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-10-26T11:03:29Z",
+      "side": 1,
+      "message": "This is probably not the correct PID/VID combo.",
+      "revId": "4976e33e01cebcc7d73081dd8b9ccb9666b4a67a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f2577a7_fbeff1e6",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 325,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-10-26T11:03:29Z",
+      "side": 1,
+      "message": "You shouldn\u0027t need all of these partitions mounted.",
+      "revId": "4976e33e01cebcc7d73081dd8b9ccb9666b4a67a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
