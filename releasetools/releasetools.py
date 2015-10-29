@@ -18,11 +18,17 @@ import common
 import re
 
 def FullOTA_Assertions(info):
+  AddBootloaderAssertion(info)
   AddTrustZoneAssertion(info, info.input_zip)
   return
 
 def IncrementalOTA_Assertions(info):
+  AddBootloaderAssertion(info)
   AddTrustZoneAssertion(info, info.target_zip)
+  return
+
+def AddBootloaderAssertion(info):
+  info.script.AppendExtra('assert(run_program("/sbin/sh", "-c", "aboot=`strings /dev/block/platform/msm_sdcc.1/by-name/aboot | grep mdss_mdp.panel=`; if [ -z \\"$aboot\\" ]; then exit 1; fi") == 0 || abort("Wrong Aboot version, please update!"););')
   return
 
 def AddTrustZoneAssertion(info, input_zip):
