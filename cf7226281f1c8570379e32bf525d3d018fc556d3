@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f2f7f8d_cc5b4285",
+        "filename": "overlay/cmsdk/cm/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2015-11-11T23:10:50Z",
+      "side": 1,
+      "message": "Whitespace",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 1
+      },
+      "revId": "cf7226281f1c8570379e32bf525d3d018fc556d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_ac60f633",
+        "filename": "overlay/cmsdk/cm/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2015-11-11T23:10:50Z",
+      "side": 1,
+      "message": "Another whitespace",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 4
+      },
+      "revId": "cf7226281f1c8570379e32bf525d3d018fc556d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_ec66fe51",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 290,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2015-11-11T23:10:50Z",
+      "side": 1,
+      "message": "Why? We don\u0027t have any backlit buttons. Forget that, we don\u0027t have any buttons at all.",
+      "range": {
+        "startLine": 289,
+        "startChar": 4,
+        "endLine": 290,
+        "endChar": 69
+      },
+      "revId": "cf7226281f1c8570379e32bf525d3d018fc556d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
