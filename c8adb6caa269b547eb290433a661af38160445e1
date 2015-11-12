@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f2f7f8d_a7e13101",
+        "filename": "sepolicy/mediaserver.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-12T01:29:10Z",
+      "side": 1,
+      "message": "What the hell? unlabeled?",
+      "revId": "c8adb6caa269b547eb290433a661af38160445e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_87e63516",
+        "filename": "sepolicy/mediaserver.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-12T01:29:10Z",
+      "side": 1,
+      "message": "What firmware is mediaserver going after?",
+      "revId": "c8adb6caa269b547eb290433a661af38160445e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_27ed41ef",
+        "filename": "sepolicy/mm-qcamerad.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-12T01:29:10Z",
+      "side": 1,
+      "message": "This probably should have been a file_auto_trans rule.",
+      "revId": "c8adb6caa269b547eb290433a661af38160445e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_67e34907",
+        "filename": "sepolicy/mm-qcamerad.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-12T01:29:10Z",
+      "side": 1,
+      "message": "This is weird. What file is it going after?",
+      "revId": "c8adb6caa269b547eb290433a661af38160445e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_07bc85da",
+        "filename": "sepolicy/mpdecision.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-12T01:29:10Z",
+      "side": 1,
+      "message": "This probably should be a file_auto_trans rule too.",
+      "revId": "c8adb6caa269b547eb290433a661af38160445e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_e7c05953",
+        "filename": "sepolicy/property.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-12T01:29:10Z",
+      "side": 1,
+      "message": "Why not delete?",
+      "revId": "c8adb6caa269b547eb290433a661af38160445e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_a7ba51db",
+        "filename": "sepolicy/tune2fs.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-12T01:29:10Z",
+      "side": 1,
+      "message": "There\u0027s a tune2fs service defined somewhere?",
+      "revId": "c8adb6caa269b547eb290433a661af38160445e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_87cf557e",
+        "filename": "sepolicy/ueventd.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-12T01:29:10Z",
+      "side": 1,
+      "message": "This is probably wrong...",
+      "revId": "c8adb6caa269b547eb290433a661af38160445e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_67cc6989",
+        "filename": "sepolicy/vold.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-12T01:29:10Z",
+      "side": 1,
+      "message": "This is weird, why is vold going after sensors/drm files? Is this for fsck?",
+      "revId": "c8adb6caa269b547eb290433a661af38160445e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
