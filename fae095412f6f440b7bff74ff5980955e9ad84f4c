@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f515b1d_00da5ae8",
+        "filename": "g2.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-20T11:26:28Z",
+      "side": 1,
+      "message": "B comes before S",
+      "revId": "fae095412f6f440b7bff74ff5980955e9ad84f4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
