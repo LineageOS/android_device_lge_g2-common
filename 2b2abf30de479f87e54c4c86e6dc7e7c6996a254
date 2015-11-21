@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f4e5783_2840a307",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 306,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-21T02:37:40Z",
+      "side": 1,
+      "message": "You might as well swap this with the above.",
+      "revId": "2b2abf30de479f87e54c4c86e6dc7e7c6996a254",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
