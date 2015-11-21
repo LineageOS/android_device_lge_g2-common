@@ -16,6 +16,24 @@
       "revId": "2b2abf30de479f87e54c4c86e6dc7e7c6996a254",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f4e5783_e8496b32",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 306,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-21T02:38:44Z",
+      "side": 1,
+      "message": "Nvm, there\u0027s derp in the kernel driver.",
+      "parentUuid": "5f4e5783_2840a307",
+      "revId": "2b2abf30de479f87e54c4c86e6dc7e7c6996a254",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
