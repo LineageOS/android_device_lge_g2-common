@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "5f4e5783_2b0e5de5",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-21T06:26:23Z",
+      "side": 1,
+      "message": "This can just be /sys/.../lge_touch/touch_gesture.",
+      "revId": "2b2abf30de479f87e54c4c86e6dc7e7c6996a254",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f4e5783_8b69d18c",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 305,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-21T06:26:23Z",
+      "side": 1,
+      "message": "This forces touch gestures to on.",
+      "revId": "2b2abf30de479f87e54c4c86e6dc7e7c6996a254",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f4e5783_2840a307",
         "filename": "rootdir/etc/init.g2.rc",
         "patchSetId": 1
@@ -31,6 +65,41 @@
       "side": 1,
       "message": "Nvm, there\u0027s derp in the kernel driver.",
       "parentUuid": "5f4e5783_2840a307",
+      "revId": "2b2abf30de479f87e54c4c86e6dc7e7c6996a254",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f4e5783_4b0999db",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 306,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-21T06:26:23Z",
+      "side": 1,
+      "message": "This isn\u0027t necessary, the default touch_gesture driver already handles inputs of 0 and 1 correctly.",
+      "parentUuid": "5f4e5783_e8496b32",
+      "revId": "2b2abf30de479f87e54c4c86e6dc7e7c6996a254",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f4e5783_6b0455c7",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 308,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-21T06:26:23Z",
+      "side": 1,
+      "message": "This also forces touch gestures to on.",
       "revId": "2b2abf30de479f87e54c4c86e6dc7e7c6996a254",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
