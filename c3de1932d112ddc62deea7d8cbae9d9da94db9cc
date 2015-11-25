@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff82abbf_a92fdef4",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2015-11-25T21:44:26Z",
+      "side": 0,
+      "message": "actually...all stuff probably needs to be moved down too...blargh",
+      "revId": "c3de1932d112ddc62deea7d8cbae9d9da94db9cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
