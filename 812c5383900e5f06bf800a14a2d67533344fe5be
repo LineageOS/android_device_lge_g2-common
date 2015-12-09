@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f93b717_808e782c",
+        "filename": "rootdir/etc/set_baseband.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2015-12-09T20:34:24Z",
+      "side": 1,
+      "message": "This doesn\u0027t need to be here, The Linux Foundation has nothing to do with this script.",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 1
+      },
+      "revId": "812c5383900e5f06bf800a14a2d67533344fe5be",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
