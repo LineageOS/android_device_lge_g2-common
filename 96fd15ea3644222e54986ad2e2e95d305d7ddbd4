@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f93b717_20b76489",
+        "filename": "configs/mixer_paths.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-10T00:13:59Z",
+      "side": 1,
+      "message": "Don\u0027t change the defaults, these are the values set when it\u0027s idle and no use case is active.",
+      "revId": "96fd15ea3644222e54986ad2e2e95d305d7ddbd4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f93b717_40bcf068",
+        "filename": "configs/mixer_paths.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-10T00:13:59Z",
+      "side": 1,
+      "message": "Don\u0027t change this.",
+      "revId": "96fd15ea3644222e54986ad2e2e95d305d7ddbd4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f93b717_e0b09c8e",
+        "filename": "configs/mixer_paths.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 473,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-10T00:13:59Z",
+      "side": 1,
+      "message": "You\u0027re increasing the mic volume... is that intentional?",
+      "revId": "96fd15ea3644222e54986ad2e2e95d305d7ddbd4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f93b717_00aee82d",
+        "filename": "configs/mixer_paths.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 627,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-10T00:13:59Z",
+      "side": 1,
+      "message": "Is this case even used?",
+      "revId": "96fd15ea3644222e54986ad2e2e95d305d7ddbd4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f93b717_a0aa9416",
+        "filename": "configs/mixer_paths.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 655,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-10T00:13:59Z",
+      "side": 1,
+      "message": "Are these cases even used?",
+      "revId": "96fd15ea3644222e54986ad2e2e95d305d7ddbd4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
