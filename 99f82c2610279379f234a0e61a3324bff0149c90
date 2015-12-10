@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "5f93b717_209e8407",
+        "filename": "rootdir/Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-10T00:11:02Z",
+      "side": 1,
+      "message": "Still unnecessary.",
+      "revId": "99f82c2610279379f234a0e61a3324bff0149c90",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f93b717_80999820",
+        "filename": "rootdir/etc/set_baseband.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-10T00:11:02Z",
+      "side": 1,
+      "message": "Checking product is a better way to go here.",
+      "revId": "99f82c2610279379f234a0e61a3324bff0149c90",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f93b717_8093d84f",
         "filename": "rootdir/etc/set_baseband.sh",
         "patchSetId": 3
