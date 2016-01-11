@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_abbb490c",
+        "filename": "rootdir/etc/set_baseband.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2016-01-11T20:36:24Z",
+      "side": 1,
+      "message": "Does this variable ever actually get set again? I don\u0027t expect it to re-run `getprop gsm.version.baseband` every time you attempt to get the value of this variable.\n\nAlso - We don\u0027t have to loop this on g3, simply triggering it on the property being blank (as you\u0027ve done in init.g2.rc) was enough.",
+      "revId": "efea0a57ef579bd9c6ff606b1b7f7564ef500493",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
