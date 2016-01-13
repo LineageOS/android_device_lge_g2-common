@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_c0030c0f",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-01-13T23:40:47Z",
+      "side": 1,
+      "message": "Huh, that\u0027s interesting. Shouldn\u0027t this be camera_data_file or an existing type?",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_000a7425",
+        "filename": "sepolicy/mediaserver.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-01-13T23:40:47Z",
+      "side": 1,
+      "message": "rw_file_perms\n\nAlso, what file is being accessed?",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_40187c80",
+        "filename": "sepolicy/mpdecision.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-01-13T23:40:47Z",
+      "side": 1,
+      "message": "I thought this was already granted in some way...\n\nIf not, w_dir_perms.",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_801e646e",
+        "filename": "sepolicy/platform_app.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-01-13T23:40:47Z",
+      "side": 1,
+      "message": "s comes before t.\n\nAlso, do you happen to know what app is looking for this?",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_2013f068",
+        "filename": "sepolicy/platform_app.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-01-13T23:40:47Z",
+      "side": 1,
+      "message": "r_file_perms",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
