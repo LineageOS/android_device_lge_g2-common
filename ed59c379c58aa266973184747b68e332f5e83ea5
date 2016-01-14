@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1fcbff3d_88a0c6a7",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 13855
+      },
+      "writtenOn": "2016-01-14T18:38:15Z",
+      "side": 1,
+      "message": "Can\u0027t find something similar..\nError is \"\u003c38\u003e[  401.738529 / 01-12 23:16:10.154] type\u003d1400 audit(1452636970.154:352): avc: denied { open } for pid\u003d8453 comm\u003d\"generic\" name\u003d\"mmosal_logmask.cfg\" dev\u003d\"mmcblk0p35\" ino\u003d24795 scontext\u003du:r:mediaserver:s0 tcontext\u003du:object_r:system_data_file:s0 tclass\u003dfile permissive\u003d1\"",
+      "parentUuid": "1fcbff3d_c0030c0f",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fcbff3d_000a7425",
         "filename": "sepolicy/mediaserver.te",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2016-01-13T23:40:47Z",
       "side": 1,
       "message": "rw_file_perms\n\nAlso, what file is being accessed?",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_48aade85",
+        "filename": "sepolicy/mediaserver.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13855
+      },
+      "writtenOn": "2016-01-14T18:38:15Z",
+      "side": 1,
+      "message": "Thanks :) I will change to rw_file_perms.\nLog is \"\u003c38\u003e[   69.748481 / 01-12 22:44:22.519] type\u003d1400 audit(1452635062.519:269): avc: denied { read write } for pid\u003d2071 comm\u003d\"NPDecoder\" name\u003d\"nx2194.mem\" dev\u003d\"mmcblk0p21\" ino\u003d46 scontext\u003du:r:mediaserver:s0 tcontext\u003du:object_r:persist_drm_file:s0 tclass\u003dfile permissive\u003d1\n\u003c38\u003e[   69.748720 / 01-12 22:44:22.519] type\u003d1400 audit(1452635062.519:270): avc: denied { open } for pid\u003d2071 comm\u003d\"NPDecoder\" name\u003d\"nx2194.mem\" dev\u003d\"mmcblk0p21\" ino\u003d46 scontext\u003du:r:mediaserver:s0 tcontext\u003du:object_r:persist_drm_file:s0 tclass\u003dfile permissive\u003d1\"",
+      "parentUuid": "1fcbff3d_000a7425",
       "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "1fcbff3d_0894d643",
+        "filename": "sepolicy/mpdecision.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13855
+      },
+      "writtenOn": "2016-01-14T18:38:15Z",
+      "side": 1,
+      "message": "Well.. It throws \"\u003c38\u003e[    8.202659 / 01-02 12:05:18.690] type\u003d1400 audit(129918.640:44): avc: denied { write } for pid\u003d275 comm\u003d\"mpdecision\" name\u003d\"system\" dev\u003d\"mmcblk0p35\" ino\u003d311297 scontext\u003du:r:mpdecision:s0 tcontext\u003du:object_r:system_data_file:s0 tclass\u003ddir permissive\u003d1\n\u003c38\u003e[    8.202814 / 01-02 12:05:18.690] type\u003d1400 audit(129918.640:45): avc: denied { add_name } for pid\u003d275 comm\u003d\"mpdecision\" name\u003d\"default_values\" scontext\u003du:r:mpdecision:s0 tcontext\u003du:object_r:system_data_file:s0 tclass\u003ddir permissive\u003d1\"",
+      "parentUuid": "1fcbff3d_40187c80",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fcbff3d_801e646e",
         "filename": "sepolicy/platform_app.te",
         "patchSetId": 1
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "1fcbff3d_e89aaa6c",
+        "filename": "sepolicy/platform_app.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13855
+      },
+      "writtenOn": "2016-01-14T18:38:15Z",
+      "side": 1,
+      "message": "\"s comes before t\" - please explain :)\nLog :\n\"\u003c38\u003e[  101.238374 / 01-12 22:44:54.605] type\u003d1400 audit(1452635094.605:285): avc: denied { search } for pid\u003d4205 comm\u003d\"Thread-53\" name\u003d\"thermal\" dev\u003d\"sysfs\" ino\u003d7358 scontext\u003du:r:platform_app:s0 tcontext\u003du:object_r:sysfs_thermal:s0 tclass\u003ddir permissive\u003d1\n\u003c38\u003e[  101.242547 / 01-12 22:44:54.615] type\u003d1400 audit(1452635094.605:286): avc: denied { read } for pid\u003d4205 comm\u003d\"Thread-53\" name\u003d\"thermal_zone0\" dev\u003d\"sysfs\" ino\u003d17332 scontext\u003du:r:platform_app:s0 tcontext\u003du:object_r:sysfs_thermal:s0 tclass\u003dlnk_file permissive\u003d1\n\u003c38\u003e[  101.243641 / 01-12 22:44:54.615] type\u003d1400 audit(1452635094.605:287): avc: denied { read } for pid\u003d4205 comm\u003d\"Thread-53\" name\u003d\"temp\" dev\u003d\"sysfs\" ino\u003d17340 scontext\u003du:r:platform_app:s0 tcontext\u003du:object_r:sysfs_thermal:s0 tclass\u003dfile permissive\u003d1\n\u003c38\u003e[  101.244085 / 01-12 22:44:54.615] type\u003d1400 audit(1452635094.605:288): avc: denied { open } for pid\u003d4205 comm\u003d\"Thread-53\" name\u003d\"temp\" dev\u003d\"sysfs\" ino\u003d17340 scontext\u003du:r:platform_app:s0 tcontext\u003du:object_r:sysfs_thermal:s0 tclass\u003dfile permissive\u003d1\n\u003c38\u003e[  101.244709 / 01-12 22:44:54.615] type\u003d1400 audit(1452635094.605:289): avc: denied { getattr } for pid\u003d4205 comm\u003d\"Thread-53\" path\u003d\"/sys/devices/virtual/thermal/thermal_zone0/temp\" dev\u003d\"sysfs\" ino\u003d17340 scontext\u003du:r:platform_app:s0 tcontext\u003du:object_r:sysfs_thermal:s0 tclass\u003dfile permissive\u003d1\"",
+      "parentUuid": "1fcbff3d_801e646e",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fcbff3d_2013f068",
         "filename": "sepolicy/platform_app.te",
         "patchSetId": 1
@@ -81,6 +153,24 @@
       "writtenOn": "2016-01-13T23:40:47Z",
       "side": 1,
       "message": "r_file_perms",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_c89d6e67",
+        "filename": "sepolicy/platform_app.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13855
+      },
+      "writtenOn": "2016-01-14T18:38:15Z",
+      "side": 1,
+      "message": "Thanks :D",
+      "parentUuid": "1fcbff3d_2013f068",
       "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
