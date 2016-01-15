@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_e39acd6c",
+        "filename": "sepolicy/platform_app.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-01-15T03:22:25Z",
+      "side": 1,
+      "message": "I try to alphabetize the lines. Hence s before t, because s occurs before t in the alphabet.",
+      "revId": "abda0db138d6323d40327b0785ce0aac90f12143",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
