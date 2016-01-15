@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "1fcbff3d_a367e525",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-01-15T05:47:56Z",
+      "side": 1,
+      "message": "I\u0027m saying you should probably label /data/mmosal_logmask.cfg as a camera file type instead of defining your own custom label.",
+      "parentUuid": "1fcbff3d_88a0c6a7",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fcbff3d_000a7425",
         "filename": "sepolicy/mediaserver.te",
         "patchSetId": 1
@@ -66,6 +84,24 @@
       "side": 1,
       "message": "Thanks :) I will change to rw_file_perms.\nLog is \"\u003c38\u003e[   69.748481 / 01-12 22:44:22.519] type\u003d1400 audit(1452635062.519:269): avc: denied { read write } for pid\u003d2071 comm\u003d\"NPDecoder\" name\u003d\"nx2194.mem\" dev\u003d\"mmcblk0p21\" ino\u003d46 scontext\u003du:r:mediaserver:s0 tcontext\u003du:object_r:persist_drm_file:s0 tclass\u003dfile permissive\u003d1\n\u003c38\u003e[   69.748720 / 01-12 22:44:22.519] type\u003d1400 audit(1452635062.519:270): avc: denied { open } for pid\u003d2071 comm\u003d\"NPDecoder\" name\u003d\"nx2194.mem\" dev\u003d\"mmcblk0p21\" ino\u003d46 scontext\u003du:r:mediaserver:s0 tcontext\u003du:object_r:persist_drm_file:s0 tclass\u003dfile permissive\u003d1\"",
       "parentUuid": "1fcbff3d_000a7425",
+      "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_2373f5e9",
+        "filename": "sepolicy/mediaserver.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-01-15T05:47:56Z",
+      "side": 1,
+      "message": "This looks like nuplayer. What kind of media file are you playing when this occurs?",
+      "parentUuid": "1fcbff3d_48aade85",
       "revId": "ed59c379c58aa266973184747b68e332f5e83ea5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
