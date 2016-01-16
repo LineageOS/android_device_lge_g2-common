@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_c07d42e8",
+        "filename": "sepolicy/mpdecision.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13855
+      },
+      "writtenOn": "2016-01-16T17:37:11Z",
+      "side": 1,
+      "message": "This doesn\u0027t fix permission error..\n\n\u003c38\u003e[    8.202659 / 01-02 12:05:18.690] type\u003d1400 audit(129918.640:44): avc: denied { write } for pid\u003d275 comm\u003d\"mpdecision\" name\u003d\"system\" dev\u003d\"mmcblk0p35\" ino\u003d311297 scontext\u003du:r:mpdecision:s0 tcontext\u003du:object_r:system_data_file:s0 tclass\u003ddir permissive\u003d1\n\u003c38\u003e[    8.202814 / 01-02 12:05:18.690] type\u003d1400 audit(129918.640:45): avc: denied { add_name } for pid\u003d275 comm\u003d\"mpdecision\" name\u003d\"default_values\" scontext\u003du:r:mpdecision:s0 tcontext\u003du:object_r:system_data_file:s0 tclass\u003ddir permissive\u003d1\n\nAdding access to system_data_file for mpdecision is probably wrong idea? ;)",
+      "revId": "64c0b69b3cfb19f0e9743fa2b1c33ee1df03be7d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
