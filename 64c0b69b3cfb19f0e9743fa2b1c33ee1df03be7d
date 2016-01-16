@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "1fcbff3d_605b2e87",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 13855
+      },
+      "writtenOn": "2016-01-16T17:38:34Z",
+      "side": 1,
+      "message": "camera_logmask label will be OK?",
+      "revId": "64c0b69b3cfb19f0e9743fa2b1c33ee1df03be7d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fcbff3d_c07d42e8",
         "filename": "sepolicy/mpdecision.te",
         "patchSetId": 3
