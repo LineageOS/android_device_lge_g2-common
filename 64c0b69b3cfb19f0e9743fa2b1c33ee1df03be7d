@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1fcbff3d_d290b098",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-01-19T01:01:22Z",
+      "side": 1,
+      "message": "Why can\u0027t you just label this camera_data_file? Does it need to be it\u0027s own special label?",
+      "parentUuid": "1fcbff3d_605b2e87",
+      "revId": "64c0b69b3cfb19f0e9743fa2b1c33ee1df03be7d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fcbff3d_c07d42e8",
         "filename": "sepolicy/mpdecision.te",
         "patchSetId": 3
