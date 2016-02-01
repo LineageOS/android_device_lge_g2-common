@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_34bd3bb7",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-02-01T06:13:20Z",
+      "side": 1,
+      "message": "Unsure why this should be changed.",
+      "revId": "4e9ab291b2e6f7cf410c75abbd781e6476107d7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_74a98379",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-02-01T06:13:20Z",
+      "side": 1,
+      "message": "This defaults to 0.\n\nSee: https://github.com/CyanogenMod/android_frameworks_native/blob/cm-13.0/services/surfaceflinger/Android.mk#L78",
+      "revId": "4e9ab291b2e6f7cf410c75abbd781e6476107d7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

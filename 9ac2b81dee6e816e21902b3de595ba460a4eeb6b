@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_14b83fc6",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-02-01T06:13:20Z",
+      "side": 0,
+      "message": "Unsure why you want to do this, this is defaulting to 2.\n\nSee: https://github.com/CyanogenMod/android_frameworks_native/blob/cm-13.0/services/surfaceflinger/DisplayHardware/FramebufferSurface.cpp#L41",
+      "revId": "9ac2b81dee6e816e21902b3de595ba460a4eeb6b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
