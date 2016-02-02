@@ -128,6 +128,24 @@
       "revId": "c222e28a076c3be5ef5c70e317a0716b35897435",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_09cca568",
+        "filename": "configs/audio_policy.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2016-02-02T07:10:29Z",
+      "side": 1,
+      "message": "It\u0027s supposed to be able to take up to 192k, right?",
+      "parentUuid": "1fcbff3d_e9a7d9a6",
+      "revId": "c222e28a076c3be5ef5c70e317a0716b35897435",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
