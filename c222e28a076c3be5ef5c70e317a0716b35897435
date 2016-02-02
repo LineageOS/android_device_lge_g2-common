@@ -57,6 +57,23 @@
       "revId": "c222e28a076c3be5ef5c70e317a0716b35897435",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_e9eb59d9",
+        "filename": "configs/audio_policy.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-02-02T06:50:41Z",
+      "side": 1,
+      "message": "It is indeed this line that resolves the issue. I suspect that dynamic is not actually the right thing to do here, the DSP probably wants either 44100 or 48000 or both.\n\nEither way, it\u0027d be best to fix this issue in a separate patchset, then wholesale update this config afterwards.",
+      "revId": "c222e28a076c3be5ef5c70e317a0716b35897435",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
