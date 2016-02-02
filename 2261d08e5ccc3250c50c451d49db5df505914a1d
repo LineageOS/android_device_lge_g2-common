@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_cfd0e2cc",
+        "filename": "rootdir/etc/init.g2.power.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-02-02T00:24:47Z",
+      "side": 1,
+      "message": "Unnecessary, kernel sets this by default.",
+      "revId": "2261d08e5ccc3250c50c451d49db5df505914a1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
