@@ -74,6 +74,24 @@
       "revId": "c222e28a076c3be5ef5c70e317a0716b35897435",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_4984ed0c",
+        "filename": "configs/audio_policy.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2016-02-02T06:55:32Z",
+      "side": 1,
+      "message": "Yeah setting this to dynamic will \"resolve\" its not a good idea. We had that on hima for a while and it was not pretty. G2 has it too for a bit but I fixed that early in the CM13 bringup.",
+      "parentUuid": "1fcbff3d_e9eb59d9",
+      "revId": "c222e28a076c3be5ef5c70e317a0716b35897435",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
