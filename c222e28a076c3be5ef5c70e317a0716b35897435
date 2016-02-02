@@ -146,6 +146,24 @@
       "revId": "c222e28a076c3be5ef5c70e317a0716b35897435",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_c9c53d3e",
+        "filename": "configs/audio_policy.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-02-02T07:11:15Z",
+      "side": 1,
+      "message": "Depends on your DSP firmware.",
+      "parentUuid": "1fcbff3d_09cca568",
+      "revId": "c222e28a076c3be5ef5c70e317a0716b35897435",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
