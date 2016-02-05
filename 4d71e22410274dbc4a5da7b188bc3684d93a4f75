@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_e56db598",
+        "filename": "configs/mixer_paths.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1129,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-02-05T00:36:35Z",
+      "side": 1,
+      "message": "Unnecessary last line change.",
+      "revId": "4d71e22410274dbc4a5da7b188bc3684d93a4f75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
