@@ -20,6 +20,7 @@ LOCAL_SRC_FILES += \
     ../platform_lib_abstractions/elapsed_millis_since_boot.cpp \
     loc_misc_utils.cpp
 
+# Flag -std=c++11 is not accepted by compiler when LOCAL_CLANG is set to true
 LOCAL_CFLAGS += \
      -fno-short-enums \
      -D_ANDROID_
