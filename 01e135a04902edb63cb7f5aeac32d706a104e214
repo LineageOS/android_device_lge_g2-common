@@ -45,6 +45,30 @@
       "revId": "01e135a04902edb63cb7f5aeac32d706a104e214",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_d52c119b",
+        "filename": "sepolicy/healthd.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-04-26T14:09:11Z",
+      "side": 1,
+      "message": "What device is it attempting to access? It looks like it\u0027s probably going to be a search, but isn\u0027t that allowed already? What\u0027s the denial?",
+      "parentUuid": "5faad753_9f88f81f",
+      "range": {
+        "startLine": 1,
+        "startChar": 14,
+        "endLine": 1,
+        "endChar": 24
+      },
+      "revId": "01e135a04902edb63cb7f5aeac32d706a104e214",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
