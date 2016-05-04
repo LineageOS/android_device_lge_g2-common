@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_06834655",
+        "filename": "rootdir/etc/init.g2.power.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13855
+      },
+      "writtenOn": "2016-05-04T11:05:32Z",
+      "side": 0,
+      "message": "Only this on early-init? Maybe we can move it to dev.bootcomplete - near sys.io.scheduler? :)",
+      "revId": "4ec6ac9da752762ec327ec922fdbd39246ef342d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
