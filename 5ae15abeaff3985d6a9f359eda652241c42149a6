@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_c44aeaaa",
+        "filename": "liblight/lights.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-05-12T16:28:10Z",
+      "side": 0,
+      "message": "We don\u0027t want to treat attention the same as maybe any of the other notification LED patterns?",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 40
+      },
+      "revId": "5ae15abeaff3985d6a9f359eda652241c42149a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_64c77614",
+        "filename": "liblight/lights.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-05-12T16:28:10Z",
+      "side": 0,
+      "message": "yep making this static void is good.",
+      "range": {
+        "startLine": 62,
+        "startChar": 0,
+        "endLine": 62,
+        "endChar": 4
+      },
+      "revId": "5ae15abeaff3985d6a9f359eda652241c42149a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
