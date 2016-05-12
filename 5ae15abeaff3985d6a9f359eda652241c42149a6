@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_efc01f7f",
+        "filename": "liblight/lights.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 12592
+      },
+      "writtenOn": "2016-05-12T18:55:31Z",
+      "side": 0,
+      "message": "Our only attention light is the LED on the power button on the back which we don\u0027t currently utilize (hence the other commit I was working on, and it is currently disabled by default in frameworks/base (https://github.com/CyanogenMod/android_frameworks_base/blob/cm-13.0/core/res/res/values/config.xml#L560) which we do not override. If we are not using it, I do not believe it should be mindlessly included. The implementation as is would not suffice for our back LED button as mentionedhttps://github.com/lg-devs/android_kernel_lge_msm8974/issues/15.",
+      "parentUuid": "5faad753_c44aeaaa",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 40
+      },
+      "revId": "5ae15abeaff3985d6a9f359eda652241c42149a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_64c77614",
         "filename": "liblight/lights.c",
         "patchSetId": 7
