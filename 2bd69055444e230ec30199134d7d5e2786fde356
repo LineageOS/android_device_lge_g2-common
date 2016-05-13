@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_0af3290c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2016-05-13T10:59:35Z",
+      "side": 1,
+      "message": "not sure this is really necessary to point out...this has been in the manifest for over a year \u003dP",
+      "revId": "2bd69055444e230ec30199134d7d5e2786fde356",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
