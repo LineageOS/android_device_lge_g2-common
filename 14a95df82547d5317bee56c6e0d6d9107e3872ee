@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_585f0de5",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-06-28T16:38:56Z",
+      "side": 1,
+      "message": "You probably don\u0027t want to swap the ordering here, it just makes it harder to figure out what\u0027s being changed.\n\nAlso turning off fluence here is not necessarily recommended. You will need to check all your voice use cases to make sure there is no echo in you call now.",
+      "revId": "14a95df82547d5317bee56c6e0d6d9107e3872ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

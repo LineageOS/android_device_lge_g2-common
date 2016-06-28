@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_185995fd",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-06-28T16:38:56Z",
+      "side": 0,
+      "message": "Removing this makes no difference, false already disables this.",
+      "revId": "8350697e79fbe23bd79b82b83f9f1855837fc140",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
