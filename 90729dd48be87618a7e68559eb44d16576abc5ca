@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_759a07c6",
+        "filename": "system_prop.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2016-07-03T14:03:46Z",
+      "side": 1,
+      "message": "this prop only exists in the aosp hal...the caf audio hal doesn\u0027t use this anywhere",
+      "revId": "90729dd48be87618a7e68559eb44d16576abc5ca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
