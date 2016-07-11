@@ -62,6 +62,23 @@
       "revId": "9e4277e3fc831c5aa1860e2185222f10e4d32a4c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_6c56b609",
+        "filename": "g2.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 12592
+      },
+      "writtenOn": "2016-07-11T00:44:46Z",
+      "side": 1,
+      "message": "Should probably go in system_prop.mk rather than here.",
+      "revId": "9e4277e3fc831c5aa1860e2185222f10e4d32a4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
