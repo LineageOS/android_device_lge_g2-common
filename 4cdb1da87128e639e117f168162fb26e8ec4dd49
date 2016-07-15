@@ -52,6 +52,24 @@
       "revId": "4cdb1da87128e639e117f168162fb26e8ec4dd49",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_82dad2e6",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 3167
+      },
+      "writtenOn": "2016-07-15T02:58:55Z",
+      "side": 1,
+      "message": "Dammit, so it\u0027s actually pulling in cm-13.0-caf-8974?",
+      "parentUuid": "3fa7e38b_42213afb",
+      "revId": "4cdb1da87128e639e117f168162fb26e8ec4dd49",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
