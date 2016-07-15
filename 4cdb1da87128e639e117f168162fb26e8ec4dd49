@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_022b42eb",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-07-15T02:00:41Z",
+      "side": 1,
+      "message": "Didn\u0027t someone say this property isn\u0027t used in the CAF HAL?",
+      "revId": "4cdb1da87128e639e117f168162fb26e8ec4dd49",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
