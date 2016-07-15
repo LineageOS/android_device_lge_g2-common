@@ -34,6 +34,24 @@
       "revId": "4cdb1da87128e639e117f168162fb26e8ec4dd49",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_42213afb",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-07-15T02:21:11Z",
+      "side": 1,
+      "message": "Wrong branch, that\u0027s the AOSP variant branch. The CAF variant doesn\u0027t have it, so this line does nothing.",
+      "parentUuid": "3fa7e38b_624556b3",
+      "revId": "4cdb1da87128e639e117f168162fb26e8ec4dd49",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
