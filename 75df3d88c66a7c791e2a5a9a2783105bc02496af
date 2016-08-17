@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_2298db68",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 12592
+      },
+      "writtenOn": "2016-08-17T03:56:53Z",
+      "side": 1,
+      "message": "Do we still need these flags as well? It may be possible to scrub this whole section, but I\u0027m not sure.",
+      "revId": "75df3d88c66a7c791e2a5a9a2783105bc02496af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fa4df85_8293cf4f",
+        "filename": "rootdir/etc/init.g2.power.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 12592
+      },
+      "writtenOn": "2016-08-17T03:56:53Z",
+      "side": 1,
+      "message": "Looks good, my mistake here in a previous commit. We are good to remove this section. I thought 2 was the original setting but it turns out it was actually 4, so good here.",
+      "revId": "75df3d88c66a7c791e2a5a9a2783105bc02496af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fa4df85_628ed328",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 303,
+      "author": {
+        "id": 12592
+      },
+      "writtenOn": "2016-08-17T03:56:53Z",
+      "side": 1,
+      "message": "I\u0027m wondering if we can ditch this section as a whole...Neither hammerhead nor bacon do anything here. Isn\u0027t irsc_util related to sec_config and sensors stuff? We shouldn\u0027t need to mess with sensors in offline charging.",
+      "revId": "75df3d88c66a7c791e2a5a9a2783105bc02496af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
