@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1fa4df85_223a1be7",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 15589
+      },
+      "writtenOn": "2016-08-17T12:38:56Z",
+      "side": 1,
+      "message": "I\u0027m trying to leave similar with G3 and G4. Who knows what LG did wrong! ;)",
+      "parentUuid": "1fa4df85_2298db68",
+      "revId": "75df3d88c66a7c791e2a5a9a2783105bc02496af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fa4df85_8293cf4f",
         "filename": "rootdir/etc/init.g2.power.rc",
         "patchSetId": 4
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "1fa4df85_62625319",
+        "filename": "rootdir/etc/init.g2.power.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 15589
+      },
+      "writtenOn": "2016-08-17T12:38:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1fa4df85_8293cf4f",
+      "revId": "75df3d88c66a7c791e2a5a9a2783105bc02496af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fa4df85_628ed328",
         "filename": "rootdir/etc/init.g2.rc",
         "patchSetId": 4
@@ -47,6 +83,24 @@
       "writtenOn": "2016-08-17T03:56:53Z",
       "side": 1,
       "message": "I\u0027m wondering if we can ditch this section as a whole...Neither hammerhead nor bacon do anything here. Isn\u0027t irsc_util related to sec_config and sensors stuff? We shouldn\u0027t need to mess with sensors in offline charging.",
+      "revId": "75df3d88c66a7c791e2a5a9a2783105bc02496af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fa4df85_2521c5a0",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 303,
+      "author": {
+        "id": 15589
+      },
+      "writtenOn": "2016-08-17T12:38:56Z",
+      "side": 1,
+      "message": "You maybe right. But we need a dev who really understands this to make this changes. G3 still has it.",
+      "parentUuid": "1fa4df85_628ed328",
       "revId": "75df3d88c66a7c791e2a5a9a2783105bc02496af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
