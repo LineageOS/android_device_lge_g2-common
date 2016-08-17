@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_02703f72",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2016-08-17T01:18:36Z",
+      "side": 1,
+      "message": "If we don\u0027t need it, remove it",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 37
+      },
+      "revId": "9189a48a878b8222d553abc0f70c906326cff1d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fa4df85_a26ccb9c",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 305,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2016-08-17T01:18:36Z",
+      "side": 1,
+      "message": "Check if we even need modem mounted at all during charge mode.",
+      "revId": "9189a48a878b8222d553abc0f70c906326cff1d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
