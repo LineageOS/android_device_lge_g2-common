@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_fb202a4c",
+        "filename": "rootdir/etc/init.g2.power.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 15589
+      },
+      "writtenOn": "2016-08-18T14:17:36Z",
+      "side": 1,
+      "message": "Hey Tyler Dunn, when you have the opportunity, please push this.",
+      "range": {
+        "startLine": 68,
+        "startChar": 4,
+        "endLine": 68,
+        "endChar": 54
+      },
+      "revId": "902824566fce83008c2111735c8138aae085f78d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
