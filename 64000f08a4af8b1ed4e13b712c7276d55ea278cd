@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_5b5b7e2d",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 15589
+      },
+      "writtenOn": "2016-08-18T14:06:15Z",
+      "side": 0,
+      "message": "Blackberry, is that you??\nReally, random stuff.... no one needs this anymore.\nWelcome 2016",
+      "range": {
+        "startLine": 144,
+        "startChar": 0,
+        "endLine": 144,
+        "endChar": 71
+      },
+      "revId": "64000f08a4af8b1ed4e13b712c7276d55ea278cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
