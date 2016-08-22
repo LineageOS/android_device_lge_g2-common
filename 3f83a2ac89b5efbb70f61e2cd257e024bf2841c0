@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_21fa0b42",
+        "filename": "sepolicy/healthd.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2016-08-22T19:12:52Z",
+      "side": 1,
+      "message": "this is WAY too permissive",
+      "revId": "3f83a2ac89b5efbb70f61e2cd257e024bf2841c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
