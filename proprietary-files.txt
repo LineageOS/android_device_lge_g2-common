@@ -224,6 +224,7 @@ vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
+vendor/lib/liblqe.so
 vendor/lib/libperipheral_client.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
@@ -246,7 +247,8 @@ bin/netmgrd:vendor/bin/netmgrd
 bin/qmuxd:vendor/bin/qmuxd
 bin/radish:vendor/bin/radish
 bin/rmt_storage:vendor/bin/rmt_storage
-lib/libril.so:vendor/lib/libril.so
+etc/data/dsi_config.xml:vendor/etc/data/dsi_config.xml
+etc/data/netmgr_config.xml:vendor/etc/data/netmgr_config.xml
 lib/libuicc.so:vendor/lib/libuicc.so
 lib/libvss_bsp_qcci.so:vendor/lib/libvss_bsp_qcci.so
 lib/libvss_common_core.so:vendor/lib/libvss_common_core.so
