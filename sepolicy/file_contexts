@@ -5,9 +5,6 @@
 /dev/rfkill                                         u:object_r:rfkill_device:s0
 /dev/btlock                                         u:object_r:btlock_file:s0
 
-# Diag
-/dev/diag_lge                                       u:object_r:diag_device:s0
-
 # Encryption
 /dev/block/platform/msm_sdcc\.1/by-name/encrypt     u:object_r:metadata_block_device:s0
 
