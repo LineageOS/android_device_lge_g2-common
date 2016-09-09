@@ -222,6 +222,7 @@ PRODUCT_PACKAGES += \
 # Qualcomm
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
+    librmnetctl \
     libxml2
 
 # Recovery
@@ -231,10 +232,6 @@ PRODUCT_PACKAGES += \
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
-
-# RIL
-PRODUCT_PACKAGES += \
-    libril_shim
 
 # Seccomp
 PRODUCT_COPY_FILES += \
