@@ -212,41 +212,40 @@ etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 bin/mpdecision:vendor/bin/mpdecision
 vendor/lib/libqti-perfd-client.so
 
-# Qualcomm framework
+# Qualcomm framework - pinned blobs are from bacon lollipop
 bin/irsc_util:vendor/bin/irsc_util
 etc/permissions/qcrilhook.xml:vendor/etc/permissions/qcrilhook.xml
 etc/permissions/qcnvitems.xml:vendor/etc/permissions/qcnvitems.xml
 -framework/qcnvitems.jar:vendor/framework/qcnvitems.jar
 -framework/qcrilhook.jar:vendor/framework/qcrilhook.jar
 lib/libmdmdetect.so:vendor/lib/libmdmdetect.so
-vendor/lib/libconfigdb.so
-vendor/lib/libdiag.so
-vendor/lib/libdsi_netctrl.so
-vendor/lib/libdsutils.so
-vendor/lib/libidl.so
-vendor/lib/libperipheral_client.so
-vendor/lib/libqcci_legacy.so
-vendor/lib/libqdi.so
-vendor/lib/libqdp.so
-vendor/lib/libqmi_cci.so
+vendor/lib/libconfigdb.so|19625a4618fda92c5031d9474d067d68b44fdbeb
+vendor/lib/libdiag.so|a4d055959db801a00dd34500256bb5f7277e21d1
+vendor/lib/libdsi_netctrl.so|01c8f2cd060c361e2967987192007530dbe84aff
+vendor/lib/libdsutils.so|bb0a6b9720cef673dea1daf47ad03046ef1b263f
+vendor/lib/libidl.so|bb0a6b9720cef673dea1daf47ad03046ef1b263f
+vendor/lib/libperipheral_client.so|6ea3985b1d151e9ec95e6096e671a23612cb59eb
+vendor/lib/libqcci_legacy.so|092d3b4e08f7e0e349457d23ace12d2057fcf894
+vendor/lib/libqdi.so|72960df1c89403bb969a2cce9e86cc295946b91a
+vendor/lib/libqdp.so|b5df438722721228af8d05ab25c9d0f8bf5282b3
+vendor/lib/libqmi_cci.so|c220a3b244b9d83aeef5ddc8b839ae0bd017e146
 vendor/lib/libqmi_client_helper.so
-vendor/lib/libqmi_client_qmux.so
-vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_client_qmux.so|99b7326ea1301e27329235767290bd70c41a4b9c
+vendor/lib/libqmi_common_so.so|9a50d5845caa38002190acb902350f226f6f5066
+vendor/lib/libqmi_csi.so|8c0888258ab27b855d99927b2dbf8f55f3b9c457
 vendor/lib/libqmi_csvt_srvc.so
-vendor/lib/libqmi_encdec.so
-vendor/lib/libqmiservices.so
-vendor/lib/libqmi.so
-vendor/lib/libsmemlog.so
-vendor/lib/libxml.so
+vendor/lib/libqmi_encdec.so|5d1861e9ea26e4fb089c82456bcef9c297fa7f14
+vendor/lib/libqmiservices.so|666fd967af1ff17367eca9ed6d9e236976c0f4e7
+vendor/lib/libqmi.so|c2f589d04611edaa1634263bcdcd747aab9e26af
+vendor/lib/libsmemlog.so|e6044fa96873c1fbad21b9acb9d8f61d53a99c0d
+vendor/lib/libxml.so|d117a9386d3ea5a989b33d8ed9abc199e5589f8a
 
-# Radio
+# Radio - pinned blobs are from bacon lollipop
 -app/qcrilmsgtunnel/qcrilmsgtunnel.apk:vendor/app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-bin/netmgrd:vendor/bin/netmgrd
-bin/qmuxd:vendor/bin/qmuxd
+bin/netmgrd:vendor/bin/netmgrd|2f0914921a38f51e03d876fefba4177994e7080c
+bin/qmuxd:vendor/bin/qmuxd|51adb63ef2c5dc4a01a75de5a922f626f251fe98
 bin/radish:vendor/bin/radish
 bin/rmt_storage:vendor/bin/rmt_storage
-lib/libril.so:vendor/lib/libril.so
 lib/libuicc.so:vendor/lib/libuicc.so
 lib/libvss_bsp_qcci.so:vendor/lib/libvss_bsp_qcci.so
 lib/libvss_common_core.so:vendor/lib/libvss_common_core.so
@@ -263,10 +262,10 @@ lib/libvss_resim_idl.so:vendor/lib/libvss_resim_idl.so
 lib/libvss_resim_iface.so:vendor/lib/libvss_resim_iface.so
 lib/libvss_sar_qcci.so:vendor/lib/libvss_sar_qcci.so
 vendor/lib/libcneapiclient.so
-vendor/lib/libnetmgr.so
-vendor/lib/libril-qc-qmi-1.so
-vendor/lib/libril-qcril-hook-oem.so
-vendor/lib/libsystem_health_mon.so
+vendor/lib/libnetmgr.so|354994131a609339abbfc438a0c2cccb6a76f492
+vendor/lib/libril-qc-qmi-1.so|a54cac69bbb52fa964d651f09c0034298c8eb3ab
+vendor/lib/libril-qcril-hook-oem.so|7ab5908e7a15f69cab5fc7b1c43e128acba119d5
+vendor/lib/libsystem_health_mon.so|25c0a0d1c1e72f2f49e20771877973b34ebe410a
 
 bin/sensors.qcom:vendor/bin/sensors.qcom
 vendor/lib/hw/activity_recognition.msm8974.so

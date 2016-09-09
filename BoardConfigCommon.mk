@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2013-2015 The CyanogenMod Project
+#               2017-2018, The LineageOS Project. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -125,7 +126,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/g2-common/releasetools
 
 # RIL
-BOARD_RIL_CLASS += ../../../device/lge/g2-common/ril
+TARGET_RIL_VARIANT := caf
 
 # SDClang
 TARGET_USE_SDCLANG := true
@@ -139,7 +140,6 @@ BOARD_SEPOLICY_DIRS += \
 
 # Shims
 TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
-    /system/vendor/lib/libril.so|libril_shim.so \
     /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so \
     /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_atomic.so \
     /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_camera_parameters.so \
