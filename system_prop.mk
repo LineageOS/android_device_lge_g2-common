@@ -75,19 +75,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
 
+# QMI
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.data.netmgrd.qos.enable=false \
+    persist.data.qmi.adb_logmask=0 \
+    persist.qcril.disable_retry=true \
+    rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
+    ro.use_data_netmgrd=true
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.custom_ecc=1
+    telephony.lteOnGsmDevice=1 \
+    ro.telephony.default_network=9 \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1 \
-    ro.telephony.call_ring.multiple=0
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.qmi.adb_logmask=0 \
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
+    persist.telephony.oosisdc=false \
+    ril.subscription.types=NV,RUIM \
     ro.ril.telephony.mqanelements=5
 
 # Sensors
