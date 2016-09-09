@@ -212,41 +212,42 @@ etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 bin/mpdecision:vendor/bin/mpdecision
 vendor/lib/libqti-perfd-client.so
 
-# Qualcomm framework
+# Qualcomm framework - pinned blobs are from bacon lollipop (oppo/msm8974-common @6a93ad8f5262853f0ebee512527dbd2098326d7c)
 bin/irsc_util:vendor/bin/irsc_util
 etc/permissions/qcrilhook.xml:vendor/etc/permissions/qcrilhook.xml
 etc/permissions/qcnvitems.xml:vendor/etc/permissions/qcnvitems.xml
 -framework/qcnvitems.jar:vendor/framework/qcnvitems.jar
 -framework/qcrilhook.jar:vendor/framework/qcrilhook.jar
-lib/libmdmdetect.so:vendor/lib/libmdmdetect.so
-vendor/lib/libconfigdb.so
-vendor/lib/libdiag.so
-vendor/lib/libdsi_netctrl.so
-vendor/lib/libdsutils.so
-vendor/lib/libidl.so
-vendor/lib/libperipheral_client.so
-vendor/lib/libqcci_legacy.so
-vendor/lib/libqdi.so
-vendor/lib/libqdp.so
-vendor/lib/libqmi_cci.so
+lib/libmdmdetect.so:vendor/lib/libmdmdetect.so|46bed3e48330a507faefe46b58d1248a1b0a6a19
+vendor/lib/libconfigdb.so|9aab7d457fc051e7e594730059b633c17d0cd252
+vendor/lib/libdiag.so|83faaf8d9afb1082289f220c75a6d4068f78449e
+vendor/lib/libdsi_netctrl.so|ba29ad86b207e409437fcc61a58248d9d8f77686
+vendor/lib/libdsutils.so|d702c7dc4850cef2e11585dec45ce2ba8a300818
+vendor/lib/libidl.so|80284a24069ac9ede565cf881f0f5444e3c3c8a8
+vendor/lib/libperipheral_client.so|3652d20a80ea83fa5bd7b319c81d24773ce2e72b
+vendor/lib/libqcci_legacy.so|87744acedcdad76d3cf29425e2df8ba12f50492a
+vendor/lib/libqdi.so|c8ed7f1c0202a2a962ccf8c17b8e6b9fc89fd853
+vendor/lib/libqdp.so|708e20683b6cf3e3714e5c0c8bdcc08d958c9a55
+vendor/lib/libqmi_cci.so|f250f31d9f69362c0624f611173f9af606565542
 vendor/lib/libqmi_client_helper.so
-vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_client_qmux.so|cbcbd488321fc62b2764d48dfeade94555777ca4
 vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_csi.so|854a04af724a9e390236166f87412e55ecf70665
 vendor/lib/libqmi_csvt_srvc.so
-vendor/lib/libqmi_encdec.so
-vendor/lib/libqmiservices.so
-vendor/lib/libqmi.so
-vendor/lib/libsmemlog.so
-vendor/lib/libxml.so
+vendor/lib/libqmi_encdec.so|84d58f2d3e7adb527e2c7900b79ecc6c8afb0f95
+vendor/lib/libqmiservices.so|cab36873cba27d68dcd780e19de6ad708de2a83b
+vendor/lib/libqmi.so|2164ab0e4b84c1b26ea56d032ea187b746014516
+vendor/lib/libsmemlog.so|de401bb3f1abe3c70cffb27227d095932b4872b8
+vendor/lib/libxml.so|7facf1278f8e4e6388926318378ee5869c1d03ad
 
-# Radio
+# Radio - pinned blobs are from bacon lollipop (oppo/msm8974-common @6a93ad8f5262853f0ebee512527dbd2098326d7c)
 -app/qcrilmsgtunnel/qcrilmsgtunnel.apk:vendor/app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-bin/netmgrd:vendor/bin/netmgrd
-bin/qmuxd:vendor/bin/qmuxd
+bin/netmgrd:vendor/bin/netmgrd|c607fef476bb9718341e8f7973c863d9530d27f4
+bin/qmuxd:vendor/bin/qmuxd|e817478f1e03b64f1cfd44f0adc799e6273c8cfc
 bin/radish:vendor/bin/radish
 bin/rmt_storage:vendor/bin/rmt_storage
-lib/libril.so:vendor/lib/libril.so
+etc/data/dsi_config.xml:vendor/etc/data/dsi_config.xml
+etc/data/netmgr_config.xml:vendor/etc/data/netmgr_config.xml
 lib/libuicc.so:vendor/lib/libuicc.so
 lib/libvss_bsp_qcci.so:vendor/lib/libvss_bsp_qcci.so
 lib/libvss_common_core.so:vendor/lib/libvss_common_core.so
@@ -263,10 +264,10 @@ lib/libvss_resim_idl.so:vendor/lib/libvss_resim_idl.so
 lib/libvss_resim_iface.so:vendor/lib/libvss_resim_iface.so
 lib/libvss_sar_qcci.so:vendor/lib/libvss_sar_qcci.so
 vendor/lib/libcneapiclient.so
-vendor/lib/libnetmgr.so
-vendor/lib/libril-qc-qmi-1.so
-vendor/lib/libril-qcril-hook-oem.so
-vendor/lib/libsystem_health_mon.so
+vendor/lib/libnetmgr.so|c9b7f6b6ce13f8e5db7adfa1ff52d0a4570c46ac
+vendor/lib/libril-qc-qmi-1.so|36f859239545ec50effba08f247bac11c94a038b
+vendor/lib/libril-qcril-hook-oem.so|296e24412b286d9fe0860bab464c39732c8951d0
+vendor/lib/libsystem_health_mon.so|25c0a0d1c1e72f2f49e20771877973b34ebe410a
 
 bin/sensors.qcom:vendor/bin/sensors.qcom
 vendor/lib/hw/activity_recognition.msm8974.so
