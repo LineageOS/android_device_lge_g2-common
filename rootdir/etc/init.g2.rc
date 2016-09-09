@@ -32,8 +32,6 @@ on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
 
-    symlink /dev/diag_lge /dev/diag
-
     mkdir /sys 0771 system system
     mkdir /firmware 0771 system system
 
@@ -165,6 +163,8 @@ on early-boot
     write /sys/module/lowmemorykiller/parameters/lmk_fast_run 0
 
 on boot
+    mkdir /dev/socket/netmgr 0750 radio radio
+
     # Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio
@@ -334,7 +334,7 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
 service qmuxd /vendor/bin/qmuxd
     class main
     user radio
-    group radio audio bluetooth wakelock gps oem_2950
+    group radio audio bluetooth wakelock diag gps oem_2950
 
 service qseecomd /vendor/bin/qseecomd
     class core
