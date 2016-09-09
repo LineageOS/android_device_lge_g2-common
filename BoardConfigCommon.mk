@@ -128,7 +128,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/g2-common/releasetools
 
 # RIL
-BOARD_RIL_CLASS += ../../../device/lge/g2-common/ril
+BOARD_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_10
+BOARD_GLOBAL_CPPFLAGS += -DUSE_RIL_VERSION_10
+BOARD_PROVIDES_LIBRIL := true
 
 # SDClang
 TARGET_USE_SDCLANG := true
@@ -142,7 +144,6 @@ BOARD_SEPOLICY_DIRS += \
 
 # Shims
 TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
-    /system/vendor/lib/libril.so|libril_shim.so \
     /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so \
     /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_atomic.so \
     /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_camera_parameters.so \
