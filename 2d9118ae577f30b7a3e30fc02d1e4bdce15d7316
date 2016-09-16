@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_dba5d205",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 3167
+      },
+      "writtenOn": "2016-09-16T05:10:15Z",
+      "side": 1,
+      "message": "Newb commit error, I didn\u0027t consciously amend this. Though, the permissions do need a once over. I took these changes from the G3 implementation. They have an sepolicy for netmgrd and we don\u0027t.",
+      "range": {
+        "startLine": 38,
+        "startChar": 87,
+        "endLine": 38,
+        "endChar": 118
+      },
+      "revId": "2d9118ae577f30b7a3e30fc02d1e4bdce15d7316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
