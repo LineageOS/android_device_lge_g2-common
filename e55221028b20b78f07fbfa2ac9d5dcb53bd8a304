@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_ca3e50d9",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 12592
+      },
+      "writtenOn": "2016-09-23T11:56:12Z",
+      "side": 1,
+      "message": "av.offload.enable\u003dfalse in M is audio.offload.video\u003dfalse",
+      "revId": "e55221028b20b78f07fbfa2ac9d5dcb53bd8a304",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
