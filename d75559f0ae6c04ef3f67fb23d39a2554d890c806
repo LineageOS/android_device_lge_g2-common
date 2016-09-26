@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_f43a0b96",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 16
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 13610
+      },
+      "writtenOn": "2016-09-26T23:38:45Z",
+      "side": 1,
+      "message": "shouldn\u0027t it be removed, since we build lbrmnetctl now?",
+      "revId": "d75559f0ae6c04ef3f67fb23d39a2554d890c806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
