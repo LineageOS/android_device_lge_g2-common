@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_d32cc403",
+        "filename": "g2.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 2504
+      },
+      "writtenOn": "2016-09-27T18:43:47Z",
+      "side": 1,
+      "message": "this shoud be at top... then a2dp correct alphabet order!",
+      "range": {
+        "startLine": 71,
+        "startChar": 4,
+        "endLine": 71,
+        "endChar": 11
+      },
+      "revId": "0865a1e691199960bc3787ca3ae49264e6b4735f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
