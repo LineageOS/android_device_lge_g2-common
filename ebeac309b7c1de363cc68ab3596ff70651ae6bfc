@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff2e2bb8_9c5f84e4",
+        "filename": "g2.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 12986
+      },
+      "writtenOn": "2016-10-12T21:35:03Z",
+      "side": 1,
+      "message": "This is old, it\u0027s globally included in libaudiopolicymanager now.",
+      "revId": "ebeac309b7c1de363cc68ab3596ff70651ae6bfc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff2e2bb8_7c6440ba",
+        "filename": "system_prop.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 12986
+      },
+      "writtenOn": "2016-10-12T21:35:03Z",
+      "side": 1,
+      "message": "This makes our mono speaker even poorer, it should be enabled only for devices with duo-stereo speakers to get some benefit.\nUsing it mainly/only for voicecall is saner.",
+      "revId": "ebeac309b7c1de363cc68ab3596ff70651ae6bfc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
