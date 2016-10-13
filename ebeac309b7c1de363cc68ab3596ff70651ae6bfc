@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ff2e2bb8_3c6ab87f",
+        "filename": "g2.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 15589
+      },
+      "writtenOn": "2016-10-13T00:06:35Z",
+      "side": 1,
+      "message": "Are you sure? Everyone still uses it (Bacon, HTC1, MotoX).",
+      "parentUuid": "ff2e2bb8_9c5f84e4",
+      "revId": "ebeac309b7c1de363cc68ab3596ff70651ae6bfc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ff2e2bb8_7c6440ba",
         "filename": "system_prop.mk",
         "patchSetId": 5
