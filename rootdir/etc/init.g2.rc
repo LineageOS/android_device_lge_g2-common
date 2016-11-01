@@ -323,10 +323,10 @@ service audiod /system/bin/audiod
     user system
     group system
 
-service charger /sbin/healthd -c
+service charger /charger
     class charger
     critical
-    seclabel u:r:healthd:s0
+    seclabel u:r:charger:s0
 
 service conn_init /system/bin/hwaddrs
     class late_start
