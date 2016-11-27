@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f681702_a87df66f",
+        "filename": "sepolicy/mpdecision.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2016-11-27T04:06:22Z",
+      "side": 1,
+      "message": "eek, this is way too open",
+      "revId": "73ec7321b78ce3be2a37be8a99a5a83f63cc1dc7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
