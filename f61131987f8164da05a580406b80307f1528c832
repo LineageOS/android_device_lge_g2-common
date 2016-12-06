@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f681702_27e9f419",
+        "filename": "rootdir/etc/fstab.g2",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 2504
+      },
+      "writtenOn": "2016-12-06T17:53:50Z",
+      "side": 1,
+      "message": "acidently readded it :(",
+      "range": {
+        "startLine": 13,
+        "startChar": 79,
+        "endLine": 13,
+        "endChar": 86
+      },
+      "revId": "f61131987f8164da05a580406b80307f1528c832",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
