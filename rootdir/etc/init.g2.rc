@@ -290,6 +290,9 @@ on boot
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
     write /sys/module/lowmemorykiller/parameters/debug_level 0
 
+    # Wifi firmware reload path
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
+
 on charger
     wait /dev/block/platform/msm_sdcc.1/by-name/modem
     mount vfat /dev/block/platform/msm_sdcc.1/by-name/modem /firmware ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337
