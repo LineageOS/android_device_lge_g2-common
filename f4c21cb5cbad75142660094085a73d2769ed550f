@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f681702_4608602b",
+        "filename": "rootdir/etc/fstab.g2",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 12592
+      },
+      "writtenOn": "2016-12-11T02:51:56Z",
+      "side": 1,
+      "message": "Let\u0027s use 4 zram streams for better perf as well? There\u0027s two more commits that should go along with this, unfortunately I was hoping a reset would happen before all these commits went through.",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 201
+      },
+      "revId": "f4c21cb5cbad75142660094085a73d2769ed550f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
