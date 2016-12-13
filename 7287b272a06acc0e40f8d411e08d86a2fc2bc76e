@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f681702_cb40eb38",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 2504
+      },
+      "writtenOn": "2016-12-13T22:50:49Z",
+      "side": 1,
+      "message": "space",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 4
+      },
+      "revId": "7287b272a06acc0e40f8d411e08d86a2fc2bc76e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
