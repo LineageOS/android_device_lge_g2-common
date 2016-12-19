@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f681702_10931e51",
+        "filename": "rootdir/etc/init.g2.power.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 2504
+      },
+      "writtenOn": "2016-12-19T21:51:33Z",
+      "side": 1,
+      "message": "are here missing cpu0?",
+      "range": {
+        "startLine": 50,
+        "startChar": 5,
+        "endLine": 50,
+        "endChar": 49
+      },
+      "revId": "018f40dfa8abe9d16e833b2bcdf034ee121977c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
