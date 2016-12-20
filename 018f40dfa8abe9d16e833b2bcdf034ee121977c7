@@ -22,6 +22,30 @@
       "revId": "018f40dfa8abe9d16e833b2bcdf034ee121977c7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f681702_d04b66ad",
+        "filename": "rootdir/etc/init.g2.power.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 12592
+      },
+      "writtenOn": "2016-12-20T00:48:18Z",
+      "side": 1,
+      "message": "No, we don\u0027t need to worry about CPU0. Why would we want to be able to turn off CPU0?",
+      "parentUuid": "5f681702_10931e51",
+      "range": {
+        "startLine": 50,
+        "startChar": 5,
+        "endLine": 50,
+        "endChar": 49
+      },
+      "revId": "018f40dfa8abe9d16e833b2bcdf034ee121977c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
