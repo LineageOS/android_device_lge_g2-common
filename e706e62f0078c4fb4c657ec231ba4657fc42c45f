@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f681702_030d8836",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2016-12-24T00:41:47Z",
+      "side": 1,
+      "message": "This is enabled by default.",
+      "revId": "e706e62f0078c4fb4c657ec231ba4657fc42c45f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f681702_230a4420",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2016-12-24T00:41:47Z",
+      "side": 1,
+      "message": "This is disabled by default.",
+      "revId": "e706e62f0078c4fb4c657ec231ba4657fc42c45f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
