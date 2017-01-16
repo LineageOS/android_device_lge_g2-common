@@ -366,10 +366,9 @@ service sensors /system/bin/sensors.qcom
     user root
     group root wakelock
 
-service set_baseband /system/bin/sh /system/etc/set_baseband.sh
+service set_baseband /system/bin/set_baseband.sh
     class late_start
     user root
-    seclabel u:r:set_baseband:s0
     oneshot
     disabled
 
