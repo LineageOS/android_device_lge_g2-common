@@ -4,6 +4,8 @@
 export FAMILY=g2-common
 export VENDOR=lge
 
+export DEVICE_BRINGUP_YEAR=2014
+
 function extract() {
     for FILE in `egrep -v '(^#|^$)' $1`; do
         OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
