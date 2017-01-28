@@ -1,3 +1,6 @@
+# Baseband
+/system/bin/set_baseband.sh                         u:object_r:set_baseband_exec:s0
+
 # Bluetooth
 /dev/rfkill                                         u:object_r:rfkill_device:s0
 /dev/btlock                                         u:object_r:btlock_file:s0
@@ -37,9 +40,6 @@
 # Sensors
 /persist-lg/sensors(/.*)?                           u:object_r:sensors_persist_file:s0
 /sns(/.*)?                                          u:object_r:sensors_persist_file:s0
-
-# Baseband
-/system/bin/set_baseband.sh                         u:object_r:set_baseband_exec:s0
 
 # Thermal
 /system/bin/thermal-engine                          u:object_r:thermal-engine_exec:s0
