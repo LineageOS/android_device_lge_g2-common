@@ -368,12 +368,10 @@ service sensors /system/bin/sensors.qcom
 
 service set_baseband /system/bin/set_baseband.sh
     class late_start
-    user root
+    user system
+    group shell
     oneshot
     disabled
-
-on property:gsm.version.baseband=""
-    start set_baseband
 
 service thermal-engine /system/bin/thermal-engine
     class main
@@ -422,3 +420,5 @@ service wpa_supplicant /system/bin/wpa_supplicant \
 on property:ro.data.large_tcp_window_size=true
     write /proc/sys/net/ipv4/tcp_adv_win_scale 2
 
+on property:sys.boot_completed=1
+    start set_baseband
