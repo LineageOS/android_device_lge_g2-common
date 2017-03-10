@@ -33,6 +33,8 @@ vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth
 vendor/firmware/BCM4335B0_002.001.006.0191.0201_ORC.hcd
+vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so
+vendor/lib/libaptXScheduler.so
 
 # Camera
 bin/mm-qcamera-daemon
