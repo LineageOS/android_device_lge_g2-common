@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba57610f_e8af332a",
+        "filename": "sepolicy/set_baseband.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2017-03-11T00:11:17Z",
+      "side": 1,
+      "message": "consider using r_dir_file macro : https://github.com/LineageOS/android_system_sepolicy/blob/cm-14.1/te_macros#L64",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 51
+      },
+      "revId": "75a4f41ddd28de39b93fa0fbd6ada4474f6a357c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
