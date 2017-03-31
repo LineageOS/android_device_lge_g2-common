@@ -84,6 +84,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     hwaddrs \
+    libbt-vendor \
     android.hardware.bluetooth@1.0-impl
 
 PRODUCT_COPY_FILES += \
