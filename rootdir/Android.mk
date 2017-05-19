@@ -24,7 +24,7 @@ LOCAL_MODULE            := init.g2.rc
 LOCAL_MODULE_TAGS       := optional eng
 LOCAL_MODULE_CLASS      := ETC
 LOCAL_SRC_FILES         := etc/init.g2.rc
-LOCAL_MODULE_PATH       := $(TARGET_ROOT_OUT)
+LOCAL_MODULE_PATH       := $(TARGET_OUT_VENDOR_ETC)/init/hw
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -32,7 +32,7 @@ LOCAL_MODULE            := init.g2.power.rc
 LOCAL_MODULE_TAGS       := optional eng
 LOCAL_MODULE_CLASS      := ETC
 LOCAL_SRC_FILES         := etc/init.g2.power.rc
-LOCAL_MODULE_PATH       := $(TARGET_ROOT_OUT)
+LOCAL_MODULE_PATH       := $(TARGET_OUT_VENDOR_ETC)/init/hw
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -40,7 +40,7 @@ LOCAL_MODULE            := init.g2.usb.rc
 LOCAL_MODULE_TAGS       := optional eng
 LOCAL_MODULE_CLASS      := ETC
 LOCAL_SRC_FILES         := etc/init.g2.usb.rc
-LOCAL_MODULE_PATH       := $(TARGET_ROOT_OUT)
+LOCAL_MODULE_PATH       := $(TARGET_OUT_VENDOR_ETC)/init/hw
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
