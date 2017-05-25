@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa82b9bf_5ca4d556",
+        "filename": "sepolicy/mpdecision.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 2504
+      },
+      "writtenOn": "2017-05-25T16:17:17Z",
+      "side": 1,
+      "message": "its made on init, so it faild to make dir",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 57
+      },
+      "revId": "7a32a6c01fb4af0b4b1f0f8a54dfcb77b079709d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
