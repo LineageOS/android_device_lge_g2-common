@@ -255,7 +255,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-service.g2
+    android.hardware.vibrator@1.1-service.g2
 
 # Touchscreen
 PRODUCT_COPY_FILES += \
