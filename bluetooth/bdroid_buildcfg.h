@@ -19,6 +19,8 @@
 
 #define BTM_DEF_LOCAL_NAME   "LG G2"
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
+#define BTM_WBS_INCLUDED TRUE       /* Enable WBS */
+#define BTIF_HF_WBS_PREFERRED TRUE  /* Use WBS    */
 
 /* Defined if the kernel does not have support for CLOCK_BOOTTIME_ALARM */
 #define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
