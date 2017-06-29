@@ -306,11 +306,6 @@ service adsprpcd /system/bin/adsprpcd
     user media
     group media
 
-service audiod /system/bin/audiod
-    class late_start
-    user system
-    group system
-
 service charger /sbin/healthd -c
     class charger
     critical
@@ -331,9 +326,9 @@ service irsc_util /system/bin/irsc_util "/etc/sec_config"
     oneshot
 
 service mpdecision /system/bin/mpdecision --avg_comp
-   class late_start
+   class main
    user root
-   group root system readproc
+   group root readproc
    disabled
 
 service netmgrd /system/bin/netmgrd
