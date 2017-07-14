@@ -81,6 +81,8 @@ on fs
     mkdir /dev/bus 0755 root root
     mkdir /dev/bus/usb 0755 root root
 
+    setprop sys.usb.ffs.aio_compat 1
+
 on post-fs-data
     # Create directory used by bluetooth
     mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
