@@ -33,7 +33,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true \
     ro.opengles.version=196608 \
-    ro.sf.lcd_density=480
+    ro.sf.lcd_density=480 \
+    debug.hwui.use_buffer_age=false
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
