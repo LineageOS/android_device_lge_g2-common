@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9de6b95f_f0f95ff3",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 17901
+      },
+      "writtenOn": "2017-08-03T21:02:35Z",
+      "side": 0,
+      "message": "Maybe it shouldn\u0027t be removed as it will still be used by vs980 and ls980?",
+      "range": {
+        "startLine": 35,
+        "startChar": 31,
+        "endLine": 35,
+        "endChar": 35
+      },
+      "revId": "20fe61bea2c93f58fdba5f1a5d0b0deb708cf028",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
