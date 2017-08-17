@@ -81,7 +81,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessingdescriptors
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    $(LOCAL_PATH)/configs/audio_effects.xml:system/vendor/etc/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/vendor/etc/audio_policy.conf \
     $(LOCAL_PATH)/configs/mixer_paths.xml:system/vendor/etc/mixer_paths.xml
 
