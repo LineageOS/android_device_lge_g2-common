@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a52d39d4_456d8ebd",
+        "filename": "system_prop.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 15589
+      },
+      "writtenOn": "2017-08-20T00:46:29Z",
+      "side": 1,
+      "message": "Maybe...\n\nhttps://review.lineageos.org/#/c/38068/",
+      "range": {
+        "startLine": 77,
+        "startChar": 4,
+        "endLine": 77,
+        "endChar": 35
+      },
+      "revId": "b114daf039d346b73f91ba352fd2ad0bbb90cff8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
