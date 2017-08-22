@@ -18,7 +18,9 @@
 $(call inherit-product-if-exists, vendor/lge/g2-common/g2-common-vendor.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Permissions
 PRODUCT_COPY_FILES += \
