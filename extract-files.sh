@@ -1,62 +1,71 @@
 #!/bin/bash
+#
+# Copyright (C) 2013-2016 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
 
-#set -e
-export FAMILY=g2-common
-export VENDOR=lge
+set -e
 
-function extract() {
-    for FILE in `egrep -v '(^#|^$)' $1`; do
-        OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
-        FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
-        DEST=${PARSING_ARRAY[1]}
-        if [ -z $DEST ]; then
-            DEST=$FILE
-        fi
-        DIR=`dirname $FILE`
-        if [ ! -d $2/$DIR ]; then
-            mkdir -p $2/$DIR
-        fi
-        if [ "$SRC" = "adb" ]; then
-            # Try CM target first
-            adb pull /system/$DEST $2/$DEST
-            # if file does not exist try OEM target
-            if [ "$?" != "0" ]; then
-                adb pull /system/$FILE $2/$DEST
-            fi
-        else
-            cp $SRC/system/$FILE $2/$DEST
-            # if file dot not exist try destination
-            if [ "$?" != "0" ]
-                then
-                cp $SRC/system/$DEST $2/$DEST
-            fi
-        fi
-    done
-}
+DEVICE_COMMON=g2-common
+VENDOR=lge
 
-if [ $# -eq 0 ]; then
-  SRC=adb
-else
-  if [ $# -eq 1 ]; then
-    SRC=$1
-  else
-    echo "$0: bad number of arguments"
-    echo ""
-    echo "usage: $0 [PATH_TO_EXPANDED_ROM]"
-    echo ""
-    echo "If PATH_TO_EXPANDED_ROM is not specified, blobs will be extracted from"
-    echo "the device using adb pull."
+INITIAL_COPYRIGHT_YEAR=2013
+
+# Load extractutils and do some sanity checks
+MY_DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+
+CM_ROOT="$MY_DIR"/../../..
+
+HELPER="$CM_ROOT"/vendor/cm/build/tools/extract_utils.sh
+if [ ! -f "$HELPER" ]; then
+    echo "Unable to find helper script at $HELPER"
     exit 1
-  fi
+fi
+. "$HELPER"
+
+# default to not sanitizing the vendor folder before extraction
+clean_vendor=false
+
+while [ "$1" != "" ]; do
+    case $1 in
+        -p | --path )           shift
+                                SRC=$1
+                                ;;
+        -s | --section )        shift
+                                SECTION=$1
+                                clean_vendor=false
+                                ;;
+        -c | --clean-vendor )   clean_vendor=true
+                                ;;
+    esac
+    shift
+done
+
+if [ -z "$SRC" ]; then
+    SRC=adb
 fi
 
-BASE=../../../vendor/$VENDOR/$FAMILY/proprietary
-rm -rf $BASE/*
+# Initialize the helper for common device
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true $clean_vendor
 
-DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
-rm -rf $DEVBASE/*
+extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
-extract ../../$VENDOR/$FAMILY/proprietary-files.txt $BASE
-extract ../../$VENDOR/$DEVICE/proprietary-files.txt $DEVBASE
+# Initialize the helper for device
+setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" false $clean_vendor
 
-./setup-makefiles.sh
+extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC" "$SECTION"
+
+"$MY_DIR"/setup-makefiles.sh
