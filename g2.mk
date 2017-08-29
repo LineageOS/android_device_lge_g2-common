@@ -87,9 +87,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
 
 # BoringSSL compatability wrapper
-PRODUCT_PACKAGES += \
-    libboringssl-compat \
-    libstlport
+#PRODUCT_PACKAGES += \
+#    libboringssl-compat \
+#    libstlport
 
 # Camera
 PRODUCT_PACKAGES += \
