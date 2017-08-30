@@ -18,7 +18,7 @@ on early-boot
     chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/G/led_current
     chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/B/led_current
 
-service light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.g2
+service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.g2
     interface android.hardware.light@2.0::ILight default
     class hal
     user system
