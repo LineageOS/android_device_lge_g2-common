@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f2429136_aaa82005",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 17323
+      },
+      "writtenOn": "2017-09-03T14:40:54Z",
+      "side": 1,
+      "message": "Bring back libril_shim.so",
+      "revId": "0af9771d038800d2efd21be7c57024adf7db8aac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
