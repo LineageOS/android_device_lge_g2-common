@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2015, The CyanogenMod Project
+ * Copyright (C) 2012-2015, The CyanogenMod Project
+ * Copyright (C) 2017 - The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +33,30 @@
 #include <hardware/camera.h>
 #include <camera/Camera.h>
 #include <camera/CameraParameters.h>
+
+const char AUDIO_ZOOM_OFF[] = "audio-zoom"; \
+const char AUDIO_ZOOM_ON[] = "audio-zoom"; \
+const char BEAUTY_SHOT_OFF[] = "beauty-shot"; \
+const char BEAUTY_SHOT_ON[] = "beauty-shot"; \
+const char BURST_SHOT_OFF[] = "burst-shot"; \
+const char BURST_SHOT_ON[] = "burst-shot"; \
+const char FOCUS_MODE_MANUAL_POSITION[] = "manual-position"; \
+const char KEY_AUDIO_ZOOM[] = "audio-zoom"; \
+const char KEY_AUDIO_ZOOM_SUPPORTED[] = "audio-zoom-supported"; \
+const char KEY_BEAUTY_SHOT[] = "beauty-shot"; \
+const char KEY_BEAUTY_SHOT_SUPPORTED[] = "beauty-shot-supported"; \
+const char KEY_BURST_SHOT[] = "burst-shot"; \
+const char KEY_BURST_SHOT_SUPPORTED[] = "burst-shot-supported"; \
+const char KEY_FOCUS_MODE_MANUAL_POSITION[] = "manual-position"; \
+const char KEY_FOCUS_MODE_OBJECT_TRACKING[] = "object-tracking"; \
+const char KEY_FOCUS_MODE_OBJECT_TRACKING_SUPPORTED[] = "object-tracking-supported"; \
+const char KEY_VIDEO_WDR[] = "video-wdr"; \
+const char KEY_VIDEO_WDR_SUPPORTED[] = "video-wdr-supported"; \
+const char VIDEO_WDR_OFF[] = "video-wdr"; \
+const char VIDEO_WDR_ON[] = "video-wdr"; \
+const char WHITE_BALANCE_MANUAL_CCT[] = "white-balance-manual"; \
+const char OBJECT_TRACKING_ON[] = "object-tracking"; \
+const char OBJECT_TRACKING_OFF[] = "object-tracking";
 
 static android::Mutex gCameraWrapperLock;
 static camera_module_t *gVendorModule = 0;
