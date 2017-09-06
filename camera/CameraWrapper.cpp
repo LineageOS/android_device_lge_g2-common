@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2015, The CyanogenMod Project
+ * Copyright (C) 2012-2015, The CyanogenMod Project
+ * Copyright (C) 2017 - The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +33,30 @@
 #include <hardware/camera.h>
 #include <camera/Camera.h>
 #include <camera/CameraParameters.h>
+
+const char CameraParameters::AUDIO_ZOOM_OFF[] = "audio-zoom"; \
+const char CameraParameters::AUDIO_ZOOM_ON[] = "audio-zoom"; \
+const char CameraParameters::BEAUTY_SHOT_OFF[] = "beauty-shot"; \
+const char CameraParameters::BEAUTY_SHOT_ON[] = "beauty-shot"; \
+const char CameraParameters::BURST_SHOT_OFF[] = "burst-shot"; \
+const char CameraParameters::BURST_SHOT_ON[] = "burst-shot"; \
+const char CameraParameters::FOCUS_MODE_MANUAL_POSITION[] = "manual-position"; \
+const char CameraParameters::KEY_AUDIO_ZOOM[] = "audio-zoom"; \
+const char CameraParameters::KEY_AUDIO_ZOOM_SUPPORTED[] = "audio-zoom-supported"; \
+const char CameraParameters::KEY_BEAUTY_SHOT[] = "beauty-shot"; \
+const char CameraParameters::KEY_BEAUTY_SHOT_SUPPORTED[] = "beauty-shot-supported"; \
+const char CameraParameters::KEY_BURST_SHOT[] = "burst-shot"; \
+const char CameraParameters::KEY_BURST_SHOT_SUPPORTED[] = "burst-shot-supported"; \
+const char CameraParameters::KEY_FOCUS_MODE_MANUAL_POSITION[] = "manual-position"; \
+const char CameraParameters::KEY_FOCUS_MODE_OBJECT_TRACKING[] = "object-tracking"; \
+const char CameraParameters::KEY_FOCUS_MODE_OBJECT_TRACKING_SUPPORTED[] = "object-tracking-supported"; \
+const char CameraParameters::KEY_VIDEO_WDR[] = "video-wdr"; \
+const char CameraParameters::KEY_VIDEO_WDR_SUPPORTED[] = "video-wdr-supported"; \
+const char CameraParameters::VIDEO_WDR_OFF[] = "video-wdr"; \
+const char CameraParameters::VIDEO_WDR_ON[] = "video-wdr"; \
+const char CameraParameters::WHITE_BALANCE_MANUAL_CCT[] = "white-balance-manual"; \
+const char CameraParameters::OBJECT_TRACKING_ON[] = "object-tracking"; \
+const char CameraParameters::OBJECT_TRACKING_OFF[] = "object-tracking";
 
 static android::Mutex gCameraWrapperLock;
 static camera_module_t *gVendorModule = 0;
@@ -114,9 +139,9 @@ static char *camera_fixup_getparams(int id, const char *settings)
     params.dump();
 #endif
 
-    if (params.get(android::CameraParameters::KEY_RECORDING_HINT)) {
+    if (params.get(KEY_RECORDING_HINT)) {
         videoMode = (!strcmp(params.get(
-                android::CameraParameters::KEY_RECORDING_HINT), "true"));
+                KEY_RECORDING_HINT), "true"));
     }
 
     if (!videoMode) {
@@ -129,7 +154,7 @@ static char *camera_fixup_getparams(int id, const char *settings)
         /* Front camera */
         if (id == 1) {
             /* Remove HDR scene mode */
-            params.set(android::CameraParameters::KEY_SUPPORTED_SCENE_MODES,
+            params.set(KEY_SUPPORTED_SCENE_MODES,
                     supportedSceneModes);
         }
     }
@@ -158,9 +183,9 @@ static char *camera_fixup_setparams(int id, const char *settings)
     params.dump();
 #endif
 
-    if (params.get(android::CameraParameters::KEY_RECORDING_HINT)) {
+    if (params.get(KEY_RECORDING_HINT)) {
         videoMode = (!strcmp(params.get(
-                android::CameraParameters::KEY_RECORDING_HINT), "true"));
+                KEY_RECORDING_HINT), "true"));
     }
 
     if (params.get(KEY_EXPOSURE_TIME)) {
@@ -171,8 +196,8 @@ static char *camera_fixup_setparams(int id, const char *settings)
     if (!videoMode) {
         if (id == 0) {
             if (slowShutterMode) {
-                params.set(android::CameraParameters::KEY_FLASH_MODE,
-                        android::CameraParameters::FLASH_MODE_OFF);
+                params.set(KEY_FLASH_MODE,
+                        FLASH_MODE_OFF);
             }
         }
     }
