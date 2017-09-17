@@ -1,0 +1,26 @@
+on early-boot
+    # led
+    chown system system /sys/class/leds/red/brightness
+    chown system system /sys/class/leds/green/brightness
+    chown system system /sys/class/leds/blue/brightness
+    chown system system /sys/class/lg_rgb_led/use_patterns/blink_patterns
+    chown system system /sys/class/leds/button-backlight1/brightness
+    chown system system /sys/class/leds/button-backlight2/brightness
+    chmod 0660 /sys/class/leds/button-backlight1/brightness
+    chmod 0660 /sys/class/leds/button-backlight2/brightness
+
+    # lp5521
+    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/led_current_index
+    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/led_pattern
+    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/led_blink
+    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/R/brightness
+    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/G/brightness
+    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/B/brightness
+    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/R/led_current
+    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/G/led_current
+    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/B/led_current
+
+service light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.g2
+    class hal
+    user system
+    group system
