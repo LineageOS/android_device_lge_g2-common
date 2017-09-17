@@ -202,27 +202,6 @@ on boot
     chown system system /sys/class/timed_output/vibrator/amp
     chmod 0660 /sys/class/timed_output/vibrator/amp
 
-    # led
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/green/brightness
-    chown system system /sys/class/leds/blue/brightness
-    chown system system /sys/class/lg_rgb_led/use_patterns/blink_patterns
-    chown system system /sys/class/leds/button-backlight1/brightness
-    chown system system /sys/class/leds/button-backlight2/brightness
-    chmod 0660 /sys/class/leds/button-backlight1/brightness
-    chmod 0660 /sys/class/leds/button-backlight2/brightness
-
-    # lp5521
-    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/led_current_index
-    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/led_pattern
-    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/led_blink
-    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/R/brightness
-    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/G/brightness
-    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/B/brightness
-    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/R/led_current
-    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/G/led_current
-    chown system system /sys/devices/f9967000.i2c/i2c-0/0-0032/leds/B/led_current
-
     # Assign TCP buffer thresholds to be ceiling value of technology maximums
     # Increased technology maximums should be reflected here.
     write /proc/sys/net/core/rmem_max  2097152
