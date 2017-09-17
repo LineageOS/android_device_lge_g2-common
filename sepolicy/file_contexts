@@ -22,6 +22,9 @@
 # IR Blaster
 /dev/ttyHSL1                                        u:object_r:cir_device:s0
 
+# Lights
+/system/vendor/bin/hw/android\.hardware\.light@2\.0-service\.g2    u:object_r:hal_light_default_exec:s0
+
 # MPdecision
 /data/system/default_values                         u:object_r:mpctl_data_file:s0
 /dev/socket/mpctl                                   u:object_r:mpctl_socket:s0
