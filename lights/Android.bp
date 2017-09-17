@@ -1,0 +1,17 @@
+cc_binary {
+    name: "android.hardware.light@2.0-service.g2",
+    relative_install_path: "hw",
+    init_rc: ["android.hardware.light@2.0-service.g2.rc"],
+    srcs: ["service.cpp", "Light.cpp"],
+    shared_libs: [
+        "libcutils",
+        "libhardware",
+        "libhidlbase",
+        "libhidltransport",
+        "liblog",
+        "libhwbinder",
+        "libutils",
+        "android.hardware.light@2.0",
+    ],
+    proprietary: true,
+}
