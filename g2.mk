@@ -189,7 +189,8 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
+    android.hardware.nfc@1.0-impl-bcm \
+    android.hardware.nfc@1.0-service \
     Tag \
     com.android.nfc_extras \
     nfc_nci.bcm2079x.default \
