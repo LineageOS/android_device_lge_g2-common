@@ -20,4 +20,8 @@
 #define BTM_DEF_LOCAL_NAME   "LG G2"
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 
+/* Allow car handsfree setup to work (BMW and Mercedes) */
+#define BTM_WBS_INCLUDED TRUE        /* Enable WBS */
+#define BTIF_HF_WBS_PREFERRED FALSE  /* Don't default to WBS */
+
 #endif
