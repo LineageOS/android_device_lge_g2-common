@@ -43,7 +43,7 @@ setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 write_headers "g2 d800 d801 d802 d803 f320 l01f ls980 vs980"
 
 # The common blobs
-write_makefiles "$MY_DIR"/proprietary-files.txt
+write_makefiles "$MY_DIR"/proprietary-files.txt true
 
 # We are done with common
 write_footers
@@ -55,7 +55,7 @@ setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 write_headers
 
 # The device blobs
-write_makefiles "$MY_DIR"/../$DEVICE/proprietary-files.txt
+write_makefiles "$MY_DIR"/../$DEVICE/proprietary-files.txt true
 
 # We are done with device
 write_footers
