@@ -40,8 +40,8 @@
          LIGHTS_SEGMENTED_BATTERY_LED = 16
          LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS = 32
 
-         For example, a device support pulsating, RGB notification and
-         battery LEDs would set this config to 11. -->
-    <integer name="config_deviceLightCapabilities" translatable="false">11</integer>
+         For example, a device with notification and battery lights that supports
+         pulsating and RGB control would set this config to 75. -->
+    <integer name="config_deviceLightCapabilities" translatable="false">75</integer>
 
 </resources>
