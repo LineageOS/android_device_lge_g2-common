@@ -100,7 +100,8 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl-legacy \
     Snap \
     camera.msm8974 \
-    libshim_atomic
+    libshim_atomic \
+    libshim_camera_parameters
 
 # Display
 PRODUCT_PACKAGES += \
