@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c5a7080b_25c97f5a",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 17323
+      },
+      "writtenOn": "2017-10-26T03:16:19Z",
+      "side": 1,
+      "message": "Backslash is missing in the end of the line",
+      "revId": "1c96bcdb4d67eda96a940494b2246b5699646683",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
