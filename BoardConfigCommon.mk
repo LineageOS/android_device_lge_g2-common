@@ -28,6 +28,9 @@ TARGET_CPU_VARIANT := krait
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# ADB Legacy Interface
+TARGET_USES_LEGACY_ADB_INTERFACE := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := galbi
 TARGET_NO_BOOTLOADER := true
