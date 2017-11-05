@@ -2,9 +2,8 @@ type set_baseband, domain;
 type set_baseband_exec, exec_type, file_type;
 init_daemon_domain(set_baseband)
 
-allow set_baseband baseband_prop:property_service set;
 allow set_baseband firmware_file:dir search;
 allow set_baseband firmware_file:file r_file_perms;
 allow set_baseband shell_exec:file { entrypoint read getattr };
 allow set_baseband toolbox_exec:file { execute_no_trans open read getattr execute };
-unix_socket_connect(set_baseband, property, init)
+set_prop(set_baseband, baseband_prop)
