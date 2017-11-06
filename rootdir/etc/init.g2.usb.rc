@@ -208,3 +208,34 @@ on property:sys.usb.config=ptp,adb
     write /sys/class/android_usb/android0/enable 1
     start adbd
     setprop sys.usb.state ${sys.usb.config}
+
+
+# USB accessory
+on property:sys.usb.config=accessory
+    write /sys/devices/platform/android_usb/usb_function_switch 8192
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=accessory,adb
+    start adbd
+    write /sys/devices/platform/android_usb/usb_function_switch 8194
+    setprop sys.usb.state ${sys.usb.config}
+
+# audio accessory
+on property:sys.usb.config=audio_source
+    write /sys/devices/platform/android_usb/usb_function_switch 131072
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=audio_source,adb
+    start adbd
+    write /sys/devices/platform/android_usb/usb_function_switch 131074
+    setprop sys.usb.state ${sys.usb.config}
+
+# USB and audio accessory
+on property:sys.usb.config=accessory,audio_source
+    write /sys/devices/platform/android_usb/usb_function_switch 139264
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=accessory,audio_source,adb
+    start adbd
+    write /sys/devices/platform/android_usb/usb_function_switch 139266
+    setprop sys.usb.state ${sys.usb.config}
