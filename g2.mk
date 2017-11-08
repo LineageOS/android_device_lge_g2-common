@@ -88,8 +88,7 @@ PRODUCT_COPY_FILES += \
 
 # BoringSSL compatability wrapper
 PRODUCT_PACKAGES += \
-    libboringssl-compat \
-    libstlport
+    libboringssl-compat
 
 # Camera
 PRODUCT_PACKAGES += \
