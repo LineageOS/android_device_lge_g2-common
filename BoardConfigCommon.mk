@@ -81,6 +81,9 @@ USE_OPENGL_RENDERER := true
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := device/lge/g2-common/config.fs
+
 # HIDL
 DEVICE_MANIFEST_FILE := device/lge/g2-common/configs/manifest.xml
 
