@@ -210,7 +210,7 @@ PRODUCT_PACKAGES += \
     NfcNci
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/vendor/etc/libnfc-brcm.conf \
+    $(LOCAL_PATH)/nfc/libnfc-nci.conf:system/vendor/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-brcm-20791b05.conf:system/vendor/etc/libnfc-brcm-20791b05.conf \
     $(LOCAL_PATH)/nfc/nfcee_access.xml:system/etc/nfcee_access.xml
 
