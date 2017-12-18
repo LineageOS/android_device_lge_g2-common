@@ -183,13 +183,13 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
-    Tag \
-    com.android.nfc_extras
+    android.hardware.nfc@1.0-impl-bcm \
+    android.hardware.nfc@1.0-service \
+    Tag
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/vendor/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/nfc/nfcee_access.xml:system/vendor/etc/nfcee_access.xml \
+    $(LOCAL_PATH)/nfc/nfcee_access.xml:system/vendor/etc/nfcee_access.xml
 
 # Power
 PRODUCT_PACKAGES += \
