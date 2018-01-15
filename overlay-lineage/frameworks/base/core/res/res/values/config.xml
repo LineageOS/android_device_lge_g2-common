@@ -20,5 +20,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Disable Button backlight settings -->
-    <integer name="config_buttonBrightnessSettingDefault">0</integer>
+    <!-- <integer name="config_buttonBrightnessSettingDefault">0</integer> -->
 </resources>
