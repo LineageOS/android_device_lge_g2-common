@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e920cb21_6bcbe765",
+        "filename": "overlay-lineage/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 17323
+      },
+      "writtenOn": "2018-01-15T16:33:27Z",
+      "side": 1,
+      "message": "Don\u0027t add anything new, unless explicitly specified",
+      "revId": "95004f0f5f71104184dd690958d4aa488a17a222",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
