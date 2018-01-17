@@ -310,7 +310,7 @@ service conn_init /vendor/bin/hwaddrs
 on property:init.svc.conn_init=stopped
     chmod 644 /data/misc/bdaddr
 
-service irsc_util /vendor/bin/irsc_util "/etc/sec_config"
+service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class main
     user root
     oneshot
