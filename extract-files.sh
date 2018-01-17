@@ -74,4 +74,7 @@ sed -i 's|/system/framework|/system/vendor/framework|g' "$QCNVITEMS"
 QCRILHOOK="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/etc/permissions/qcrilhook.xml
 sed -i 's|/system/framework|/system/vendor/framework|g' "$QCRILHOOK"
 
+THERMAL_ENGINE="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/bin/thermal-engine
+sed -i 's|/system/etc|/vendor/etc|g' "$THERMAL_ENGINE"
+
 "$MY_DIR"/setup-makefiles.sh
