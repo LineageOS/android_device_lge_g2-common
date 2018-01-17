@@ -76,6 +76,14 @@ on fs
     chmod 0644 /persist/sensors/sensors_settings
     chown system root /persist/sensors/sensors_settings
 
+    # FunctionsFS
+    mkdir /dev/usb-ffs 0770 shell shell
+    mkdir /dev/usb-ffs/adb 0770 shell shell
+    mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
+    write /sys/class/android_usb/android0/f_ffs/aliases adb
+    mkdir /dev/bus 0755 root root
+    mkdir /dev/bus/usb 0755 root root
+
 on post-fs-data
     # Create directory used by bluetooth
     mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
@@ -293,14 +301,6 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/bcmdhd/parameters/firmware_path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
-
-on fs
-    mkdir /dev/usb-ffs 0770 shell shell
-    mkdir /dev/usb-ffs/adb 0770 shell shell
-    mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
-    write /sys/class/android_usb/android0/f_ffs/aliases adb
-    mkdir /dev/bus 0755 root root
-    mkdir /dev/bus/usb 0755 root root
 
 on charger
     wait /dev/block/platform/msm_sdcc.1/by-name/modem
