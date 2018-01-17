@@ -320,11 +320,6 @@ service adsprpcd /system/bin/adsprpcd
     user media
     group media
 
-service audiod /system/bin/audiod
-    class late_start
-    user system
-    group system
-
 service charger /charger
     class charger
     critical
