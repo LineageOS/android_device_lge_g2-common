@@ -353,7 +353,7 @@ service mpdecision /system/bin/mpdecision --avg_comp
 service netmgrd /system/bin/netmgrd
     class main
     user root
-    group root wifi wakelock radio inet
+    group root wifi wakelock radio inet oem_2950
 
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
