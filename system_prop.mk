@@ -77,18 +77,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.custom_ecc=1
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.apm_sim_not_pwdn=1 \
-    ro.telephony.call_ring.multiple=0
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.qmi.adb_logmask=0 \
-
-PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.do_not_init_csvt=1 \
     rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
-    ro.ril.telephony.mqanelements=5
+    persist.radio.custom_ecc=1 \
+    persist.radio.apm_sim_not_pwdn=1 \
+    persist.data.qmi.adb_logmask=0 \
+    ro.ril.telephony.mqanelements=4 \
+    ro.telephony.call_ring.multiple=0 \
+    ro.telephony.default_network=9 \
+    telephony.lteOnCdmaDevice=0 \
+    telephony.lteOnGsmDevice=1 \
+    ro.use_data_netmgrd=true \
+    persist.telephony.oosisdc=false \
+    persist.qcril.disable_retry=true \
+    persist.data.netmgrd.qos.enable=false \
+    ril.subscription.types=NV,RUIM \
+    persist.telephony.oosisdc=false
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
