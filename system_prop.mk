@@ -76,18 +76,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.custom_ecc=1
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.apm_sim_not_pwdn=1 \
-    ro.telephony.call_ring.multiple=0
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.qmi.adb_logmask=0 \
-
-PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.do_not_init_csvt=1 \
     rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
-    ro.ril.telephony.mqanelements=5
+# Setup custom emergency number list based on the MCC. This is needed by RIL
+    persist.radio.custom_ecc=1 \
+# Do not power down SIM card when modem is sent to Low Power Mode.
+    persist.radio.apm_sim_not_pwdn=1 \
+    persist.data.qmi.adb_logmask=0 \
+    ro.ril.telephony.mqanelements=4 \
+    ro.telephony.call_ring.multiple=0 \
+    ro.telephony.default_network=9 \
+    telephony.lteOnCdmaDevice=0 \
+    telephony.lteOnGsmDevice=1 \
+    ro.use_data_netmgrd=true
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
