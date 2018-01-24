@@ -7,7 +7,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     audio_hal.period_size=192 \
     persist.audio.dualmic.config=endfire \
-    use.voice.path.for.pcm.voip=true
+    use.voice.path.for.pcm.voip=true \
+    ro.config.vc_call_vol_steps=12
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.audiorec=false \
