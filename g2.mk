@@ -173,6 +173,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service \
     lights.msm8974
 
+# Offmode Charging
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
