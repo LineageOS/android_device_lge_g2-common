@@ -138,6 +138,9 @@ include device/qcom/sepolicy/legacy-sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
     device/lge/g2-common/sepolicy
 
+# Treble
+PRODUCT_SHIPPING_API_LEVEL := 17
+
 # Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
