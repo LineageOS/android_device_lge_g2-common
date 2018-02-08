@@ -145,6 +145,9 @@ TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat
     /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_atomic.so \
     /system/lib/libcamera_client.so|libshim_camera_parameters.so
 
+# Treble
+PRODUCT_SHIPPING_API_LEVEL := 17
+
 # Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
