@@ -300,5 +300,5 @@ vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # WiFi
-etc/firmware/fw_bcmdhd_apsta.bin
-etc/firmware/fw_bcmdhd.bin
+vendor/firmware/fw_bcmdhd_apsta.bin
+vendor/firmware/fw_bcmdhd.bin
