@@ -74,4 +74,10 @@
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities" translatable="false">75</integer>
 
+    <!-- Defines the actions shown in advanced reboot submenu -->
+    <string-array name="config_restartActionsList">
+        <item>restart</item>
+        <item>restart_recovery</item>
+     </string-array>
+
 </resources>
