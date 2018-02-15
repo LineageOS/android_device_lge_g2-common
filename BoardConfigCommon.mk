@@ -141,6 +141,12 @@ include device/qcom/sepolicy/legacy-sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
     device/lge/g2-common/sepolicy
 
+# Shims
+TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
+    /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so \
+    /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_atomic.so \
+    /system/lib/libcamera_client.so|libshim_camera_parameters.so
+
 # Treble
 PRODUCT_SHIPPING_API_LEVEL := 17
 
