@@ -44,7 +44,6 @@ on early-init
     write /sys/class/leds/lcd-backlight/brightness 130
 
 on init
-    export LD_SHIM_LIBS /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so:/system/lib/libril.so|libril_shim.so:/system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so:/system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_atomic.so:/system/lib/libcamera_client.so|libshim_camera_parameters.so
 
     mkdir /persist 0771 system system
     mkdir /factory 0775 system system
