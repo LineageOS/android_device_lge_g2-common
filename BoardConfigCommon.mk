@@ -80,6 +80,7 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := device/lge/g2-common/config.fs
+TARGET_EXFAT_DRIVER := sdfat
 
 # HIDL
 DEVICE_MANIFEST_FILE := device/lge/g2-common/configs/manifest.xml
