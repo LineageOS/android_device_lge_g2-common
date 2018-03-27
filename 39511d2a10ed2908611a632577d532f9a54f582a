@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7bda6c10_bda1d6b7",
+        "filename": "system_prop.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-03-27T17:31:43Z",
+      "side": 1,
+      "message": "This was necessary for mobile data",
+      "revId": "39511d2a10ed2908611a632577d532f9a54f582a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
