@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7938dd05_e7ac5b63",
+        "filename": "system_prop.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-03-27T15:58:11Z",
+      "side": 1,
+      "message": "You\u0027re not allowed to comment in the middle of a multiline in makefile",
+      "revId": "ee5b639aec6dd76c9f633c3709badfba02ed74ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
