@@ -2604,7 +2604,8 @@ Return<void> RadioImpl::getRadioCapability(int32_t serial) {
 #if VDBG
     RLOGD("getRadioCapability: serial %d", serial);
 #endif
-    dispatchVoid(serial, mSlotId, RIL_REQUEST_GET_RADIO_CAPABILITY);
+    RequestInfo *pRI = android::addRequestToList(serial, mSlotId, RIL_REQUEST_GET_RADIO_CAPABILITY);
+    sendErrorResponse(pRI, RIL_E_REQUEST_NOT_SUPPORTED);
     return Void();
 }
 
