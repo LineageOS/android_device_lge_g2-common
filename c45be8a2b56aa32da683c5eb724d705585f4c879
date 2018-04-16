@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1d9c3e29_28b4f509",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 7
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-04-16T10:34:54Z",
+      "side": 1,
+      "message": "We haven\u0027t moved this blob to vendor yet, it should have been\n/system/lib/hw/camera.vendor.msm8974.so",
+      "range": {
+        "startLine": 47,
+        "startChar": 191,
+        "endLine": 47,
+        "endChar": 237
+      },
+      "revId": "c45be8a2b56aa32da683c5eb724d705585f4c879",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
