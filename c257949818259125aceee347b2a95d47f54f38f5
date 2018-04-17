@@ -16,6 +16,29 @@
       "revId": "c257949818259125aceee347b2a95d47f54f38f5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a2efee99_9a41f3e7",
+        "filename": "camera/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-04-17T10:03:42Z",
+      "side": 1,
+      "message": "This is wrong. See: https://github.com/LineageOS/android_device_htc_m8-common/commit/31f20d614e198463394eea3c24af6680e2aeff79",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 61
+      },
+      "revId": "c257949818259125aceee347b2a95d47f54f38f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
