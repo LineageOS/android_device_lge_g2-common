@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa86283b_1b738cb0",
+        "filename": "camera/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-04-17T09:55:50Z",
+      "side": 1,
+      "message": "Most likely not needed",
+      "revId": "c257949818259125aceee347b2a95d47f54f38f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
