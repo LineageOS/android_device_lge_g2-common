@@ -68,4 +68,10 @@ setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" false $clean_vendor
 
 extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC" "$SECTION"
 
+QCNVITEMS="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/etc/permissions/qcnvitems.xml
+sed -i 's|/system/framework|/system/vendor/framework|g' "$QCNVITEMS"
+
+QCRILHOOK="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/etc/permissions/qcrilhook.xml
+sed -i 's|/system/framework|/system/vendor/framework|g' "$QCRILHOOK"
+
 "$MY_DIR"/setup-makefiles.sh
