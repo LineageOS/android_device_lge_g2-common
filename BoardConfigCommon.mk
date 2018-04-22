@@ -142,10 +142,10 @@ BOARD_SEPOLICY_DIRS += \
 
 # Shims
 TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
-    /system/lib/libril.so|libril_shim.so \
+    /system/vendor/lib/libril.so|libril_shim.so \
     /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so \
     /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_atomic.so \
-    /system/lib/libcamera_client.so|libshim_camera_parameters.so \
+    /system/vendor/lib/libcamera_client.so|libshim_camera_parameters.so \
     /system/vendor/bin/mpdecision|libshim_atomic.so
 
 # Shipping API level (for CTS backward compatibility)
