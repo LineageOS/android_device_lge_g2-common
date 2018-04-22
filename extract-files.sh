@@ -68,4 +68,7 @@ setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" false $clean_vendor
 
 extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC" "$SECTION"
 
+THERMAL_ENGINE="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/bin/thermal-engine
+sed -i 's|/system/etc|/vendor/etc|g' "$THERMAL_ENGINE"
+
 "$MY_DIR"/setup-makefiles.sh
