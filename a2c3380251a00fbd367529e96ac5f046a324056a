@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "29deb5f0_bbda5f3b",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 6
+      },
+      "lineNbr": 298,
+      "author": {
+        "id": 17901
+      },
+      "writtenOn": "2018-04-27T17:19:34Z",
+      "side": 1,
+      "message": "Let\u0027s fix all of them in a separate adding hash to kanged blobs and original source to the blobs we moved to vendor",
+      "parentUuid": "73be9070_36f619fe",
+      "revId": "a2c3380251a00fbd367529e96ac5f046a324056a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d7c496f1_74c17761",
         "filename": "proprietary-files.txt",
         "patchSetId": 6
