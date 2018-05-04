@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fe2cf102_4a2d4b3c",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-05-04T11:13:00Z",
+      "side": 1,
+      "message": "Shouldn\u0027t you turn off all the lights when none of the conditions are met?",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 5
+      },
+      "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
