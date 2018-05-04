@@ -46,6 +46,30 @@
       "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "11be11ff_07d2d5d6",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-05-04T13:09:08Z",
+      "side": 1,
+      "message": "Not too sure how this works, but i believe that\u0027s what\u0027s happening on the previous line, 107. mNotificationState is not lit if we reach that else.\n\nAlthough, it might be better to make it clearer",
+      "parentUuid": "fe2cf102_4a2d4b3c",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 5
+      },
+      "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
