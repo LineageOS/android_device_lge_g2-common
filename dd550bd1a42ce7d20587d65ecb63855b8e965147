@@ -22,6 +22,30 @@
       "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "166c8ef6_e2f76fe0",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 17901
+      },
+      "writtenOn": "2018-05-04T13:04:06Z",
+      "side": 1,
+      "message": "We kanged g3 https://review.lineageos.org/#/c/LineageOS/android_device_lge_g3-common/+/209602/ , I just checked and it looks they removed it for some reason I ignore.",
+      "parentUuid": "fe2cf102_4a2d4b3c",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 5
+      },
+      "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
