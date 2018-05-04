@@ -70,6 +70,30 @@
       "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f8da4394_d804ffba",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-05-04T13:15:26Z",
+      "side": 1,
+      "message": "Looking at it once again, it seems wrong indeed. Here\u0027s the original implementation: https://github.com/LineageOS/android_device_htc_hiae/blob/lineage-15.1/light/Light.cpp#L113-L124.",
+      "parentUuid": "11be11ff_07d2d5d6",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 5
+      },
+      "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
