@@ -94,6 +94,30 @@
       "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a321842c_82ecf2fc",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 17901
+      },
+      "writtenOn": "2018-05-04T14:10:09Z",
+      "side": 1,
+      "message": "I don\u0027t see the logic to set the same SpeakerLightLocked condition in L100 and in L106 if L102 and L104 are not fullfilled.",
+      "parentUuid": "f8da4394_d804ffba",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 5
+      },
+      "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
