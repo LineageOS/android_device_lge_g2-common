@@ -22,6 +22,24 @@
       "revId": "5e76b873f961eff20383c311212a12c271761bd6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e4f34766_47513105",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 17901
+      },
+      "writtenOn": "2018-05-05T17:29:57Z",
+      "side": 1,
+      "message": "ok, let\u0027s modify the script",
+      "parentUuid": "4f81ddfe_c068f0af",
+      "revId": "5e76b873f961eff20383c311212a12c271761bd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
