@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4f81ddfe_c068f0af",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-05-05T17:22:18Z",
+      "side": 1,
+      "message": "No need to do this manually, we can have the extract script hex edit it",
+      "range": {
+        "startLine": 281,
+        "startChar": 44,
+        "endLine": 281,
+        "endChar": 85
+      },
+      "revId": "5e76b873f961eff20383c311212a12c271761bd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
