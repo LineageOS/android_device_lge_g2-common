@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5eec45b0_4c45e6eb",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 11
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-05-05T23:41:34Z",
+      "side": 1,
+      "message": "Fix this...\n\nmBlinkPattern \u003c\u003c 0 \u003c\u003c std::endl;",
+      "range": {
+        "startLine": 107,
+        "startChar": 8,
+        "endLine": 107,
+        "endChar": 50
+      },
+      "revId": "003ef16d65847f5d2bf2cdff8e6ca9b0adcc46c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

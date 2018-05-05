@@ -118,6 +118,29 @@
       "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "932e7463_8d06ad9e",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-05-05T23:41:34Z",
+      "side": 1,
+      "message": "Fix this. It\u0027s wrong.",
+      "range": {
+        "startLine": 107,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 5
+      },
+      "revId": "dd550bd1a42ce7d20587d65ecb63855b8e965147",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
