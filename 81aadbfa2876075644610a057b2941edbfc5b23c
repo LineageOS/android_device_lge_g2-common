@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0f11b3fc_98b77739",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 12
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 17901
+      },
+      "writtenOn": "2018-05-06T14:21:09Z",
+      "side": 1,
+      "message": "Should this go to android.hardware.light@2.0-service.g2.rc as well?",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 54
+      },
+      "revId": "81aadbfa2876075644610a057b2941edbfc5b23c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
