@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "5c564943_45393244",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 12
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-05-06T14:32:46Z",
+      "side": 1,
+      "message": "I bet that this doesn\u0027t even compile...",
+      "range": {
+        "startLine": 108,
+        "startChar": 8,
+        "endLine": 108,
+        "endChar": 18
+      },
+      "revId": "81aadbfa2876075644610a057b2941edbfc5b23c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0f11b3fc_98b77739",
         "filename": "rootdir/etc/init.g2.rc",
         "patchSetId": 12
