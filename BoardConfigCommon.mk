@@ -146,7 +146,8 @@ BOARD_SEPOLICY_DIRS += \
 TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
     /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so \
     /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_atomic.so \
-    /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_camera_parameters.so
+    /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_camera_parameters.so\
+    /system/vendor/bin/mpdecision|libshim_atomic.so
 
 # Shipping API level (for CTS backward compatibility)
 PRODUCT_SHIPPING_API_LEVEL := 17
