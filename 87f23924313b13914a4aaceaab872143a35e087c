@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c1c3d8ae_0b7c3480",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 19259
+      },
+      "writtenOn": "2018-05-14T22:07:45Z",
+      "side": 1,
+      "message": "dupe of above shim?",
+      "revId": "87f23924313b13914a4aaceaab872143a35e087c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
