@@ -1,3 +1,5 @@
+# Common proprietary files - from D80230d build LRX22G, unless pinned
+
 # ADSP
 bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib/libadsprpc.so
@@ -33,7 +35,7 @@ vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth
 vendor/firmware/BCM4335B0_002.001.006.0191.0201_ORC.hcd
-vendor/lib/libaptX_encoder.so
+vendor/lib/libaptX_encoder.so|b03772672144d4b750a5672c2922aded93bb0512
 
 
 # Camera
@@ -150,34 +152,34 @@ vendor/lib/libQSEEComAPI.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
 
-# GPS
-lib/libloc_api_v02.so:vendor/lib/libloc_api_v02.so
-lib/libloc_ds_api.so:vendor/lib/libloc_ds_api.so
-vendor/lib/hw/flp.default.so
-vendor/lib/libgeofence.so
-vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
+# GPS Package version: bacon-01052015-44f539df63cf9fbc2f913b8cc7c3ea995ffe5417
+lib/libloc_api_v02.so:vendor/lib/libloc_api_v02.so|d1eceda1846db9dbae690339ed89b8b9bc372622
+lib/libloc_ds_api.so:vendor/lib/libloc_ds_api.so|4aa70b017e53bbae0c4c98e0553725781ca0f45e
+vendor/lib/hw/flp.default.so|56e0d175700496356f81f4639d905ff97c00e2c0
+vendor/lib/libgeofence.so|f0ff7f591ac91bb44b72fd07c3850034e9f191bb
+vendor/lib/libizat_core.so|f94d2de79ba4a72f651ecd324f342141e5ab32a1
+vendor/lib/liblbs_core.so|97d1882b1db331063d3b29f60cbc6f9f10ad56b7
 
-# Graphics
+# Graphics msm8974_LA.BF.1.1.3_RB1__release_AU
 etc/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw
 etc/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw
-vendor/lib/egl/eglsubAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30-a3xx.so
-vendor/lib/libCB.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
-vendor/lib/librs_adreno_sha1.so
-vendor/lib/librs_adreno.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/libsc-a3xx.so
+vendor/lib/egl/eglsubAndroid.so|e5337ef70a5f6667dc1d0afe39773bc71dadf03f
+vendor/lib/egl/libEGL_adreno.so|40c685ed7cde2b8b9b8a86ebf0e62cefe5818302
+vendor/lib/egl/libGLESv1_CM_adreno.so|edcfe9375569e1628a6eb573a67b61cf751d5ad4
+vendor/lib/egl/libGLESv2_adreno.so|c39e429d7df9e14a6cc3a36914a758d6212cd287
+vendor/lib/egl/libq3dtools_adreno.so|78935c0dffc716aceb4f7c336705f40d1d8557ef
+vendor/lib/libadreno_utils.so|863991d5e167b7c67354812155f8b897e2414536
+vendor/lib/libbccQTI.so|38688aca2fac8bd95c0d034a82710b60c9be77a7
+vendor/lib/libC2D2.so|e1e2b0bca9298eebcbf0c0937b05bf299e0bcc43
+vendor/lib/libc2d30-a3xx.so|a8f0dfaee92035d9579bb02314813666c799f1e0
+vendor/lib/libCB.so|bbb4831624a6bbb463d30edbe4ba736ccd377195
+vendor/lib/libgsl.so|a7615de4e0a4d53b757a38c4b2d0f234646f18e5
+vendor/lib/libllvm-qcom.so|6854878e1672d23b046f69e934ee59ba9e6a7de6
+vendor/lib/libOpenCL.so|24f57862cfcea0b3f85b45cd741ce62e1ae54d9f
+vendor/lib/librs_adreno_sha1.so|bcc2f1a8bbd9cf4e397eac5589e6bdd0397b3aba
+vendor/lib/librs_adreno.so|9b37eaaf58b522460895fd8941b4ab4016d031e9
+vendor/lib/libRSDriver_adreno.so|ae43fe68540f9c58f7e74e35c54ed24291282953
+vendor/lib/libsc-a3xx.so|e1908edb48dd74b8732a221f585012860f6296e5
 vendor/lib/libuiblur.so
 
 # IR
@@ -274,7 +276,7 @@ vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 
 # STLport
-vendor/lib/libstlport.so
+vendor/lib/libstlport.so|0be0a0d13e12fbf95d97d309dcbc25d3f969a469
 
 # Thermal
 bin/thermal-engine:vendor/bin/thermal-engine
@@ -284,7 +286,7 @@ vendor/lib/libthermalioctl.so
 # Time
 -app/TimeService/TimeService.apk:vendor/app/TimeService/TimeService.apk
 bin/time_daemon:vendor/bin/time_daemon|e5fe186973b90715ab9a045d4dcd63d0134e2e63
-vendor/lib/libalarmservice_jni.so
+vendor/lib/libalarmservice_jni.so|feebfb0189551f15513ce1f05315bc9f5e73e31a
 -vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 
