@@ -16,6 +16,24 @@
       "revId": "87f23924313b13914a4aaceaab872143a35e087c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2bff564b_0d3b9190",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-05-15T05:55:37Z",
+      "side": 1,
+      "message": "No, the above is for atomic lib. After moving all blobs to /vendor it\u0027s asking for missing camera parameters too.",
+      "parentUuid": "c1c3d8ae_0b7c3480",
+      "revId": "87f23924313b13914a4aaceaab872143a35e087c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
