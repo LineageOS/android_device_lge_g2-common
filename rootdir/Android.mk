@@ -7,6 +7,7 @@ LOCAL_MODULE            := set_baseband.sh
 LOCAL_MODULE_TAGS       := optional eng
 LOCAL_MODULE_CLASS      := EXECUTABLES
 LOCAL_SRC_FILES         := bin/set_baseband.sh
+LOCAL_MODULE_PATH       := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
 # Init scripts

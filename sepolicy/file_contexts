@@ -1,5 +1,5 @@
 # Baseband
-/system/bin/set_baseband.sh                         u:object_r:set_baseband_exec:s0
+/system/vendor/bin/set_baseband.sh                  u:object_r:set_baseband_exec:s0
 
 # Bluetooth
 /dev/rfkill                                         u:object_r:rfkill_device:s0
