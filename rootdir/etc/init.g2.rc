@@ -351,7 +351,7 @@ service sensors /vendor/bin/sensors.qcom
     user root
     group root wakelock
 
-service set_baseband /system/bin/set_baseband.sh
+service set_baseband /vendor/bin/set_baseband.sh
     class late_start
     user system
     group shell
