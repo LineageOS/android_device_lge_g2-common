@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e9cf8ad_874b05ad",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 15
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-05-17T03:17:25Z",
+      "side": 1,
+      "message": "Without \"finding\" yourself a libacdbloader.so that looks in vendor, this actually makes it so that you aren\u0027t finding these files anymore. And yes, I strings-ed your blobs.\n\n  $ strings libacdbloader.so | grep etc\n  /etc/acdbdata/",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 66
+      },
+      "revId": "3fe529c41a3d0da6bd7b4a67ac14fa2122238e92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
