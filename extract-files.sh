@@ -77,4 +77,7 @@ sed -i 's|/system/framework|/vendor/framework|g' "$QCRILHOOK"
 THERMAL_ENGINE="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/bin/thermal-engine
 sed -i 's|/system/etc|/vendor/etc|g' "$THERMAL_ENGINE"
 
+LIBACDBLOADER="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib/libacdbloader.so
+sed -i 's|/etc/acdbdata/|/vendor/acdb/\x00|g' "$LIBACDBLOADER"
+
 "$MY_DIR"/setup-makefiles.sh
