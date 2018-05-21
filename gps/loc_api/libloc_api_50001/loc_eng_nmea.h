@@ -1,4 +1,4 @@
-/* Copyright (c) 2011,2014 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -9,7 +9,7 @@
  *       copyright notice, this list of conditions and the following
  *       disclaimer in the documentation and/or other materials provided
  *       with the distribution.
- *     * Neither the name of The Linux Foundation, nor the names of its
+ *     * Neither the name of The Linux Foundation nor the names of its
  *       contributors may be used to endorse or promote products derived
  *       from this software without specific prior written permission.
  *
@@ -27,42 +27,17 @@
  *
  */
 
-#ifndef __LOC_H__
-#define __LOC_H__
+#ifndef LOC_ENG_NMEA_H
+#define LOC_ENG_NMEA_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
-
-#include <ctype.h>
-#include <cutils/properties.h>
 #include <hardware/gps.h>
 #include <gps_extended.h>
 
-#define XTRA_DATA_MAX_SIZE 100000 /*bytes*/
+#define NMEA_SENTENCE_MAX_LENGTH 200
 
-typedef void (*loc_location_cb_ext) (UlpLocation* location, void* locExt);
-typedef void (*loc_sv_status_cb_ext) (GpsSvStatus* sv_status, void* svExt);
-typedef void* (*loc_ext_parser)(void* data);
-typedef void (*loc_shutdown_cb) (void);
+void loc_eng_nmea_send(char *pNmea, int length, loc_eng_data_s_type *loc_eng_data_p);
+int loc_eng_nmea_put_checksum(char *pNmea, int maxSize);
+void loc_eng_nmea_generate_sv(loc_eng_data_s_type *loc_eng_data_p, const HaxxSvStatus &svStatus, const GpsLocationExtended &locationExtended);
+void loc_eng_nmea_generate_pos(loc_eng_data_s_type *loc_eng_data_p, const UlpLocation &location, const GpsLocationExtended &locationExtended, unsigned char generate_nmea);
 
-typedef struct {
-    loc_location_cb_ext location_cb;
-    gps_status_callback status_cb;
-    loc_sv_status_cb_ext sv_status_cb;
-    gps_nmea_callback nmea_cb;
-    gps_set_capabilities set_capabilities_cb;
-    gps_acquire_wakelock acquire_wakelock_cb;
-    gps_release_wakelock release_wakelock_cb;
-    gps_create_thread create_thread_cb;
-    loc_ext_parser location_ext_parser;
-    loc_ext_parser sv_ext_parser;
-    gps_request_utc_time request_utc_time_cb;
-    loc_shutdown_cb shutdown_cb;
-} LocCallbacks;
-
-#ifdef __cplusplus
-}
-#endif /* __cplusplus */
-
-#endif //__LOC_H__
+#endif // LOC_ENG_NMEA_H
