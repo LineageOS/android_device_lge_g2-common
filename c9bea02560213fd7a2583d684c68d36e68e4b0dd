@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6013d98e_af2bf484",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-05-24T22:26:56Z",
+      "side": 0,
+      "message": "This is not a legacy HAL1 prop.",
+      "range": {
+        "startLine": 29,
+        "startChar": 4,
+        "endLine": 29,
+        "endChar": 35
+      },
+      "revId": "c9bea02560213fd7a2583d684c68d36e68e4b0dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
