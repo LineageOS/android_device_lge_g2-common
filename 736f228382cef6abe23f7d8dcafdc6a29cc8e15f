@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "072552c6_27f80dfd",
+        "filename": "system_prop.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-05-24T22:41:26Z",
+      "side": 1,
+      "message": "Remove as well.",
+      "range": {
+        "startLine": 29,
+        "startChar": 35,
+        "endLine": 29,
+        "endChar": 37
+      },
+      "revId": "736f228382cef6abe23f7d8dcafdc6a29cc8e15f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
