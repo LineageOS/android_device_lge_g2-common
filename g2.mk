@@ -264,8 +264,8 @@ PRODUCT_PACKAGES += \
 
 # Touchscreen
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/touch_dev.idc:system/usr/idc/touch_dev.idc
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/vendor/usr/keylayout/gpio-keys.kl \
+    $(LOCAL_PATH)/keylayout/touch_dev.idc:system/vendor/usr/idc/touch_dev.idc
 
 # Wifi
 PRODUCT_PACKAGES += \
