@@ -31,7 +31,7 @@ endef
 DXHDCP2_IMAGES := \
     dxhdcp2.b00 dxhdcp2.b01 dxhdcp2.b02 dxhdcp2.b03 dxhdcp2.mdt
 
-DXHDCP2_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(DXHDCP2_IMAGES))
+DXHDCP2_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(DXHDCP2_IMAGES))
 $(DXHDCP2_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "dxhdcp2 firmware link: $@"
 	@mkdir -p $(dir $@)
@@ -43,7 +43,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(DXHDCP2_SYMLINKS)
 TQS_IMAGES := \
     tqs.b00 tqs.b01 tqs.b02 tqs.b03 tqs.mdt
 
-TQS_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(TQS_IMAGES))
+TQS_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(TQS_IMAGES))
 $(TQS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "tqs firmware link: $@"
 	@mkdir -p $(dir $@)
@@ -55,7 +55,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(TQS_SYMLINKS)
 WCD9320_IMAGES := \
     wcd9320_anc.bin wcd9320_mad_audio.bin wcd9320_mbhc.bin
 
-WCD9320_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/wcd9320/,$(WCD9320_IMAGES))
+WCD9320_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/wcd9320/,$(WCD9320_IMAGES))
 $(WCD9320_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "wcd9320 firmware link: $@"
 	@mkdir -p $(dir $@)
