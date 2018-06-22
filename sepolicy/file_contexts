@@ -24,6 +24,7 @@
 
 # Lights
 /system/vendor/bin/hw/android\.hardware\.light@2\.0-service\.g2    u:object_r:hal_light_default_exec:s0
+/sys/devices/mdp(.*)/qcom,mdss_fb_primary(.*)/leds(/.*)?           u:object_r:sysfs_leds:s0
 
 # MPdecision
 /data/system/default_values                         u:object_r:mpctl_data_file:s0
