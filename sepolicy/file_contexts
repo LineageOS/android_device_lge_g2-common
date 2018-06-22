@@ -51,3 +51,6 @@
 # Vibrator
 /sys/devices/virtual/input/lge_touch(/.*)?          u:object_r:sysfs_touchpanel:s0
 /sys/devices/platform/tspdrv/nforce_timed           u:object_r:sysfs_vibeamp:s0
+
+# Wifi
+/sys/module/bcmdhd/parameters/firmware_path u:object_r:sysfs_wlan_fwpath:s0
