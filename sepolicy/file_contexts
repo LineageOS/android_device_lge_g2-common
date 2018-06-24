@@ -26,6 +26,7 @@
 # Lights
 /system/vendor/bin/hw/android\.hardware\.light@2\.0-service\.g2    u:object_r:hal_light_default_exec:s0
 /sys/devices/mdp(.*)/qcom,mdss_fb_primary(.*)/leds(/.*)?           u:object_r:sysfs_leds:s0
+/sys/devices/mdp(.*)/qcom,mdss_fb_primary(.*)/leds/lcd-backlight/max_brightness      u:object_r:sysfs_leds:s0
 /sys/devices/virtual/lg_rgb_led/use_patterns/blink_patterns        u:object_r:sysfs_leds:s0
 
 # MPdecision
