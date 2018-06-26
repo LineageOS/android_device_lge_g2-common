@@ -1,5 +1,6 @@
 #
-# Copyright (C) 2013-2015 The CyanogenMod Project
+# Copyright (C) 2015-2016 The CyanogenMod Project
+#               2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -61,8 +62,6 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
-
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
