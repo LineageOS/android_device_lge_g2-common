@@ -1,0 +1,5 @@
+allow hal_sensors_default sensors_device:chr_file { getattr };
+allow hal_sensors_default property_socket:sock_file { rw_file_perms };
+allow hal_sensors_default init:unix_stream_socket { connectto };
+
+set_prop(hal_sensors_default, debug_prop)
