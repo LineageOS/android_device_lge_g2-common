@@ -180,6 +180,33 @@ vendor/lib/libRSDriver_adreno.so
 vendor/lib/libsc-a3xx.so
 vendor/lib/libuiblur.so
 
+#IMS
+vendor/bin/ims_rtp_daemon
+vendor/bin/imscmservice
+vendor/bin/imsdatadaemon
+vendor/bin/imsqmidaemon
+etc/permissions/imscm.xml:vendor/etc/permissions/imscm.xml
+-framework/imscmlibrary.jar:vendor/framework/imscmlibrary.jar
+lib/lib-dplmedia.so:vendor/lib/lib-dplmedia.so
+lib/lib-ims-rcscmjni.so:vendor/lib/lib-ims-rcscmjni.so
+lib/lib-imsSDP.so:vendor/lib/lib-imsSDP.so
+lib/lib-imscamera.so:vendor/lib/lib-imscamera.so
+lib/lib-imsdpl.so:vendor/lib/lib-imsdpl.so
+lib/lib-imsqimf.so:vendor/lib/lib-imsqimf.so
+lib/lib-imsrcs.so:vendor/lib/lib-imsrcs.so
+lib/lib-imsrcscm.so:vendor/lib/lib-imsrcscm.so
+lib/lib-imsrcscmclient.so:vendor/lib/lib-imsrcscmclient.so
+lib/lib-imsrcscmservice.so:vendor/lib/lib-imsrcscmservice.so
+lib/lib-imss.so:vendor/lib/lib-imss.so
+lib/lib-imsvt.so:vendor/lib/lib-imsvt.so
+lib/lib-imsxml.so:vendor/lib/lib-imsxml.so
+lib/lib-rcsimssjni.so:vendor/lib/lib-rcsimssjni.so
+lib/lib-rcsjni.so:vendor/lib/lib-rcsjni.so
+lib/lib-rtpcommon.so:vendor/lib/lib-rtpcommon.so
+lib/lib-rtpcore.so:vendor/lib/lib-rtpcore.so
+lib/lib-rtpdaemoninterface.so:vendor/lib/lib-rtpdaemoninterface.so
+lib/lib-rtpsl.so:vendor/lib/lib-rtpsl.so
+
 # IR
 lib/hw/consumerir.msm8974.so:vendor/lib/hw/consumerir.msm8974.so
 lib/libcir_driver.so:vendor/lib/libcir_driver.so

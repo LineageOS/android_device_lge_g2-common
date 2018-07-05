@@ -310,6 +310,44 @@ service conn_init /vendor/bin/hwaddrs
 on property:init.svc.conn_init=stopped
     chmod 644 /data/misc/bdaddr
 
+service ims_rtp_daemon /vendor/bin/ims_rtp_daemon
+   class main
+   user system
+   socket ims_rtpd stream 0660 system radio
+   group radio net_raw oem_2950 inet log
+   disabled
+
+on property:sys.ims.DATA_DAEMON_STATUS=1
+    start ims_rtp_daemon
+
+service imscmservice /vendor/bin/imscmservice
+    class main
+    user system
+    group radio net_raw oem_2950 log
+    writepid /dev/cpuset/system-background/tasks
+    disabled
+
+on property:sys.ims.DATA_DAEMON_STATUS=1
+    start imscmservice
+
+service imsdatadaemon /vendor/bin/imsdatadaemon
+    class main
+    user system
+    socket ims_datad stream 0660 system radio
+    group system wifi radio inet net_raw log oem_2950 net_admin
+    writepid /dev/cpuset/system-background/tasks
+    disabled
+
+on property:sys.ims.QMI_DAEMON_STATUS=1
+    start imsdatadaemon
+
+service imsqmidaemon /vendor/bin/imsqmidaemon
+    class main
+    user system
+    socket ims_qmid stream 0660 system radio
+    group radio net_raw log oem_2950
+    writepid /dev/cpuset/system-background/tasks
+
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class main
     user root

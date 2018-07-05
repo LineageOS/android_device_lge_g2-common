@@ -68,6 +68,9 @@ setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" false $clean_vendor
 
 extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC" "$SECTION"
 
+IMSCMLIBRARY="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/etc/permissions/imscm.xml
+sed -i 's|/system/framework|/vendor/framework|g' "$IMSCMLIBRARY"
+
 QCNVITEMS="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/etc/permissions/qcnvitems.xml
 sed -i 's|/system/framework|/vendor/framework|g' "$QCNVITEMS"
 
