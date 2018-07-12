@@ -141,8 +141,8 @@ on post-fs-data
     chmod 0664 /data/system/sensors/settings
     chown system /data/system/sensors/settings
 
-    # Create /data/time folder for time-services
-    mkdir /data/time/ 0700 system system
+    # Create /data/system/time folder for time-services
+    mkdir /data/system/time/ 0700 system system
 
     # Create directory for TZ Apps
     mkdir /data/misc/qsee 0770 system system
@@ -367,9 +367,10 @@ service thermal-engine /vendor/bin/thermal-engine
     group root
 
 service time_daemon /vendor/bin/time_daemon
+    capabilities SYS_TIME
     class late_start
-    user root
-    group root
+    user system
+    group net_raw
 
 # WiFi
 service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
