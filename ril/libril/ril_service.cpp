@@ -3786,24 +3786,20 @@ int radio::getVoiceRegistrationStateResponse(int slotId,
         VoiceRegStateResult voiceRegResponse = {};
         int numStrings = responseLen / sizeof(char *);
         if (response == NULL) {
-               RLOGE("getVoiceRegistrationStateResponse Invalid response: NULL");
-               if (e == RIL_E_SUCCESS) responseInfo.error = RadioError::INVALID_RESPONSE;
+            RLOGE("getDataRegistrationStateResponse Invalid response: NULL");
+            if (e == RIL_E_SUCCESS) responseInfo.error = RadioError::INVALID_RESPONSE;
         } else if (s_vendorFunctions->version <= 14) {
-            if (numStrings != 15) {
-                RLOGE("getVoiceRegistrationStateResponse Invalid response: NULL");
-                if (e == RIL_E_SUCCESS) responseInfo.error = RadioError::INVALID_RESPONSE;
-            } else {
-                char **resp = (char **) response;
-                voiceRegResponse.regState = (RegState) ATOI_NULL_HANDLED_DEF(resp[0], 4);
-                voiceRegResponse.rat = ATOI_NULL_HANDLED(resp[3]);
-                voiceRegResponse.cssSupported = ATOI_NULL_HANDLED_DEF(resp[7], 0);
-                voiceRegResponse.roamingIndicator = ATOI_NULL_HANDLED(resp[10]);
-                voiceRegResponse.systemIsInPrl = ATOI_NULL_HANDLED_DEF(resp[11], 0);
-                voiceRegResponse.defaultRoamingIndicator = ATOI_NULL_HANDLED_DEF(resp[12], 0);
-                voiceRegResponse.reasonForDenial = ATOI_NULL_HANDLED_DEF(resp[13], 0);
-                fillCellIdentityFromVoiceRegStateResponseString(voiceRegResponse.cellIdentity,
-                        numStrings, resp);
-            }
+            int numStrings = responseLen / sizeof(char *);
+            /* We're receiving 14 strings (which is unusual), 
+             * but regState and rat are in the correct places (index 0 and 3) */
+            char **resp = (char **) response;
+            RLOGD("getDataRegistrationStateResponse numString = %d, regState = %s, rat = %s", numStrings, resp[0], resp[3]);
+            dataRegResponse.regState = (RegState) ATOI_NULL_HANDLED_DEF(resp[0], 4);
+            dataRegResponse.rat =  ATOI_NULL_HANDLED_DEF(resp[3], 0);
+            dataRegResponse.reasonDataDenied =  NULL;
+            dataRegResponse.maxDataCalls =  1;
+            fillCellIdentityFromDataRegStateResponseString(dataRegResponse.cellIdentity,
+                    numStrings, resp);
         } else {
             RIL_VoiceRegistrationStateResponse *voiceRegState =
                     (RIL_VoiceRegistrationStateResponse *)response;

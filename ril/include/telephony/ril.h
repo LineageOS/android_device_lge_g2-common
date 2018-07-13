@@ -1111,6 +1111,10 @@ typedef struct
   int              pin1_replaced;   /* applicable to USIM, CSIM & ISIM */
   RIL_PinState     pin1;
   RIL_PinState     pin2;
+  int              remaining_count_pin1;
+  int              remaining_count_puk1;
+  int              remaining_count_pin2;
+  int              remaining_count_puk2;
 } RIL_AppStatus;
 
 /* Deprecated, use RIL_CardStatus_v6 */
