@@ -22,6 +22,30 @@
       "revId": "c9d1cefac60d8b97ec01c510218d0f4df60e0086",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "786dd83f_270b6fb1",
+        "filename": "ril/include/telephony/ril.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 1117,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-07-14T12:52:48Z",
+      "side": 1,
+      "message": "Only with Bacon blobs.\nWorks correctly with LG blobs.",
+      "parentUuid": "33b64b2d_1757043d",
+      "range": {
+        "startLine": 1114,
+        "startChar": 0,
+        "endLine": 1117,
+        "endChar": 40
+      },
+      "revId": "c9d1cefac60d8b97ec01c510218d0f4df60e0086",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
