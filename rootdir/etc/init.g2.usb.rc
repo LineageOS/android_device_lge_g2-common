@@ -42,32 +42,6 @@ on boot
     write /sys/class/android_usb/android0/iManufacturer ${ro.product.manufacturer}
     write /sys/class/android_usb/android0/iProduct ${ro.product.model}
 
-# charge_only
-on property:sys.usb.config=none
-    stop adbd
-    write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 1004
-    write /sys/class/android_usb/android0/idProduct 6300
-    write /sys/class/android_usb/android0/bDeviceClass 0
-    write /sys/class/android_usb/android0/bDeviceSubClass 0
-    write /sys/class/android_usb/android0/bDeviceProtocol 0
-    write /sys/class/android_usb/android0/functions charge_only
-    write /sys/class/android_usb/android0/enable 1
-    setprop sys.usb.state ${sys.usb.config}
-
-on property:sys.usb.config=none,adb
-    stop adbd
-    write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 1004
-    write /sys/class/android_usb/android0/idProduct 6300
-    write /sys/class/android_usb/android0/bDeviceClass 0
-    write /sys/class/android_usb/android0/bDeviceSubClass 0
-    write /sys/class/android_usb/android0/bDeviceProtocol 0
-    write /sys/class/android_usb/android0/functions charge_only,adb
-    write /sys/class/android_usb/android0/enable 1
-    start adbd
-    setprop sys.usb.state ${sys.usb.config}
-
 on property:sys.usb.config=adb
     stop adbd
     write /sys/class/android_usb/android0/enable 0
