@@ -1,5 +1,6 @@
 type btlock_file, dev_type;
 type hwaddrs_data_file, file_type, data_file_type;
+type mpt_file, file_type, data_file_type;
 type rfkill_device, dev_type;
 type sysfs_rmnet, fs_type, sysfs_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
