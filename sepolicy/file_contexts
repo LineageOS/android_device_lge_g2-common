@@ -30,6 +30,9 @@
 /dev/socket/mpctl                                   u:object_r:mpctl_socket:s0
 /dev/socket/mpdecision(/.*)?                        u:object_r:mpctl_socket:s0
 
+# MPT
+/mpt(/.*)?                                          u:object_r:mpt_file:s0
+
 # NFC
 /dev/bcm2079x                                       u:object_r:nfc_device:s0
 
