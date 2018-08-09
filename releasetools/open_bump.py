@@ -98,7 +98,7 @@ def pad_image(image_name):
     paged_second_size = get_size_from_kernel(f_image, page_size, 24)
     if paged_second_size <= 0:
         paged_second_size = 0
-    paged_dt_size = get_size_from_kernel(f_image, page_size, 40)
+    paged_dt_size = get_size_from_kernel(f_image, page_size, 44)
     if paged_dt_size <= 0:
         paged_dt_size = 0
     calculated_size = page_size + paged_kernel_size + paged_ramdisk_size + paged_second_size + paged_dt_size
