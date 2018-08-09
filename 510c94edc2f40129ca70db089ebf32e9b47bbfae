@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8bf4446c_6c7dec7f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-09T23:46:31Z",
+      "side": 1,
+      "message": "At the very least, \"This *also* reverts commit xxx\". That commit didn\u0027t have the manifest change.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 61
+      },
+      "revId": "510c94edc2f40129ca70db089ebf32e9b47bbfae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "76b7bd45_b5ce0b29",
+        "filename": "configs/manifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-09T23:46:31Z",
+      "side": 1,
+      "message": "No longer used.",
+      "range": {
+        "startLine": 83,
+        "startChar": 8,
+        "endLine": 83,
+        "endChar": 37
+      },
+      "revId": "510c94edc2f40129ca70db089ebf32e9b47bbfae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
