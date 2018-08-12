@@ -330,4 +330,7 @@
         <item>XTRA_SERVER_2=http://xtrapath2.izatcloud.net/xtra2.bin</item>
         <item>XTRA_SERVER_3=http://xtrapath3.izatcloud.net/xtra2.bin</item>
     </string-array>
+
+    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
 </resources>
