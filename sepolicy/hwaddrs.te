@@ -4,5 +4,9 @@ init_daemon_domain(hwaddrs)
 
 allow hwaddrs block_device:dir search;
 allow hwaddrs misc_block_device:blk_file r_file_perms;
-allow hwaddrs hwaddrs_data_file:file rw_file_perms;
-file_type_auto_trans(hwaddrs, system_data_file, hwaddrs_data_file)
+
+allow hwaddrs bluetooth_data_file:file create_file_perms;
+allow hwaddrs persist_file:file create_file_perms;
+
+allow hwaddrs bluetooth_data_file:dir { search write add_name };
+allow hwaddrs persist_file:dir { search write add_name };
