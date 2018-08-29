@@ -5,17 +5,17 @@
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
-    audio_hal.period_size=192 \
+    vendor.audio_hal.period_size=192 \
     persist.audio.dualmic.config=endfire \
-    use.voice.path.for.pcm.voip=true \
+    vendor.voice.path.for.pcm.voip=true \
     ro.config.vc_call_vol_steps=12
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.fluence.audiorec=false \
-    persist.audio.fluence.speaker=false \
-    persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.voicerec=false \
-    ro.qc.sdk.audio.fluencetype=fluence
+    persist.vendor.audio.fluence.audiorec=false \
+    persist.vendor.audio.fluence.speaker=false \
+    persist.vendor.audio.fluence.voicecall=true \
+    persist.vendor.audio.fluence.voicerec=false \
+    ro.vendor.audio.sdk.fluencetype=fluence
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
