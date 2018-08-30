@@ -38,12 +38,14 @@ TARGET_NO_RADIOIMAGE := true
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/g2-common/releasetools/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=g2
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=g2 androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x05000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/lge/msm8974
+KERNEL_TOOLCHAIN=$(shell pwd)/prebuilts/gcc/linux-x86/arm/oreo-arm-linux-androideabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 
 # Audio
 AUDIO_FEATURE_ENABLED_FLUENCE := true
@@ -53,7 +55,7 @@ AUDIO_FEATURE_ENABLED_HFP := true
 AUDIO_FEATURE_ENABLED_NEW_SAMPLE_RATE := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
+#USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
@@ -137,11 +139,11 @@ TARGET_RIL_VARIANT := caf
 TARGET_USE_SDCLANG := true
 
 # SELinux policies
-include device/qcom/sepolicy/sepolicy.mk
-include device/qcom/sepolicy/legacy-sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/legacy-sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    device/lge/g2-common/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+#    device/lge/g2-common/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
