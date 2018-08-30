@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "343b167a_917013d3",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 387,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-08-30T17:33:54Z",
+      "side": 0,
+      "message": "I can\u0027t get wifi to turn on without these lines (and updating wpa_supplicant.conf location to /data/vendor/wifi/wpa)",
+      "range": {
+        "startLine": 386,
+        "startChar": 4,
+        "endLine": 387,
+        "endChar": 52
+      },
+      "revId": "8d08945b7ce345d521537e79a902a1db79525331",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
