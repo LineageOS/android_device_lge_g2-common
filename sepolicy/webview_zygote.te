@@ -1,1 +1,0 @@
-allow webview_zygote baseband_prop:file { getattr open read };
