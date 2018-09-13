@@ -1,5 +1,5 @@
 # Baseband
-/system/vendor/bin/set_baseband.sh                  u:object_r:set_baseband_exec:s0
+/(vendor|system/vendor)/bin/set_baseband\.sh        u:object_r:set_baseband_exec:s0
 
 # Bluetooth
 /dev/rfkill                                         u:object_r:rfkill_device:s0
@@ -15,16 +15,16 @@
 
 # Hwaddrs
 /data/misc/bdaddr                                   u:object_r:hwaddrs_data_file:s0
-/system/vendor/bin/hwaddrs                          u:object_r:hwaddrs_exec:s0
+/(vendor|system/vendor)/bin/hwaddrs                 u:object_r:hwaddrs_exec:s0
 
 # IR Blaster
 /dev/ttyHSL1                                        u:object_r:cir_device:s0
 
 # Lights
-/system/vendor/bin/hw/android\.hardware\.light@2\.0-service\.g2    u:object_r:hal_light_default_exec:s0
-/sys/devices/mdp(.*)/qcom,mdss_fb_primary(.*)/leds(/.*)?           u:object_r:sysfs_leds:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.g2             u:object_r:hal_light_default_exec:s0
+/sys/devices/mdp(.*)/qcom,mdss_fb_primary(.*)/leds(/.*)?                             u:object_r:sysfs_leds:s0
 /sys/devices/mdp(.*)/qcom,mdss_fb_primary(.*)/leds/lcd-backlight/max_brightness      u:object_r:sysfs_leds:s0
-/sys/devices/virtual/lg_rgb_led/use_patterns/blink_patterns        u:object_r:sysfs_leds:s0
+/sys/devices/virtual/lg_rgb_led/use_patterns/blink_patterns                          u:object_r:sysfs_leds:s0
 
 # MPdecision
 /data/system/default_values                         u:object_r:mpctl_data_file:s0
@@ -45,16 +45,13 @@
 /persist-lg/sensors(/.*)?                           u:object_r:sensors_persist_file:s0
 /sns(/.*)?                                          u:object_r:sensors_persist_file:s0
 
-# Thermal
-/system/vendor/bin/thermal-engine                   u:object_r:thermal-engine_exec:s0
-
 # Time
 /data/system/time(/.*)?                             u:object_r:time_data_file:s0
 
 # Vibrator
 /sys/devices/virtual/input/lge_touch(/.*)?          u:object_r:sysfs_touchpanel:s0
 /sys/devices/platform/tspdrv/nforce_timed           u:object_r:sysfs_vibrator:s0
-/system/vendor/bin/hw/android\.hardware\.vibrator@1\.1-service\.g2 u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator@1\.1-service\.g2 u:object_r:hal_vibrator_default_exec:s0
 
 # Wifi
 /sys/module/bcmdhd/parameters/firmware_path u:object_r:sysfs_wlan_fwpath:s0
