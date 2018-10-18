@@ -44,6 +44,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x05000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/lge/msm8974
+KERNEL_TOOLCHAIN=$(shell pwd)/prebuilts/gcc/linux-x86/arm/oreo-arm-linux-androideabi-4.9/bin
 
 # Audio
 AUDIO_FEATURE_ENABLED_FLUENCE := true
