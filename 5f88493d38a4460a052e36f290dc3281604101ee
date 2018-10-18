@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a155397b_a5e5b3ca",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-10-18T21:40:41Z",
+      "side": 1,
+      "message": "Yea we\u0027re discriminating darwin.",
+      "range": {
+        "startLine": 47,
+        "startChar": 67,
+        "endLine": 47,
+        "endChar": 72
+      },
+      "revId": "5f88493d38a4460a052e36f290dc3281604101ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "572daba2_98055c62",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2018-10-18T21:40:41Z",
+      "side": 1,
+      "message": "This could be ../../../ i guess...",
+      "range": {
+        "startLine": 47,
+        "startChar": 17,
+        "endLine": 47,
+        "endChar": 29
+      },
+      "revId": "5f88493d38a4460a052e36f290dc3281604101ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
