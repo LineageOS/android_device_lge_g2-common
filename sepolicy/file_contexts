@@ -44,6 +44,9 @@
 /persist-lg/sensors(/.*)?                           u:object_r:sensors_persist_file:s0
 /sns(/.*)?                                          u:object_r:sensors_persist_file:s0
 
+# sysfs - block/storage
+/sys/devices/msm_sdcc\.[0-9]/mmc_host/mmc[0-9]/mmc[0-9]:[0-9]+/block/mmcblk[0-9]/stat u:object_r:sysfs_disk_stat:s0
+
 # Time
 /data/system/time(/.*)?                             u:object_r:time_data_file:s0
 
