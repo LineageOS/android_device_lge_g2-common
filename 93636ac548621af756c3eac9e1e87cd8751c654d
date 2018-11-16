@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d81ca8e1_29031ad9",
+        "filename": "bluetooth/bdroid_buildcfg.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 5259
+      },
+      "writtenOn": "2018-11-16T16:54:44Z",
+      "side": 1,
+      "message": "I think this is a noop now after https://github.com/LineageOS/android_system_bt/commit/5b9aaac278b203962e8df0edc9d331ce8dffe4bd",
+      "range": {
+        "startLine": 24,
+        "startChar": 8,
+        "endLine": 24,
+        "endChar": 29
+      },
+      "revId": "93636ac548621af756c3eac9e1e87cd8751c654d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
