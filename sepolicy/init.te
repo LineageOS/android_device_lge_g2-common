@@ -1,1 +1,2 @@
 allow init debugfs:file write;
+allow init sysfs_usb_storage_gadget:file { setattr };
