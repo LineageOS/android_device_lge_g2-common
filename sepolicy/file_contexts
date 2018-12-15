@@ -6,6 +6,9 @@
 /sys/devices/platform/bluetooth_rfkill/rfkill/rfkill0/state u:object_r:sysfs_bluetooth_writable:s0
 /dev/btlock                                         u:object_r:btlock_file:s0
 
+# DRM
+/dev/block/platform/msm_sdcc\.1/by-name/drm         u:object_r:drm_block_device:s0
+
 # Encryption
 /dev/block/platform/msm_sdcc\.1/by-name/encrypt     u:object_r:metadata_block_device:s0
 
@@ -32,12 +35,14 @@
 
 # MPT
 /mpt(/.*)?                                          u:object_r:mpt_file:s0
+/dev/block/platform/msm_sdcc\.1/by-name/mpt         u:object_r:mpt_block_device:s0
 
 # NFC
 /dev/bcm2079x                                       u:object_r:nfc_device:s0
 
 # Persist
 /persist-lg(/.*)?                                   u:object_r:persist_drm_file:s0
+/dev/block/platform/msm_sdcc\.1/by-name/persist     u:object_r:persist_block_device:s0
 
 # RMNET
 /sys/class/android_usb/f_rmnet_smd_sdio/transport  --  u:object_r:sysfs_rmnet:s0
