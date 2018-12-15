@@ -1,6 +1,8 @@
 type hwaddrs, domain;
-type hwaddrs_exec, exec_type, file_type;
+type hwaddrs_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hwaddrs)
+
+allow hwaddrs self:capability { dac_override };
 
 allow hwaddrs block_device:dir search;
 allow hwaddrs misc_block_device:blk_file r_file_perms;
