@@ -47,6 +47,10 @@
 # sysfs - block/storage
 /sys/devices/msm_sdcc\.[0-9]/mmc_host/mmc[0-9]/mmc[0-9]:[0-9]+/block/mmcblk[0-9]/stat u:object_r:sysfs_disk_stat:s0
 
+# sysfs - power_supply
+/sys/devices/f9923000.i2c/i2c-1/1-002d/power_supply/battery(/.*)? u:object_r:sysfs_batteryinfo:s0
+/sys/devices/f9923000.i2c/i2c-1/1-002d/power_supply/ac(/.*)?      u:object_r:sysfs_batteryinfo:s0
+
 # Time
 /data/system/time(/.*)?                             u:object_r:time_data_file:s0
 
