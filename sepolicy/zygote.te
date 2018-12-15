@@ -1,1 +1,2 @@
 get_prop(zygote, baseband_prop)
+allow zygote proc_cmdline:file r_file_perms;
