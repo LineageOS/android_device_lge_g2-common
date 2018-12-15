@@ -1,1 +1,4 @@
 type cir_device, dev_type;
+type drm_block_device, dev_type;
+type mpt_block_device, dev_type;
+type sns_block_device, dev_type;
