@@ -323,13 +323,6 @@
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
-    <!-- Values for GPS configuration -->
-    <string-array translatable="false" name="config_gpsParameters">
-        <item>XTRA_SERVER_1=http://xtrapath1.izatcloud.net/xtra2.bin</item>
-        <item>XTRA_SERVER_2=http://xtrapath2.izatcloud.net/xtra2.bin</item>
-        <item>XTRA_SERVER_3=http://xtrapath3.izatcloud.net/xtra2.bin</item>
-    </string-array>
-
     <!-- Disable rounded corners on windows to improve graphics performance -->
     <bool name="config_supportsRoundedCornersOnWindows">false</bool>
 </resources>
