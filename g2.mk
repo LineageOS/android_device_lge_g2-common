@@ -152,6 +152,7 @@ PRODUCT_PACKAGES += \
     init.g2.power.rc \
     init.g2.usb.rc \
     init.recovery.g2.rc \
+    init.recovery.g2.power.rc \
     set_baseband.sh \
     ueventd.g2.rc
 
