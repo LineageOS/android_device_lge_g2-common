@@ -26,6 +26,9 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 
+# Assertions
+TARGET_BOARD_INFO_FILE ?= device/lge/g2-common/board-info.txt
+
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
