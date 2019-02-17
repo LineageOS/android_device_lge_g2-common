@@ -123,6 +123,11 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_g2
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+ifeq ($(WITH_TWRP),true)
+include device/lge/g2-common/twrp.mk
+include vendor/lineagetwrp/BoardConfigExtra.mk
+endif
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/g2-common/releasetools
 
