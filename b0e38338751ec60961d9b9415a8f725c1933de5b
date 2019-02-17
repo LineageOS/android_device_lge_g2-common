@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0ad0b5f5_78e9a4f1",
+        "filename": "twrp.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 18220
+      },
+      "writtenOn": "2019-02-17T15:23:38Z",
+      "side": 1,
+      "message": "no need cause whenever you export as WITH_TWRP\u003dtrue it considers RECOVERY_VARIANT as twrp by default",
+      "revId": "b0e38338751ec60961d9b9415a8f725c1933de5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
