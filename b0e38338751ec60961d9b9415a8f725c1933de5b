@@ -16,6 +16,24 @@
       "revId": "b0e38338751ec60961d9b9415a8f725c1933de5b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7492cd91_1c113f74",
+        "filename": "twrp.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2019-02-17T15:31:55Z",
+      "side": 1,
+      "message": "Done.\nFor reference, it is set by vendor/lineage/config/twrp.mk, which gets included by vendor/lineage/config/common.mk when WITH_TWRP\u003dtrue",
+      "parentUuid": "0ad0b5f5_78e9a4f1",
+      "revId": "b0e38338751ec60961d9b9415a8f725c1933de5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
