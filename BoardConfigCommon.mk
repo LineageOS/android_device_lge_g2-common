@@ -25,6 +25,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := krait
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= device/lge/g2-common/board-info.txt
