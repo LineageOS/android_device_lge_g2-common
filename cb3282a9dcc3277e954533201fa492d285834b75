@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ef291989_6e0a8766",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 19837
+      },
+      "writtenOn": "2019-03-02T10:55:19Z",
+      "side": 1,
+      "message": "g2-common: overlay: Increase minimal brightness",
+      "revId": "cb3282a9dcc3277e954533201fa492d285834b75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
