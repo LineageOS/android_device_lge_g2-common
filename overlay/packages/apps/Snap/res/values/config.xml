@@ -39,4 +39,7 @@
 
     <!-- Enable support for LGE HDR -->
     <bool name="lge_hdr_mode">true</bool>
+
+    <!-- Enable support for image stabilization -->
+    <bool name="support_dis">false</bool>
 </resources>
