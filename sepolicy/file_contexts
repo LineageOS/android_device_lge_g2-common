@@ -42,7 +42,6 @@
 
 # Persist
 /persist-lg(/.*)?                                   u:object_r:persist_drm_file:s0
-/dev/block/platform/msm_sdcc\.1/by-name/persist     u:object_r:persist_block_device:s0
 
 # RMNET
 /sys/class/android_usb/f_rmnet_smd_sdio/transport  --  u:object_r:sysfs_rmnet:s0
