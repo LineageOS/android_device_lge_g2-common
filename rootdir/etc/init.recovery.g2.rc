@@ -1,4 +1,2 @@
-import /init.recovery.g2.power.rc
-
 on fs
     setprop sys.usb.ffs.aio_compat 1
