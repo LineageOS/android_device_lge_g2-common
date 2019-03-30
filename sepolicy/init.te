@@ -1,3 +1,17 @@
 allow init debugfs:file write;
 allow init sysfs_usb_storage_gadget:file { setattr };
 allow init sysfs_leds:lnk_file { read };
+
+recovery_only(`
+allow init {
+    sysfs_cpu_boost
+    sysfs_devfreq
+    sysfs_devices_system_cpu
+    sysfs_msm_perf
+    sysfs_msm_power
+    sysfs_thermal
+}:file w_file_perms;
+
+allow init sysfs_kgsl:lnk_file r_file_perms;
+allow init sysfs_kgsl:file w_file_perms;
+')
