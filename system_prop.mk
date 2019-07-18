@@ -60,6 +60,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.disable=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0 \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=true \
     audio.offload.pcm.16bit.enable=true \
