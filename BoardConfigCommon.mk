@@ -26,9 +26,6 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 
-# Assertions
-TARGET_BOARD_INFO_FILE ?= device/lge/g2-common/board-info.txt
-
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
@@ -122,7 +119,6 @@ BOOTLOADER_MESSAGE_OFFSET := 128
 BOARD_NO_SECURE_DISCARD := true
 TARGET_RECOVERY_FSTAB := device/lge/g2-common/rootdir/etc/fstab.g2
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_g2
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
