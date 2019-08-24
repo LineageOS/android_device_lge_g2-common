@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifneq ($(filter g2 d800 d801 d802 d803 f320 l01f ls980 vs980,$(TARGET_DEVICE)),)
+ifneq ($(filter g2 d800 d801 d802 d803 d805 d806 f320 l01f ls980 vs980,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
