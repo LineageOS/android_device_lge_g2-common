@@ -52,9 +52,12 @@ namespace light {
 namespace V2_0 {
 namespace implementation {
 
-Light::Light(std::ofstream&& backlight, std::ofstream&& blinkPattern) :
+Light::Light(std::ofstream&& backlight, std::ofstream&& blinkPattern,
+             std::ofstream&& rearBlinkPattern, std::ofstream&& rearSetting) :
     mBacklight(std::move(backlight)),
-    mBlinkPattern(std::move(blinkPattern)) {
+    mBlinkPattern(std::move(blinkPattern)),
+    mRearBlinkPattern(std::move(rearBlinkPattern)),
+    mRearSetting(std::move(rearSetting)) {
     auto attnFn(std::bind(&Light::setAttentionLight, this, std::placeholders::_1));
     auto backlightFn(std::bind(&Light::setBacklight, this, std::placeholders::_1));
     auto batteryFn(std::bind(&Light::setBatteryLight, this, std::placeholders::_1));
@@ -107,6 +110,7 @@ void Light::setNotificationLight(const LightState& state) {
     std::lock_guard<std::mutex> lock(mLock);
     mNotificationState = state;
     setSpeakerBatteryLightLocked();
+    setRearLightLocked(state);
 }
 
 void Light::setSpeakerBatteryLightLocked() {
@@ -141,11 +145,19 @@ void Light::setSpeakerLightLocked(const LightState& state) {
 
     color = state.color & 0x00ffffff;
 
-    ALOGD("%s: inColor=0x%08x delay_on=%d, delay_off=%d", __func__, color,
-          onMS, offMS);
-
     sprintf(blink_pattern, "0x%x,%d,%d", color, onMS, offMS);
     mBlinkPattern << blink_pattern << std::endl;
+}
+
+void Light::setRearLightLocked(const LightState& state) {
+    char blink_pattern[PAGE_SIZE];
+
+    if(state.flashMode == Flash::TIMED){
+        sprintf(blink_pattern, "0x1,%d,%d", state.flashOnMs, state.flashOffMs);
+        mRearBlinkPattern << blink_pattern << std::endl;
+    } else  {
+        mRearSetting << "0" << std::endl;
+    }
 }
 
 }  // namespace implementation
