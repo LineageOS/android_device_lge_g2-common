@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "83dc65ff_1b7bca25",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2019-09-01T16:46:13Z",
+      "side": 1,
+      "message": "For some reason setting \"0x0,-1,-1\" does not shut the led down, contrary to how the front led behaves.\nI found that a quick way to shut it down is to write 0 to rear_setting.\nCould also set the brightness to 0 but, since the led is actually formed by 2 leds with indipendent brightness control, that would require to write to 2 paths. This is cleaner.",
+      "revId": "c568a97e1f700f022a4dec9d049e633915feb515",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
