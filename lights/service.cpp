@@ -31,7 +31,6 @@ using android::hardware::light::V2_0::implementation::Light;
 
 const static std::string kBacklightPath = "/sys/class/leds/lcd-backlight/brightness";
 const static std::string kPatternBlinkPath = "/sys/class/lg_rgb_led/use_patterns/blink_patterns";
-const static std::string kPatternRearBlinkPath = "/sys/class/lg_rgb_led/use_patterns/rear_blink_patterns";
 const static std::string kRearSetting = "/sys/class/lg_rgb_led/use_patterns/rear_setting";
 
 int main() {
@@ -49,13 +48,6 @@ int main() {
         return -error;
     }
 
-    std::ofstream rearBlinkPattern(kPatternRearBlinkPath);
-    if (!rearBlinkPattern) {
-        int error = errno;
-        ALOGE("Failed to open %s (%d): %s", kPatternRearBlinkPath.c_str(), error, strerror(error));
-        return -error;
-    }
-
     std::ofstream rearSetting(kRearSetting);
     if (!rearSetting) {
         int error = errno;
@@ -64,7 +56,7 @@ int main() {
     }
 
     android::sp<ILight> service = new Light(std::move(backlight), std::move(blinkPattern),
-                                            std::move(rearBlinkPattern), std::move(rearSetting));
+                                            std::move(rearSetting));
 
     configureRpcThreadpool(1, true);
 
