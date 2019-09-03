@@ -24,6 +24,9 @@
 #define LCD_BRIGHTNESS_MAX 255
 #define LCD_BRIGHTNESS_DELTA (LCD_BRIGHTNESS_MAX - LCD_BRIGHTNESS_MIN)
 
+#define KPDBL_ID_OFF  "0"
+#define KPDBL_ID_NOTI "6"
+
 namespace {
 using android::hardware::light::V2_0::LightState;
 
@@ -53,10 +56,9 @@ namespace V2_0 {
 namespace implementation {
 
 Light::Light(std::ofstream&& backlight, std::ofstream&& blinkPattern,
-             std::ofstream&& rearBlinkPattern, std::ofstream&& rearSetting) :
+             std::ofstream&& rearSetting) :
     mBacklight(std::move(backlight)),
     mBlinkPattern(std::move(blinkPattern)),
-    mRearBlinkPattern(std::move(rearBlinkPattern)),
     mRearSetting(std::move(rearSetting)) {
     auto attnFn(std::bind(&Light::setAttentionLight, this, std::placeholders::_1));
     auto backlightFn(std::bind(&Light::setBacklight, this, std::placeholders::_1));
@@ -152,11 +154,10 @@ void Light::setSpeakerLightLocked(const LightState& state) {
 void Light::setRearLightLocked(const LightState& state) {
     char blink_pattern[PAGE_SIZE];
 
-    if(state.flashMode == Flash::TIMED){
-        sprintf(blink_pattern, "0x1,%d,%d", state.flashOnMs, state.flashOffMs);
-        mRearBlinkPattern << blink_pattern << std::endl;
+    if(isLit(state) && state.flashMode == Flash::TIMED){
+        mRearSetting << KPDBL_ID_NOTI << std::endl;
     } else  {
-        mRearSetting << "0" << std::endl;
+        mRearSetting << KPDBL_ID_OFF << std::endl;
     }
 }
 
