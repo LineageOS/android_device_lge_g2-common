@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+BUILD_BROKEN_DUP_RULES := true
 TARGET_SPECIFIC_HEADER_PATH := device/lge/g2-common/include
 
 # Architecture
