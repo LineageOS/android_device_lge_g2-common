@@ -154,7 +154,6 @@ err_ret:
 /* verify_trustzone("TZ_VERSION", "TZ_VERSION", ...) */
 Value * VerifyTrustZoneFn(const char *name, State *state, const std::vector<std::unique_ptr<Expr>>& argv) {
     char current_tz_version[TZ_VER_BUF_LEN];
-    size_t i;
     int ret;
 
     ret = get_tz_version(current_tz_version, TZ_VER_BUF_LEN);
