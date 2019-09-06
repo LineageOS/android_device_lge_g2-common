@@ -140,6 +140,9 @@ TARGET_USE_SDCLANG := true
 #    device/lge/g2-common/sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
 
+BOARD_SEPOLICY_DIRS += \
+	device/lge/g2-common/sepolicy-tmp
+
 # Shims
 TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
     /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so \
