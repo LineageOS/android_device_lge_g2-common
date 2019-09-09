@@ -16,6 +16,24 @@
       "revId": "bb81f8e2eb1e0bda010fefec7233720a60f4f19a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "10f70430_df91918d",
+        "filename": "rootdir/etc/init.g2.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2019-09-09T22:11:52Z",
+      "side": 0,
+      "message": "we don\u0027t have/are not mounting such partition",
+      "parentUuid": "c44632b5_0aa7b9fa",
+      "revId": "bb81f8e2eb1e0bda010fefec7233720a60f4f19a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
