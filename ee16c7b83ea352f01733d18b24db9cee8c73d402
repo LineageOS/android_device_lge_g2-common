@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f0d777f4_59d132a2",
+        "filename": "wifi/wifi_sta_iface.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 638,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2019-09-10T22:35:26Z",
+      "side": 1,
+      "message": "this is never gonna be read so it can be left uninitialized",
+      "revId": "ee16c7b83ea352f01733d18b24db9cee8c73d402",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
