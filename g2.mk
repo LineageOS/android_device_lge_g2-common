@@ -98,6 +98,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
 
+# Binder support symbols
+PRODUCT_PACKAGES += \
+    libshim_binder
+
 # BoringSSL compatability wrapper
 PRODUCT_PACKAGES += \
     libboringssl-compat
