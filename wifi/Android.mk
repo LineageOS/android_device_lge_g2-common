@@ -17,7 +17,7 @@ LOCAL_PATH := $(call my-dir)
 ### android.hardware.wifi static library
 ###
 include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.wifi@1.0-service-lib
+LOCAL_MODULE := android.hardware.wifi@1.0-service-lib.g2
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_CPPFLAGS := -Wall -Werror -Wextra
@@ -76,7 +76,7 @@ include $(BUILD_STATIC_LIBRARY)
 ### android.hardware.wifi daemon
 ###
 include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.wifi@1.0-service
+LOCAL_MODULE := android.hardware.wifi@1.0-service.g2
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_CPPFLAGS := -Wall -Werror -Wextra
@@ -97,6 +97,6 @@ LOCAL_SHARED_LIBRARIES := \
     android.hardware.wifi@1.2 \
     android.hardware.wifi@1.3
 LOCAL_STATIC_LIBRARIES := \
-    android.hardware.wifi@1.0-service-lib
-LOCAL_INIT_RC := android.hardware.wifi@1.0-service.rc
+    android.hardware.wifi@1.0-service-lib.g2
+LOCAL_INIT_RC := android.hardware.wifi@1.0-service.g2.rc
 include $(BUILD_EXECUTABLE)
