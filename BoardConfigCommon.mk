@@ -150,7 +150,8 @@ TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat
     /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so \
     /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_atomic.so \
     /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_camera_parameters.so \
-    /system/vendor/bin/mpdecision|libshim_atomic.so
+    /system/vendor/bin/mpdecision|libshim_atomic.so \
+    /system/vendor/lib/libperipheral_client.so|libshim_binder.so
 
 # Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
