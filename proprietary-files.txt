@@ -84,7 +84,7 @@ vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib/libmmcamera_wavelet_lib.so
 vendor/lib/libmmipl.so
-vendor/lib/libmmjpeg.so
+vendor/lib/libmmjpeg.so|256ba1cd679b03b577aab1861f52801fe37d89e2
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/liboemcamera.so
 vendor/lib/libqomx_jpegdec.so
