@@ -22,6 +22,30 @@
       "revId": "7bbf0ef97b789657ab0e3847b570c60db2a093e7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3dfa89db_21cf50c8",
+        "filename": "gps/core/Android.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2019-09-15T09:53:10Z",
+      "side": 1,
+      "message": "Yes, core/MsgTask.cpp:112",
+      "parentUuid": "e3bdcee8_c7bab7e7",
+      "range": {
+        "startLine": 19,
+        "startChar": 4,
+        "endLine": 19,
+        "endChar": 19
+      },
+      "revId": "7bbf0ef97b789657ab0e3847b570c60db2a093e7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
