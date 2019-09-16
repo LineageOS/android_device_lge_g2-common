@@ -46,6 +46,30 @@
       "revId": "7bbf0ef97b789657ab0e3847b570c60db2a093e7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "76177c11_ef4068d6",
+        "filename": "gps/core/Android.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-09-16T10:45:28Z",
+      "side": 1,
+      "message": "You GPS HAL seems rather old then: https://github.com/LineageOS/android_device_oppo_msm8974-common/commit/dcfd6594f2f842c763fa4a8d381d4b1ada185d34#diff-1cf8839e7cc4d6b7f5fcd00fb2fd7a71L23.",
+      "parentUuid": "3dfa89db_21cf50c8",
+      "range": {
+        "startLine": 19,
+        "startChar": 4,
+        "endLine": 19,
+        "endChar": 19
+      },
+      "revId": "7bbf0ef97b789657ab0e3847b570c60db2a093e7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
