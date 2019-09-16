@@ -372,3 +372,5 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
 on property:ro.data.large_tcp_window_size=true
     write /proc/sys/net/ipv4/tcp_adv_win_scale 2
 
+on property:apexd.status=ready
+    mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
