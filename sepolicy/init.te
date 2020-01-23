@@ -1,6 +1,11 @@
 allow init debugfs:file write;
 allow init sysfs_usb_storage_gadget:file { setattr };
 allow init sysfs_leds:lnk_file { read };
+allow init {
+    sensors_persist_file
+    persist_drm_file
+    mpt_file
+}:dir mounton;
 
 recovery_only(`
 allow init {
