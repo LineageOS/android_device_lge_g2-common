@@ -1,0 +1,4 @@
+binder_use(netmgrd)
+
+allow netmgrd netd_service:service_manager find;
+allow netmgrd dnsresolver_service:service_manager find;
