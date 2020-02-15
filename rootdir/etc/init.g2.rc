@@ -258,15 +258,6 @@ on boot
     chown wifi wifi /sys/module/bcmdhd/parameters/firmware_path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
-on charger
-    wait /dev/block/platform/msm_sdcc.1/by-name/modem
-    mount vfat /dev/block/platform/msm_sdcc.1/by-name/modem /firmware ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
-    wait /dev/block/platform/msm_sdcc.1/by-name/system
-    mount ext4 /dev/block/platform/msm_sdcc.1/by-name/system /system ro barrier=1
-
-    start rmt_storage
-    start irsc_util
-
 # Services start here
 
 service adsprpcd /vendor/bin/adsprpcd
