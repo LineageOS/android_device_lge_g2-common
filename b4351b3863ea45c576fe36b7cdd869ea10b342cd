@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a8e714c_b3c4ebdc",
+        "filename": "configs/ld.config.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2020-02-16T11:14:01Z",
+      "side": 1,
+      "message": "whitespace nit",
+      "range": {
+        "startLine": 40,
+        "startChar": 32,
+        "endLine": 40,
+        "endChar": 33
+      },
+      "revId": "b4351b3863ea45c576fe36b7cdd869ea10b342cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
