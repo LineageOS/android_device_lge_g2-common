@@ -239,7 +239,8 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_g2
+    librecovery_updater_g2 \
+    fastbootd
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
