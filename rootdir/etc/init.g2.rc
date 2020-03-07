@@ -72,6 +72,8 @@ on fs
     setprop persist.adb.nonblocking_ffs 0
     setprop ro.adb.nonblocking_ffs 0
 
+    mount none /system/etc/gps.conf /system/etc/gps_debug.conf bind
+
 on post-fs-data
     # Create directory used by bluetooth
     mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
