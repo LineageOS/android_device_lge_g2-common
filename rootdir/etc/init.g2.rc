@@ -44,10 +44,18 @@ on init
 on fs
     mount_all /vendor/etc/fstab.g2
     swapon_all /vendor/etc/fstab.g2
-    restorecon_recursive /persist
-    restorecon_recursive /persist-lg
-    restorecon_recursive /sns
-    restorecon_recursive /mpt
+
+    # These directories have different labeling in stock rom.
+    # Jumping between stock and LineageOS needs restorecon -F
+    # to apply our labeling.
+    exec u:r:vendor_init:s0 root root -- /vendor/bin/toybox_vendor \
+      restorecon -RF /persist
+    exec u:r:vendor_init:s0 root root -- /vendor/bin/toybox_vendor \
+      restorecon -RF  /persist-lg
+    exec u:r:vendor_init:s0 root root -- /vendor/bin/toybox_vendor \
+      restorecon -RF  /sns
+    exec u:r:vendor_init:s0 root root -- /vendor/bin/toybox_vendor \
+      restorecon -RF  /mpt
 
     # Create directory for wifi
     mkdir /persist/wifi
