@@ -17,6 +17,8 @@
 
 TARGET_SPECIFIC_HEADER_PATH := device/lge/g2-common/include
 
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
