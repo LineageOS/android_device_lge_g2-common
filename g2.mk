@@ -99,7 +99,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    hwaddrs \
     libbt-vendor \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service
@@ -110,6 +109,9 @@ PRODUCT_COPY_FILES += \
 # Binder support symbols
 PRODUCT_PACKAGES += \
     libshim_binder
+
+# Bluetooth setting
+HWADDRS_OFFSET_BLUETOOTH	:= 0x4000
 
 # BoringSSL compatability wrapper
 PRODUCT_PACKAGES += \
@@ -177,6 +179,7 @@ PRODUCT_PACKAGES += \
 # IRDA
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl
+TARGET_PROVIDES_CONSUMERIR := true
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -299,3 +302,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/bcmdhd.cal:system/vendor/etc/wifi/bcmdhd.cal \
     $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf
+
+$(call inherit-product, device/lge/common/common.mk)
