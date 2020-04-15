@@ -283,15 +283,11 @@ service charger /system/bin/charger
     critical
     seclabel u:r:charger:s0
 
-service conn_init /vendor/bin/hwaddrs
+service conn_init /vendor/bin/hwaddrs2
     class core
     user root
-    group system
+    group system bluetooth
     oneshot
-
-on property:init.svc.conn_init=stopped
-    chmod 0644 /data/misc/bluetooth/bdaddr
-    chown bluetooth bluetooth /data/misc/bluetooth/bdaddr
 
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class main
