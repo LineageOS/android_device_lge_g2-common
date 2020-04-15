@@ -21,8 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.chip.vendor=brcm \
     persist.service.bdroid.a2dp_con=0 \
-    persist.service.bdroid.scms_t=0 \
-    ro.bt.bdaddr_path=/data/misc/bluetooth/bdaddr
+    persist.service.bdroid.scms_t=0
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
