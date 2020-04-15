@@ -90,13 +90,14 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    hwaddrs \
     libbt-vendor \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
+
+HWADDRS_OFFSET_BLUETOOTH	:= 0x4000
 
 # BoringSSL compatability wrapper
 PRODUCT_PACKAGES += \
@@ -167,6 +168,8 @@ PRODUCT_PACKAGES += \
 # IRDA
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl
+
+TARGET_ENABLE_COMMON_IR := false
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -279,5 +282,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/bcmdhd.cal:system/vendor/etc/wifi/bcmdhd.cal
+
+$(call inherit-product, device/lge/common/common.mk)
 
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)

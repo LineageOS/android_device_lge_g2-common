@@ -16,9 +16,6 @@
 /sys/devices/fdb00000\.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpuclk        u:object_r:sysfs_thermal:s0
 /sys/devices/fdb00000\.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk    u:object_r:sysfs_thermal:s0
 
-# Hwaddrs
-/(vendor|system/vendor)/bin/hwaddrs                 u:object_r:hwaddrs_exec:s0
-
 # IR Blaster
 /dev/ttyHSL1                                        u:object_r:cir_device:s0
 
