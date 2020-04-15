@@ -67,6 +67,11 @@ BOARD_CUSTOM_BT_CONFIG := device/lge/g2-common/bluetooth/vnd_g2.txt
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
+HWADDRS_MISC_PATH := /dev/block/platform/msm_sdcc.1/by-name/misc
+# Oreo HAL style random address
+HWADDRS_MAC_PREFIX := \\x22\\x22
+HWADDRS_MAC_PREFIX_LEN := 2
+
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
@@ -156,3 +161,6 @@ BOARD_WLAN_DEVICE           := bcmdhd
 WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA     := "/system/vendor/firmware/fw_bcmdhd.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/vendor/firmware/fw_bcmdhd_apsta.bin"
+
+# inherit from common lge
+-include device/lge/common/BoardConfigCommon.mk
