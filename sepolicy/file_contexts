@@ -16,6 +16,9 @@
 # Encryption
 /dev/block/platform/msm_sdcc\.1/by-name/encrypt     u:object_r:metadata_block_device:s0
 
+# GNSS
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@[0-9]\.[0-9]-service\..*        u:object_r:hal_gnss_default_exec:s0
+
 # GPU Thermal
 /sys/devices/fdb00000\.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpuclk        u:object_r:sysfs_thermal:s0
 /sys/devices/fdb00000\.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk    u:object_r:sysfs_thermal:s0
