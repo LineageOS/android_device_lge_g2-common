@@ -1,5 +1,3 @@
-ifneq ($(BUILD_TINY_ANDROID),true)
-
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -37,26 +35,30 @@ LOCAL_SRC_FILES += \
 
 LOCAL_CFLAGS += \
      -fno-short-enums \
-     -D_ANDROID_ \
-     -Wno-unused-parameter
+     -D_ANDROID_
 
 LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/gps.utils \
     $(TARGET_OUT_HEADERS)/libloc_core \
-    device/lge/g2-common/gps/libloc_api_50001
+    $(LOCAL_PATH) \
+    $(TARGET_OUT_HEADERS)/libflp
 
-LOCAL_HEADER_LIBRARIES := libgps.utils_headers libloc_core_headers
+LOCAL_COPY_HEADERS_TO:= libloc_eng/
+LOCAL_COPY_HEADERS:= \
+   LocEngAdapter.h \
+   loc.h \
+   loc_eng.h \
+   loc_eng_xtra.h \
+   loc_eng_ni.h \
+   loc_eng_agps.h \
+   loc_eng_msg.h \
+   loc_eng_log.h
 
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libloc_eng_headers
-LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)
-include $(BUILD_HEADER_LIBRARY)
 
-include $(CLEAR_VARS)
-
-LOCAL_MODULE := gps.msm8974
+LOCAL_MODULE := gps.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_OWNER := qcom
 LOCAL_PROPRIETARY_MODULE := true
 
@@ -79,18 +81,14 @@ LOCAL_SRC_FILES += \
 
 LOCAL_CFLAGS += \
     -fno-short-enums \
-     -D_ANDROID_ \
-     -Wno-unused-parameter
+    -D_ANDROID_ \
 
 ## Includes
 LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/gps.utils \
-    $(TARGET_OUT_HEADERS)/libloc_core
+    $(TARGET_OUT_HEADERS)/libloc_core \
+    $(TARGET_OUT_HEADERS)/libflp
 
 LOCAL_MODULE_RELATIVE_PATH := hw
 
-LOCAL_HEADER_LIBRARIES := libgps.utils_headers libloc_core_headers
-
 include $(BUILD_SHARED_LIBRARY)
-
-endif # not BUILD_TINY_ANDROID
