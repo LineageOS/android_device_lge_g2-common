@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2015, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -31,6 +31,9 @@
 
 #include <gps_extended.h>
 
+struct FlpExtLocation_s;
+struct FlpExtBatchOptions;
+
 namespace loc_core {
 
 class LocAdapterBase;
@@ -56,26 +59,45 @@ public:
                                        void* locationExt,
                                        enum loc_sess_status status,
                                        LocPosTechMask loc_technology_mask) {
+        (void)location;
+        (void)locationExtended;
+        (void)locationExt;
+        (void)status;
+        (void)loc_technology_mask;
         return false;
     }
-    inline virtual bool reportSv(GpsSvStatus &svStatus,
+    inline virtual bool reportSv(HaxxSvStatus &svStatus,
                                  GpsLocationExtended &locationExtended,
                                  void* svExt) {
+        (void)svStatus;
+        (void)locationExtended;
+        (void)svExt;
         return false;
     }
     inline virtual bool reportStatus(GpsStatusValue status) {
+
+        (void)status;
         return false;
     }
-    inline virtual void setAdapter(LocAdapterBase* adapter) {}
-    inline virtual void setCapabilities(unsigned long capabilities) {}
-    inline virtual bool reportBatchingSession(GpsExtBatchOptions &options,
+    inline virtual void setAdapter(LocAdapterBase* adapter) {
+
+        (void)adapter;
+    }
+    inline virtual void setCapabilities(unsigned long capabilities) {
+
+        (void)capabilities;
+    }
+    inline virtual bool reportBatchingSession(FlpExtBatchOptions &options,
                                               bool active) {
+
+        (void)options;
+        (void)active;
         return false;
     }
-    inline virtual bool reportPositions(GpsExtLocation * locations,
-                                        int32_t number_of_locations,
-                                        enum loc_sess_status status,
-                                        LocPosTechMask techMask) {
+    inline virtual bool reportPositions(const struct FlpExtLocation_s* locations,
+                                        int32_t number_of_locations) {
+        (void)locations;
+        (void)number_of_locations;
         return false;
     }
 };
