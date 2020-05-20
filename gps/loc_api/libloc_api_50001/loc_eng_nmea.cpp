@@ -59,6 +59,7 @@ void loc_eng_nmea_send(char *pNmea, int length, loc_eng_data_s_type *loc_eng_dat
     struct timeval tv;
     gettimeofday(&tv, (struct timezone *) NULL);
     int64_t now = tv.tv_sec * 1000LL + tv.tv_usec / 1000;
+    CALLBACK_LOG_CALLFLOW("nmea_cb", %p, pNmea);
     if (loc_eng_data_p->nmea_cb != NULL)
         loc_eng_data_p->nmea_cb(now, pNmea, length);
     LOC_LOGD("NMEA <%s", pNmea);
@@ -92,12 +93,8 @@ int loc_eng_nmea_put_checksum(char *pNmea, int maxSize)
         length++;
     }
 
-    // length now contains nmea sentence string length not including $ sign.
     int checksumLength = snprintf(pNmea,(maxSize-length-1),"*%02X\r\n", checksum);
-
-    // total length of nmea sentence is length of nmea sentence inc $ sign plus
-    // length of checksum (+1 is to cover the $ character in the length).
-    return (length + checksumLength + 1);
+    return (length + checksumLength);
 }
 
 /*===========================================================================
@@ -607,7 +604,7 @@ SIDE EFFECTS
 
 ===========================================================================*/
 void loc_eng_nmea_generate_sv(loc_eng_data_s_type *loc_eng_data_p,
-                              const GpsSvStatus &svStatus, const GpsLocationExtended &locationExtended)
+                              const HaxxSvStatus &svStatus, const GpsLocationExtended &locationExtended)
 {
     ENTRY_LOG();
 
@@ -793,46 +790,24 @@ void loc_eng_nmea_generate_sv(loc_eng_data_s_type *loc_eng_data_p,
 
     }//if
 
-    if (svStatus.used_in_fix_mask == 0)
-    {   // No sv used, so there will be no position report, so send
-        // blank NMEA sentences
-        strlcpy(sentence, "$GPGSA,A,1,,,,,,,,,,,,,,,", sizeof(sentence));
-        length = loc_eng_nmea_put_checksum(sentence, sizeof(sentence));
-        loc_eng_nmea_send(sentence, length, loc_eng_data_p);
+    // cache the used in fix mask, as it will be needed to send $GPGSA
+    // during the position report
+    loc_eng_data_p->sv_used_mask = svStatus.gps_used_in_fix_mask;
 
-        strlcpy(sentence, "$GPVTG,,T,,M,,N,,K,N", sizeof(sentence));
-        length = loc_eng_nmea_put_checksum(sentence, sizeof(sentence));
-        loc_eng_nmea_send(sentence, length, loc_eng_data_p);
-
-        strlcpy(sentence, "$GPRMC,,V,,,,,,,,,,N", sizeof(sentence));
-        length = loc_eng_nmea_put_checksum(sentence, sizeof(sentence));
-        loc_eng_nmea_send(sentence, length, loc_eng_data_p);
-
-        strlcpy(sentence, "$GPGGA,,,,,,0,,,,,,,,", sizeof(sentence));
-        length = loc_eng_nmea_put_checksum(sentence, sizeof(sentence));
-        loc_eng_nmea_send(sentence, length, loc_eng_data_p);
+    // For RPC, the DOP are sent during sv report, so cache them
+    // now to be sent during position report.
+    // For QMI, the DOP will be in position report.
+    if (locationExtended.flags & GPS_LOCATION_EXTENDED_HAS_DOP)
+    {
+        loc_eng_data_p->pdop = locationExtended.pdop;
+        loc_eng_data_p->hdop = locationExtended.hdop;
+        loc_eng_data_p->vdop = locationExtended.vdop;
     }
     else
-    {   // cache the used in fix mask, as it will be needed to send $GPGSA
-        // during the position report
-        loc_eng_data_p->sv_used_mask = svStatus.used_in_fix_mask;
-
-        // For RPC, the DOP are sent during sv report, so cache them
-        // now to be sent during position report.
-        // For QMI, the DOP will be in position report.
-        if (locationExtended.flags & GPS_LOCATION_EXTENDED_HAS_DOP)
-        {
-            loc_eng_data_p->pdop = locationExtended.pdop;
-            loc_eng_data_p->hdop = locationExtended.hdop;
-            loc_eng_data_p->vdop = locationExtended.vdop;
-        }
-        else
-        {
-            loc_eng_data_p->pdop = 0;
-            loc_eng_data_p->hdop = 0;
-            loc_eng_data_p->vdop = 0;
-        }
-
+    {
+        loc_eng_data_p->pdop = 0;
+        loc_eng_data_p->hdop = 0;
+        loc_eng_data_p->vdop = 0;
     }
 
     EXIT_LOG(%d, 0);
