@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f1dd2902_468654a1",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-05-23T17:04:18Z",
+      "side": 1,
+      "message": "\\..*\nthat\u0027s a weird pattern, just go with . ?",
+      "revId": "d65b14fea88bb949d799f335b9a2dd4d10c0c206",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
