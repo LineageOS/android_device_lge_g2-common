@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9560e53a_72f78fff",
+        "filename": "gnss/Gnss.cpp",
+        "patchSetId": 5
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2020-05-23T14:57:28Z",
+      "side": 1,
+      "message": "line length",
+      "range": {
+        "startLine": 201,
+        "startChar": 4,
+        "endLine": 201,
+        "endChar": 124
+      },
+      "revId": "1300587934658338e97adbd4746f40b7f629fdf9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f359a19_3e771a95",
+        "filename": "gnss/Gnss.cpp",
+        "patchSetId": 5
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2020-05-23T14:57:28Z",
+      "side": 1,
+      "message": "line length",
+      "range": {
+        "startLine": 238,
+        "startChar": 8,
+        "endLine": 238,
+        "endChar": 119
+      },
+      "revId": "1300587934658338e97adbd4746f40b7f629fdf9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "40dc1c6e_46d137e5",
+        "filename": "gnss/Gnss.cpp",
+        "patchSetId": 5
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2020-05-23T14:57:28Z",
+      "side": 1,
+      "message": "line length",
+      "range": {
+        "startLine": 246,
+        "startChar": 12,
+        "endLine": 247,
+        "endChar": 111
+      },
+      "revId": "1300587934658338e97adbd4746f40b7f629fdf9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
