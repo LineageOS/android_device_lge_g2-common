@@ -152,13 +152,14 @@ vendor/lib/libQSEEComAPI.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
 
-# GPS Package version: bacon-01052015-44f539df63cf9fbc2f913b8cc7c3ea995ffe5417
-lib/libloc_api_v02.so:vendor/lib/libloc_api_v02.so|d1eceda1846db9dbae690339ed89b8b9bc372622
-lib/libloc_ds_api.so:vendor/lib/libloc_ds_api.so|4aa70b017e53bbae0c4c98e0553725781ca0f45e
-vendor/lib/hw/flp.default.so|56e0d175700496356f81f4639d905ff97c00e2c0
-vendor/lib/libgeofence.so|f0ff7f591ac91bb44b72fd07c3850034e9f191bb
-vendor/lib/libizat_core.so|f94d2de79ba4a72f651ecd324f342141e5ab32a1
-vendor/lib/liblbs_core.so|97d1882b1db331063d3b29f60cbc6f9f10ad56b7
+# GPS (OnePlus bacon - lineage-14.1-20170807-nightly-bacon-signed.zip)
+vendor/lib/libloc_api_v02.so|9a8401afc86b54e73aa29995f228fd0243cee793
+vendor/lib/libloc_ds_api.so|ccce9d3c3fa4cadafd13b63c90d3ab8c115dd7b0
+vendor/lib/hw/flp.default.so|c36ec0a3e6563fa8ddb96aaa7d0129249ce1d305
+vendor/lib/libflp.so|20994b3ac3ecd2094698ac98463aed97e3ce54ef
+vendor/lib/libgeofence.so|953c2720c98825cdfb2757839f5f86400c11a2d5
+vendor/lib/libizat_core.so|8d1b8f5c26cc9bcdacb402e253048211a6c07ba1
+vendor/lib/liblbs_core.so|3dea19e84a0d226ea3e5c92ec169f7e0fdbe5699
 
 # Graphics msm8974_LA.BF.1.1.3_RB1__release_AU
 etc/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw
