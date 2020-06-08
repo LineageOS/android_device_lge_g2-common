@@ -161,7 +161,7 @@ vendor/lib/libgeofence.so|953c2720c98825cdfb2757839f5f86400c11a2d5
 vendor/lib/libizat_core.so|8d1b8f5c26cc9bcdacb402e253048211a6c07ba1
 vendor/lib/liblbs_core.so|3dea19e84a0d226ea3e5c92ec169f7e0fdbe5699
 
-# Graphics msm8974_LA.BF.1.1.3_RB1__release_AU
+# Graphics (Fairphone OS 19.05.3)
 etc/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw
 etc/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw
 vendor/lib/egl/eglsubAndroid.so|6e63747da648aa4fd2c595bc566a758aaa366e8d
