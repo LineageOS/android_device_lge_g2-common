@@ -158,6 +158,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/quipc.conf:system/etc/quipc.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
+
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
