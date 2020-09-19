@@ -245,6 +245,7 @@ PRODUCT_PACKAGES += \
 
 # Qualcomm
 PRODUCT_PACKAGES += \
+    libaudioclient_shim \
     libcnefeatureconfig \
     librmnetctl \
     libxml2
