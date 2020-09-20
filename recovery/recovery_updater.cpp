@@ -25,6 +25,8 @@
 #include <string.h>
 #include <unistd.h>
 
+#include <android-base/stringprintf.h>
+
 #include "edify/expr.h"
 #include "otautil/error_code.h"
 #include "updater/install.h"
@@ -169,8 +171,8 @@ Value * VerifyTrustZoneFn(const char *name, State *state, const std::vector<std:
 
     ret = 0;
     for (const auto& version : tz_version) {
-        uiPrintf(state, "Comparing TZ version %s to %s",
-            version.c_str(), current_tz_version);
+        state->updater->UiPrint(android::base::StringPrintf("Comparing TZ version %s to %s",
+            version.c_str(), current_tz_version));
         if (strncmp(version.c_str(), current_tz_version, version.length()) == 0) {
             ret = 1;
             break;
