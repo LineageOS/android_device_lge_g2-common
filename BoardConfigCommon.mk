@@ -98,6 +98,9 @@ DEVICE_MANIFEST_FILE := device/lge/g2-common/configs/manifest.xml
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
 
+# Legacy memfd
+TARGET_HAS_MEMFD_BACKPORT := true
+
 # Offmode Charging
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/lge/g2-common/charger/images
 
