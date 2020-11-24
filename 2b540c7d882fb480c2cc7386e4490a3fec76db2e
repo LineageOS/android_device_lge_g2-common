@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4b64fe63_3efe380d",
+        "filename": "overlay/frameworks/opt/net/wifi/service/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-11-24T17:56:38Z",
+      "side": 1,
+      "message": "Derp.",
+      "range": {
+        "startLine": 25,
+        "startChar": 12,
+        "endLine": 25,
+        "endChar": 33
+      },
+      "revId": "2b540c7d882fb480c2cc7386e4490a3fec76db2e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
