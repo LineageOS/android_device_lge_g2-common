@@ -101,7 +101,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=9 \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.telephony.oosisdc=false \
     ril.subscription.types=NV,RUIM \
