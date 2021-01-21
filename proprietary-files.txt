@@ -268,11 +268,6 @@ vendor/lib/libril-qc-qmi-1.so|a54cac69bbb52fa964d651f09c0034298c8eb3ab
 vendor/lib/libril-qcril-hook-oem.so|7ab5908e7a15f69cab5fc7b1c43e128acba119d5
 vendor/lib/libsystem_health_mon.so|25c0a0d1c1e72f2f49e20771877973b34ebe410a
 
-# RenderScript - (Google bullhead - OPR4.170623.006)
-vendor/lib/libRSDriver_adreno.so|2044baf0169177e52aba6d7138f80559ecf2b58d
-vendor/lib/librs_adreno.so|cceaf847d749ac2f1a3af3a1ae6ba653d93e0ed9
-vendor/lib/librs_adreno_sha1.so|e797997d3ac69dfa87904863672c5b9769c796cc
-
 # Sensors
 bin/sensors.qcom:vendor/bin/sensors.qcom
 vendor/lib/hw/activity_recognition.msm8974.so
