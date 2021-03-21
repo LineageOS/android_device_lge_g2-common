@@ -32,7 +32,7 @@ def AddBootloaderAssertion(info):
   return
 
 def AddTrustZoneAssertion(info, input_zip):
-  android_info = info.input_zip.read("OTA/android-info.txt")
+  android_info = info.input_zip.read("OTA/android-info.txt").decode('UTF-8')
   m = re.search(r'require\s+version-trustzone\s*=\s*(\S+)', android_info)
   if m:
     versions = m.group(1).split('|')
